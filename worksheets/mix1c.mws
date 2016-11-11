@@ -1,0 +1,441 @@
+{VERSION 4 0 "Mac OS X" "4.0" }
+{USTYLETAB {PSTYLE "Heading 1" -1 3 1 {CSTYLE "" -1 -1 "Times" 1 18 0
+ 0 0 1 2 1 2 2 2 2 1 0 0 1 }1 1 0 0 8 4 2 0 2 0 2 2 -1 1 }{PSTYLE "War
+ning" -1 7 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1 1 0
+ 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Left Justified Maple Outp
+ut" -1 12 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 
+}1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Fixed Width" -1 17 1 {CSTYLE "
+" -1 -1 "Courier" 1 10 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 0 0 2 0 2 
+0 2 2 -1 1 }{PSTYLE "Help" -1 10 1 {CSTYLE "" -1 -1 "Courier" 1 9 0 0 
+255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Head
+ing 4" -1 20 1 {CSTYLE "" -1 -1 "Times" 1 10 0 0 0 1 1 1 2 2 2 2 1 0 0
+ 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Line Printed Output" -1 6 1
+ {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 
+0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Heading 2" -1 4 1 {CSTYLE "" -1 -1 "T
+imes" 1 14 0 0 0 1 2 1 2 2 2 2 1 0 0 1 }1 1 0 0 8 2 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Maple Output" -1 11 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2
+ 1 2 2 2 2 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Heading 3" 
+-1 5 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 1 1 2 2 2 2 1 0 0 1 }1 1 
+0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Diagnostic" -1 9 1 {CSTYLE "" -1 -1
+ "Courier" 1 10 64 128 64 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2
+ 2 -1 1 }{PSTYLE "Ordered List 1" -1 200 1 {CSTYLE "" -1 -1 "Times" 1 
+12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }{PSTYLE 
+"Text Output" -1 2 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2
+ 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Ordered List 2" 
+-1 201 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 
+1 0 0 3 3 2 36 2 0 2 2 -1 1 }{PSTYLE "Ordered List 3" -1 202 1 {CSTYLE
+ "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 72 2
+ 0 2 2 -1 1 }{PSTYLE "R3 Font 0" -1 203 1 {CSTYLE "" -1 -1 "Helvetica"
+ 1 10 255 0 0 1 2 1 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Ordered List 4" -1 204 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 
+1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 108 2 0 2 2 -1 1 }{PSTYLE "Ordere
+d List 5" -1 205 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1
+ 0 0 1 }1 1 0 0 3 3 2 144 2 0 2 2 -1 1 }{PSTYLE "Annotation Title" -1 
+206 1 {CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 2 2 2 2 1 0 0 1 }3 1 0
+ 0 12 12 2 0 2 0 2 2 -1 1 }{PSTYLE "HyperlinkError" -1 207 1 {CSTYLE "
+" -1 -1 "Courier New" 1 12 255 0 255 1 2 2 1 2 2 1 1 0 0 1 }1 1 0 0 0 
+0 2 0 2 0 2 2 -1 1 }{PSTYLE "HyperlinkWarning" -1 208 1 {CSTYLE "" -1 
+-1 "Courier New" 1 12 0 0 255 1 2 2 1 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2
+ 0 2 2 -1 1 }{PSTYLE "Bullet Item" -1 15 1 {CSTYLE "" -1 -1 "Times" 1 
+12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }{PSTYLE 
+"Maple Plot" -1 13 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2
+ 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "List Item" -1 14 1 
+{CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3
+ 2 0 2 0 2 2 -1 1 }{PSTYLE "Dash Item" -1 16 1 {CSTYLE "" -1 -1 "Times
+" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Error" -1 8 1 {CSTYLE "" -1 -1 "Courier" 1 10 255 0 255 1 2 2
+ 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Title" -1 18 
+1 {CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 1 2 2 2 1 0 0 1 }3 1 0 0 
+12 12 2 0 2 0 2 2 -1 1 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "Time
+s" 1 12 0 0 0 1 2 1 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }
+{PSTYLE "R3 Font 2" -1 209 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 0 1 2
+ 2 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Author" -1 
+19 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 
+0 8 8 2 0 2 0 2 2 -1 1 }{CSTYLE "Help Variable" -1 25 "Courier" 1 12 0
+ 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Underlined Bold" -1 41 "Time
+s" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "Copyright" -1 34 "Times"
+ 1 10 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Maple Comment" -1 21 "Cour
+ier" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Popup" -1 31 "Times" 1
+ 12 0 128 128 1 1 2 1 2 2 2 0 0 0 1 }{CSTYLE "Atomic Variable" -1 200 
+"Times" 1 12 175 0 175 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Dictionary Hype
+rlink" -1 45 "Times" 1 12 147 0 15 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "Plo
+t Text" -1 28 "Times" 1 8 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Inp
+ut" -1 19 "Times" 1 12 255 0 0 1 2 2 2 2 1 2 0 0 0 1 }{CSTYLE "Code" 
+-1 201 "Courier New" 1 12 255 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D M
+ath Italic" -1 3 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D
+ Math Small" -1 7 "Times" 1 1 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D
+ Math Bold Small" -1 10 "Times" 1 1 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Bold" -1 39 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Menus" -1 36 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Heading" -1 26 "Times" 1 14 0 0 0 1 2 1 2 2 2 2 0 0 0 1 
+}{CSTYLE "2D Output" -1 20 "Times" 1 12 0 0 255 1 2 2 2 2 2 2 0 0 0 1 
+}{CSTYLE "2D Inert Output" -1 202 "Times" 1 12 144 144 144 1 2 2 2 2 1
+ 2 0 0 0 1 }{CSTYLE "Help Normal" -1 30 "Times" 1 12 0 0 0 1 2 2 2 2 2
+ 2 0 0 0 1 }{CSTYLE "Maple Input" -1 0 "Courier" 1 12 255 0 0 1 2 1 2 
+2 1 2 0 0 0 1 }{CSTYLE "Page Number" -1 33 "Times" 1 12 0 0 0 1 2 2 2 
+2 2 2 0 0 0 1 }{CSTYLE "Header and Footer" -1 203 "Times" 1 10 0 0 0 1
+ 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Fixed" -1 23 "Courier" 1 10 0 0 0 
+1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Output Labels" -1 29 "Times" 1 8 0 0 0
+ 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Notes" -1 37 "Times" 1 12 0 0 0 
+1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Help Underlined" -1 44 "Times" 1 12 0 
+0 0 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic Small" -1 204 "Time
+s" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Symbol 2" -1 16 "
+Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times
+" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Nonterminal" -1 24 "
+Courier" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Annotation Text" 
+-1 205 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Maple N
+ame" -1 35 "Times" 1 12 104 64 92 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Text
+" -1 206 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Plot Title
+" -1 27 "Times" 1 10 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Help Underl
+ined Italic" -1 43 "Times" 1 12 0 0 0 1 1 2 1 2 2 2 0 0 0 1 }{CSTYLE "
+Caption Reference" -1 207 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Default" -1 38 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Italic Bold" -1 40 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 
+0 1 }{CSTYLE "Maple Input Placeholder" -1 208 "Courier New" 1 12 200 0
+ 200 1 2 1 2 2 1 2 0 0 0 1 }{CSTYLE "LaTeX" -1 32 "Times" 1 12 0 0 0 1
+ 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Emphasized" -1 22 "Times" 1 12 0 0
+ 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Equation Label" -1 209 "Times" 1 12
+ 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D Comment" -1 18 "Times" 1 12 
+0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Italic" -1 42 "Times" 1 12 
+0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Prompt" -1 1 "Courier" 1 12 0 0 
+0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Bold" -1 5 "Times" 1 12 0 0 
+0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Hyperlink" -1 17 "Times" 1 12 0 128 
+128 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "Caption Text" -1 210 "Times" 1 12 
+0 0 0 1 2 1 2 2 2 2 0 0 0 1 }}
+{SECT 0 {EXCHG {PARA 0 "" 0 "" {TEXT 211 65 "Coordinate calculation o
+f the Ricci and Weyl tensors from a basis" }}{PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 8 "restart:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 15 
+"with(grtensor);" }}{PARA 11 "" 1 "" {XPPMATH 20 "Q-GRTensor~III6\"" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "QZCopyright~2016,~Peter~Musgrave,~Denis
+~Pollney,~Kayll~Lake6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "Q-grtensor.or
+g6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "7:I%AsymG6\"I.KillingCoordsGF$I$
+SymGF$I*autoAliasGF$I(gralterGF$I'grcalcGF$I,grcalcalterGF$I,grcompone
+ntGF$I-grconstraintGF$I(grdebugGF$I&grdefGF$I*grdisplayGF$I'grinitGF$I
+'grloadGF$I*grloaddefGF$I&grmapGF$I*groptionsGF$I*grsavedefGF$I,grtest
+inputGF$I,grtransformGF$I'kdeltaGF$I&makegGF$I)nptetradGF$I&qloadGF$" 
+}}}{EXCHG {PARA 0 "" 0 "" {TEXT 211 18 "We load the bases." }}{PARA 0 
+"> " 0 "" {MPLTEXT 1 0 12 "qload(mix1);" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "/I2Default~spacetimeG6\"I%mix1GF$" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"I8For~the~mix1~spacetime:G6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "I,Coor
+dinatesG6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "-I\"xG6\"6#I#upGF$" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "/)I#x~G6\"I\"aGF%=F%6#;\"\"\"\"\"%E\\[l%
+F*I&ThetaGF%\"\"#I$PhiGF%\"\"$I$PsiG6$%*protectedGI(_syslibGF%F+I\"TGF
+%" }}{PARA 11 "" 1 "" {XPPMATH 20 "I4Basis~inner~productG6\"" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "-I$etaG6\"6$I$bupGF$F&" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "/*&)I$etaG6\"I$(a)GF&\"\"\")I!GF&I$(b)GF&F(=F&6$;F(\"\"%F
+.E\\[l16$F(\"\"#\"\"!6$F2F/F36$F2\"\"$F36$F(F6F36$F6F(F36$F/F6F36$F/F/
+!\"\"6$F(F/F36$F/F2F36$F(F(F(6$F6F2F36$F2F2F(6$F6F/F36$F/F(F36$F2F(F36
+$F6F6F(" }}{PARA 11 "" 1 "" {XPPMATH 20 "I=Basis~(covariant~components
+)G6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "-I#w1G6\"6#I#dnGF$" }}{PARA 11 
+"" 1 "" {XPPMATH 20 "/&I'omega1G6\"6#I\"aGF%=F%6#;\"\"\"\"\"%E\\[l%F+,
+$*(-I$expG6$%*protectedGI(_syslibGF%6#-F'6#I\"TGF%F+,&*$I$PsiGF2\"\"#!
+\"\"F+F+#F+F<,&*$I&ThetaGF%F<F=F+F+#F=F<F=F<*(F0F+F;F+F?F>\"\"$\"\"!F,
+FE" }}{PARA 11 "" 1 "" {XPPMATH 20 "-I#w2G6\"6#I#dnGF$" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "/&I'omega2G6\"6#I\"aGF%=F%6#;\"\"\"\"\"%E\\[l%F+,$*(
+-I$expG6$%*protectedGI(_syslibGF%6#-I\"bGF%6#I\"TGF%F+I$PsiGF2F+,&*$I&
+ThetaGF%\"\"#!\"\"F+F+#F?F>F?F>,$*(F0F+F;#F+F>,&*$F:F>F?F+F+FCF?\"\"$
+\"\"!F,FG" }}{PARA 11 "" 1 "" {XPPMATH 20 "-I#w3G6\"6#I#dnGF$" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "/&I'omega3G6\"6#I\"aGF%=F%6#;\"\"\"\"\"%
+E\\[l%F+\"\"!\"\"#*&I&ThetaGF%F+-I$expG6$%*protectedGI(_syslibGF%6#-I
+\"cGF%6#I\"TGF%F+\"\"$*&F2F+,&*$I$PsiGF4F/!\"\"F+F+#FAF/F,F." }}{PARA 
+11 "" 1 "" {XPPMATH 20 "-I#w4G6\"6#I#dnGF$" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "/&I'omega4G6\"6#I\"aGF%=F%6#;\"\"\"\"\"%E\\[l%F+\"\"!\"\"
+#F.\"\"$F.F,-I$expG6$%*protectedGI(_syslibGF%6#,(-F'6#I\"TGF%F+-I\"bGF
+%F9F+-I\"cGF%F9F+" }}{PARA 11 "" 1 "" {XPPMATH 20 "IcoMixmaster~metric
+~(e.g.~MTW~Box~30.1,~Theta~=~cos(theta),~Psi~=~sin(psi))G6\"" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT 211 50 "From the bases we calculate the m
+etric components." }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 35 "grcalc(g(dn,dn
+,pdn),g(up,up),detg);" }}{PARA 6 "" 1 "" {TEXT 212 45 "Calculated e(bu
+p,dn) for mix1 (0.001000 sec.)" }}{PARA 6 "" 1 "" {TEXT 212 44 "Calcul
+ated g(dn,dn) for mix1 (0.004000 sec.)" }{TEXT 212 49 "\nCalculated g(
+dn,dn,pdn) for mix1 (0.003000 sec.)" }{TEXT 212 41 "\nCalculated detg \+
+for mix1 (0.029000 sec.)" }{TEXT 212 8 "\nprecalc" }{TEXT 212 45 "\nCa
+lculated g(up,up) for mix1 (0.037000 sec.)" }{TEXT 212 41 "\nCalculate
+d detg for mix1 (0.000000 sec.)" }}{PARA 11 "" 1 "" {XPPMATH 20 "/I*CP
+U~Time~G6\"$\"#Z!\"$" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 15 "gra
+lter(_,6,7);" }}{PARA 6 "" 1 "" {TEXT 212 48 "Component simplification
+ of a GRTensorII object:" }{TEXT 212 1 "\n" }}{PARA 6 "" 1 "" {TEXT 
+212 46 "Applying routine expand to object g(dn,dn,pdn)" }{TEXT 212 43 
+"\nApplying routine expand to object g(up,up)" }{TEXT 212 39 "\nApplyi
+ng routine expand to object detg" }{TEXT 212 47 "\nApplying routine fa
+ctor to object g(dn,dn,pdn)" }{TEXT 212 43 "\nApplying routine factor \+
+to object g(up,up)" }{TEXT 212 39 "\nApplying routine factor to object
+ detg" }}{PARA 11 "" 1 "" {XPPMATH 20 "/I*CPU~Time~G6\"$\"#%)!\"$" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT 211 101 "Though not needed for the follow
+ing calculations, it is sometimes convenient to see the line element."
+ }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 11 "grcalc(ds);" }}{PARA 6 "" 1 "" 
+{TEXT 212 38 "Calculated ds for mix1 (0.000000 sec.)" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "/I*CPU~Time~G6\"$\"\"!F&" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 13 "grdisplay(_);" }}{PARA 11 "" 1 "" {XPPMATH 20 "I8For~
+the~mix1~spacetime:G6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "I-Line~elemen
+tG6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "/*$I$~dsG6\"\"\"#,.**,(*&-I$exp
+G6$%*protectedGI(_syslibGF%6#-I\"bGF%6#I\"TGF%F&I$PsiGF-F&\"\"\"*&-F,6
+#-I\"aGF%F3F&F5F&!\"\"*$F8F&F6F6,&*$I&ThetaGF%F&F6F<F6F<I#~dGF%F6)F@I#
+2~GF%F6F<*,,&*(F+F&F5F6,&*$F5F&F<F6F6#F6F&F6*(F8F&FGFIF5F6F<F6FAF6)F@I
+\"~GF%F6I#d~GF%F6)I$PhiGF%FLF6F&*(,0*(F+F&F5F&F@F&F6*(F8F&F5F&F@F&F<F*
+F<*&F+F&F@F&F<*&F@F&-F,6#-I\"cGF%F3F&F6F7F6*$F+F&F6F6FAF6)FOFCF6F6*0F@
+F6FVF&FG#F<F&FAF6FNF6FMF6)F5FLF6F&**FVF&,&FHF6F<F6F<FAF6)F5FCF6F<*(-F,
+6#,(F:F6F1F6FXF6F&FAF6)F4FCF6F<" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 211 
+84 "We now proceed to calculate the coordinate components of the Ricci
+ and Weyl tensors." }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 22 "grcalc(Chr(dn
+,dn,up));" }}{PARA 6 "" 1 "" {TEXT 212 49 "Calculated Chr(dn,dn,dn) fo
+r mix1 (0.003000 sec.)" }}{PARA 6 "" 1 "" {TEXT 212 49 "Calculated Chr
+(dn,dn,up) for mix1 (0.011000 sec.)" }}{PARA 11 "" 1 "" {XPPMATH 20 "/
+I*CPU~Time~G6\"$\"#:!\"$" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 15 
+"gralter(_,6,7);" }}{PARA 6 "" 1 "" {TEXT 212 48 "Component simplifica
+tion of a GRTensorII object:" }}{PARA 6 "" 1 "" {TEXT 212 1 "\n" }
+{TEXT 212 47 "Applying routine expand to object Chr(dn,dn,up)" }{TEXT 
+212 48 "\nApplying routine factor to object Chr(dn,dn,up)" }}{PARA 11 
+"" 1 "" {XPPMATH 20 "/I*CPU~Time~G6\"$\"#z!\"$" }}}{EXCHG {PARA 0 "> "
+ 0 "" {MPLTEXT 1 0 24 "grcalcalter(R(dn,dn),6);" }}{PARA 6 "" 1 "" 
+{TEXT 212 50 "Simplification will be applied during calculation." }
+{TEXT 212 1 "\n" }{TEXT 212 43 "\nApplying routine expand to object R(
+dn,dn)" }}{PARA 6 "" 1 "" {TEXT 212 44 "Calculated R(dn,dn) for mix1 (
+0.014000 sec.)" }}{PARA 11 "" 1 "" {XPPMATH 20 "/I*CPU~Time~G6\"$\"#:!
+\"$" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 15 "gralter(_,6,7);" }}
+{PARA 6 "" 1 "" {TEXT 212 48 "Component simplification of a GRTensorII
+ object:" }}{PARA 6 "" 1 "" {TEXT 212 1 "\n" }{TEXT 212 42 "Applying r
+outine expand to object R(dn,dn)" }{TEXT 212 43 "\nApplying routine fa
+ctor to object R(dn,dn)" }}{PARA 11 "" 1 "" {XPPMATH 20 "/I*CPU~Time~G
+6\"$\"#E!\"$" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 23 "grmap(_,aut
+oAlias,`x`);" }}{PARA 6 "" 1 "" {TEXT 212 48 "Applying routine grtenso
+r:-autoAlias to R(dn,dn)" }}{PARA 208 "" 1 "" {TEXT 213 0 "" }
+{HYPERLNK 213 "Warning, alias or macro a[T] defined in terms of a" 4 "
+http://www.maplesoft.com/support/help/errors/view.aspx?path=Warning,%2
+0alias%20or%20macro%20a%5BT%5D%20defined%20in%20terms%20of%20a" "" }
+{TEXT 213 0 "" }}{PARA 208 "" 1 "" {TEXT 213 0 "" }{HYPERLNK 213 "Warn
+ing, alias or macro b[T] defined in terms of b" 4 "http://www.maplesof
+t.com/support/help/errors/view.aspx?path=Warning,%20alias%20or%20macro
+%20b%5BT%5D%20defined%20in%20terms%20of%20b" "" }{TEXT 213 0 "" }}
+{PARA 208 "" 1 "" {TEXT 213 0 "" }{HYPERLNK 213 "Warning, alias or mac
+ro c[T] defined in terms of c" 4 "http://www.maplesoft.com/support/hel
+p/errors/view.aspx?path=Warning,%20alias%20or%20macro%20c%5BT%5D%20def
+ined%20in%20terms%20of%20c" "" }{TEXT 213 0 "" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 13 "grdisplay(_);" }}{PARA 11 "" 1 "" {XPPMATH 20 "I
+8For~the~mix1~spacetime:G6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "I0Covari
+ant~RicciG6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "-I\"RG6\"6$I#dnGF$F&" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "/*&&I#R~G6\"6#I&ThetaGF&\"\"\"&I!GF&F'F
+),$*.,<*&-I$expG6$%*protectedGI(_syslibGF&6#I\"bGF&\"\"'I$PsiGF2\"\"#!
+\"\"*(F0\"\"%-F16#I\"aGF&F9F8F9F:*(F0F9F=F<F8F9F)*(F0F9F8F9-F16#I\"cGF
+&F<F)*&F=F7F8F9F)*(F=F9F8F9FBF<F:*&F0F<F=F9F)*(F0F9F=F9FBF9!\"#*$F=F7F
+:*&F=F9FBF<F)*(F=F9F8F9-I%diffGF36$&F?6#I\"TGF&FRF)F9*(F0F9F8F9-FN6$&F
+6FQFRF)FI*&F=F9FMF)FIF),&F(F)F:F)F:,&F(F)F)F)F:F=FIF0FIFBFI#F)F9" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "/*&&I#R~G6\"6#I&ThetaGF&\"\"\"&I!GF&6#I$
+PhiGF&F),$*2I$PsiG6$%*protectedGI(_syslibGF&F),&F0F)!\"\"F)\"\"#,&F0F)
+F)F)F6,2*$-I$expGF16#I\"bGF&\"\"'F5*&F:\"\"%-F;6#I\"aGF&F6F5*&F:F6FAF@
+F)*&F:F6-F;6#I\"cGF&F@F)*$FAF>F)*&FAF6FFF@F5*&FAF6-I%diffGF26$&FC6#I\"
+TGF&FQF)F6*&F:F6-FM6$&F=FPFQF)!\"#F)FAFVF:FV,$*&F4F)F7F)F5#!\"$F6FFFV#
+F5F6" }}{PARA 11 "" 1 "" {XPPMATH 20 "/*&&I#R~G6\"6#I$PhiGF&\"\"\"&I!G
+F&F'F),$**,fn*(-I$expG6$%*protectedGI(_syslibGF&6#I\"bGF&\"\"%-F16#I\"
+cGF&\"\"#I&ThetaGF&F;!\"\"*(F0F;F8F7F<F;F)**F0F7-F16#I\"aGF&F;I$PsiGF2
+F;F<F;F)**F0F;F@F7FCF;F<F;F=**F0F;F8F7FCF;F<F;F=**F@F;F8F7FCF;F<F;F)*&
+F0\"\"'F<F;F=*&F8FHF<F;F)*(F0FHFCF;F<F;F)*(F@FHFCF;F<F;F=**F0F;FCF;F<F
+;-I%diffGF36$&F66#I\"TGF&FRF)F;**F@F;FCF;F<F;-FN6$&FBFQFRF)!\"#*(F0F;F
+<F;FMF)FW*(F<F;F8F;-FN6$&F:FQFRF)F;*(F@F;FCF;F8F7F=*(F0F;FCF;F8F7F)*(F
+0F;FCF;FMF)FW*(F@F;FCF;FTF)F;*&F0F;F8F7F=*&F0F;FMF)F;*&F0FHFCF;F=*&F@F
+HFCF;F)*$F0FHF)*(F0F7F@F;FCF;F=*(F0F;F@F7FCF;F)*(F0F;F@F7F<F;F)*(F@F7F
+8F;F<F;F=*(F0F;F@F;F8F;F;*&F0F;F@F7F=F)F8FWF@FWF0FW#F)F;" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "/*&&I#R~G6\"6#I$PhiGF&\"\"\"&I!GF&6#I$PsiG6$%*prot
+ectedGI(_syslibGF&F),$*0I&ThetaGF&F),&F-F)!\"\"F)F),&F-F)F)F)F),,*$-I$
+expGF.6#I\"bGF&\"\"%F5*&F9\"\"#-F:6#I\"aGF&F?F?*$F@F=F5*$-F:6#I\"cGF&F
+=F)-I%diffGF/6$&FG6#I\"TGF&FMF?F)F@!\"#,$*&F4F)F6F)F5#!\"$F?F9FN#F5F?"
+ }}{PARA 11 "" 1 "" {XPPMATH 20 "/*&&I#R~G6\"6#I$PsiG6$%*protectedGI(_
+syslibGF&\"\"\"&I!GF&F'F,,$*,-I$expGF)6#I\"bGF&!\"#-F26#I\"aGF&F5,,*$F
+1\"\"%!\"\"*&F1\"\"#F6F>F>*$F6F;F<*$-F26#I\"cGF&F;F,-I%diffGF*6$&FC6#I
+\"TGF&FIF>F,,&F(F,F<F,F<,&F(F,F,F,F<#F<F>" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "/*&&I#R~G6\"6#I\"TGF&\"\"\"&I!GF&F'F),.*&&I\"cGF&F'F)&I\"
+bGF&F'F)\"\"#*&F0F)&I\"aGF&F'F)F2*&F.F)F4F)F2-I%diffG%*protectedG6$F.F
+(!\"\"-F86$F0F(F;-F86$F4F(F;" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 27 "grcalcalter(Ricciscalar,6);" }}{PARA 6 "" 1 "" {TEXT 212 50 "Sim
+plification will be applied during calculation." }{TEXT 212 1 "\n" }}
+{PARA 6 "" 1 "" {TEXT 212 46 "Applying routine expand to object tRicci
+scalar" }{TEXT 212 48 "\nCalculated Ricciscalar for mix1 (0.002000 sec
+.)" }}{PARA 11 "" 1 "" {XPPMATH 20 "/I*CPU~Time~G6\"$\"\"#!\"$" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 15 "gralter(_,6,7);" }}{PARA 6 "
+" 1 "" {TEXT 212 48 "Component simplification of a GRTensorII object:"
+ }}{PARA 6 "" 1 "" {TEXT 212 1 "\n" }{TEXT 212 45 "Applying routine ex
+pand to object Ricciscalar" }{TEXT 212 46 "\nApplying routine factor t
+o object Ricciscalar" }}{PARA 11 "" 1 "" {XPPMATH 20 "/I*CPU~Time~G6\"
+$\"\")!\"$" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 30 "grcalcalter(C
+(dn,dn,dn,dn),6);" }}{PARA 6 "" 1 "" {TEXT 212 50 "Simplification will
+ be applied during calculation." }}{PARA 6 "" 1 "" {TEXT 212 1 "\n" }
+{TEXT 212 46 "Applying routine expand to object tRicciscalar" }{TEXT 
+212 48 "\nCalculated Ricciscalar for mix1 (0.001000 sec.)" }{TEXT 212 
+49 "\nApplying routine expand to object R(dn,dn,dn,dn)" }{TEXT 212 51 
+"\nCalculated R(dn,dn,dn,dn) for mix1 (0.024000 sec.)" }{TEXT 212 49 "
+\nApplying routine expand to object C(dn,dn,dn,dn)" }{TEXT 212 51 "\nC
+alculated C(dn,dn,dn,dn) for mix1 (0.039000 sec.)" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "/I*CPU~Time~G6\"$\"#m!\"$" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 15 "gralter(_,6,7);" }}{PARA 6 "" 1 "" {TEXT 212 48 "Comp
+onent simplification of a GRTensorII object:" }}{PARA 6 "" 1 "" {TEXT 
+212 1 "\n" }{TEXT 212 48 "Applying routine expand to object C(dn,dn,dn
+,dn)" }{TEXT 212 49 "\nApplying routine factor to object C(dn,dn,dn,dn
+)" }}{PARA 11 "" 1 "" {XPPMATH 20 "/I*CPU~Time~G6\"$\"$\\#!\"$" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 23 "grmap(_,autoAlias,`x`);" }}
+{PARA 6 "" 1 "" {TEXT 212 54 "Applying routine grtensor:-autoAlias to \+
+C(dn,dn,dn,dn)" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 13 "grdisplay
+(_);" }}{PARA 11 "" 1 "" {XPPMATH 20 "I8For~the~mix1~spacetime:G6\"" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "I/Covariant~WeylG6\"" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "/**&I#C~G6\"6#I&ThetaGF&\"\"\"&I!GF&6#I$PhiGF&F)&I\"~GF
+&F'F)&I#~~GF&F,F),$*.,dq*.I$PsiG6$%*protectedGI(_syslibGF&\"\"#&I\"aGF
+&6#I\"TGF&F)F(F:&I\"bGF&F=F)-I$expGF76#I\"cGF&F:-FB6#F@F:F:*.F6F:F;F)F
+(F:F?F)FAF:-FB6#F<F:!\"#*.F6F:F?F)F(F:&FDF=F)FAF:FHF:FJ*.F6F:F;F)F(F:F
+LF)FAF:FEF:F:**-I%diffGF86$F?F>F)FHF:FAF:F(F:FJ**FLF)F?F)FHF:FEF:F:**F
+LF)F;F)FHF:FEF:F:*,F6F:F(F:-FP6$F;F>F)FAF:FEF:FJ*,FOF)FHF:FAF:F6F:F(F:
+F:*,F?F)F;F)F(F:FAF:FHF:F:*,F?F)FEF:FHF:FLF)F(F:FJ*,F?F)FLF)F(F:FAF:FH
+F:F:*,F;F)FEF:FHF:FLF)F(F:FJ*,FHF:F6F:FUF)F(F:FAF:!\"\"*,FEF:F6F:FOF)F
+(F:FAF:F)**FHF:FUF)FEF:F(F:Fgn**FHF:FUF)F(F:FAF:F)**FHF:F;F)FEF:F?F)!
+\"%*.FEF:F6F:F?F)F(F:FAF:FLF)F\\o*.FHF:F6F:F;F)F(F:FAF:FLF)\"\"%*(FHF:
+FA\"\"'F(F:Fgn*(FEF:FHF:-FP6$FLF>F)FJ*(FEF:FHF:FUF)F)*(FHF:FEF:FOF)F)*
+,FHF:F;F)FEF:F(F:F?F)F_o*,FHF:F;F)F(F:FAF:FLF)F\\o*,FEF:F6F:F(F:FAF:Fc
+oF)F)*,FHF:F6F:F(F:FAF:FcoF)Fgn**FEF:F6F:FAFaoF(F:Fgn**FHF:F6F:FAFaoF(
+F:F)**FHF:FEF:F(F:FOF)Fgn**FHF:F(F:FAF:FcoF)F)**FEF:FHF:F(F:FcoF)F:**F
+EFaoF6F:FAF:F(F:Fgn**FEF_oF6F:FAF_oF(F:F:**FEF_oFAF:FHF:F(F:\"\"$**FEF
+:FHF:FAF_oF(F:!\"$**FHFaoF6F:FAF:F(F:F)**FHF_oF6F:FAF_oF(F:FJ*(FEFaoFH
+F:F(F:F)*(FEF_oFHF_oF(F:FJ*(FHFaoFEF:F(F:F)*(FHFaoFAF:F(F:Fgn*(FHF_oFA
+F_oF(F:F:*(FHF:FAF_oFEF:F:*(FEF_oFHF:FAF:Fgn*(FEF:FHF_oFAF:Fgn*&FEFaoF
+HF:Fgn*&FEF_oFHF_oF:*&FEF:FHFaoFgn*,FEF_oF6F:FAF:FHF:F(F:Fep*,FEF:FHF_
+oF6F:FAF:F(F:FcpF),&F(F)FgnF)Fgn,&F(F)F)F)FgnFHFJFEFJFAFJ#F)Fao" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "/**&I#C~G6\"6#I&ThetaGF&\"\"\"&I!GF&6#I$
+PhiGF&F)&I\"~GF&F'F)&I#~~GF&6#I$PsiG6$%*protectedGI(_syslibGF&F),$*4F(
+F),&F3F)!\"\"F)F),&F3F)F)F)F),\\o**&I\"cGF&6#I\"TGF&F)&I\"bGF&F@F)-I$e
+xpGF46#I\"aGF&\"\"#F3FH!\"#**F>F)&FGF@F)-FE6#FCFHF3FHFH*(F>F)FBF)FDFHF
+H*(-I%diffGF56$FBFAF)FDFHF3FHFH*(-FQ6$FKFAF)FLFHF3FHFI*&FPF)FDFHFI*(FL
+FHF3FH-FQ6$F>FAF)F)*(FDFHF3FHFXF)F:*&FDFHFXF)F)*(FDFHF3FH-FE6#F?\"\"%F
+)*(FDFHFKF)F>F)!\"%*(FLFHF3FHFgnFinF:*(FDFHFKF)FBF)FH*(FLFHF3FHFPF)F)*
+(FDFHF3FHFTF)F:*(FLFinF3FHFgnFHFH*(FDFinF3FHFgnFHFI*&FDFHFgnFinF:*&FL
+\"\"'F3FHF:*&FDFdoF3FHF)*&FDFinFgnFHFH*&FDFHFTF)F)*$FDFdoF:*(FLFinFDFH
+F3FH!\"$*(FLFHFDFinF3FH\"\"$*(FLFHFDFHFgnFHF:*&FLFinFDFHFH*&FLFHFDFinF
+:**FLFHF3FHFBF)FKF)FH**FDFHF3FHFKF)FBF)FI**FLFHF3FHFBF)F>F)F[o**FDFHF3
+FHFKF)F>F)FinF)FLFIFDFI,&F(F)F:F)F:,&F(F)F)F)F:,$*&F9F)F;F)F:#FjoFH#F:
+Fdo" }}{PARA 11 "" 1 "" {XPPMATH 20 "/**&I#C~G6\"6#I&ThetaGF&\"\"\"&I!
+GF&6#I$PhiGF&F)&I\"~GF&F'F)&I#~~GF&6#I\"TGF&F),$*2I$PsiG6$%*protectedG
+I(_syslibGF&F)F(F),&F6F)!\"\"F)F),&F6F)F)F)F),2*&-I$expGF76#I\"bGF&\"
+\"#&FBF2F)\"\"$*&FDF)-F@6#I\"aGF&FCF)*&FDF)-F@6#I\"cGF&FCF;*&&FIF2F)F?
+FCF;*&FGFCFOF)!\"$*&FOF)FKFCF)*&&FMF2F)F?FC!\"#*&FTF)FGFCFCF),$*&F:F)F
+<F)F;#F;FC,&F(F)F;F)F;,&F(F)F)F)F;FY" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+/**&I#C~G6\"6#I&ThetaGF&\"\"\"&I!GF&6#I$PhiGF&F)&I\"~GF&F,F)&I#~~GF&6#
+I$PsiG6$%*protectedGI(_syslibGF&F),$*,,J*$-I$expGF46#I\"bGF&\"\"'!\"\"
+*&F;\"\"%-F<6#I\"aGF&\"\"#!\"$*&F;FB-F<6#I\"cGF&FFFF*&F;FFFCFB\"\"$*&F
+;FFFIFBF@*$FCF?F)*&FCFBFIFF!\"#*&FCFFFIFBF)*(F;FF&F>6#I\"TGF&F)&FEFUF)
+FF*(FCFFFWF)FTF)FQ*(F;FFFTF)&FKFUF)!\"%*(FZF)FTF)FCFFFQ*(F;FFFWF)FZF)F
+F*(FCFFFWF)FZF)FB*&-I%diffGF56$FZFVF)F;FFF)*&FCFFFjnF)F@*&F;FF-F[o6$FW
+FVF)FQ*&FCFFF_oF)F@*&F;FF-F[o6$FTFVF)F)*&FcoF)FCFFFFF)FCFQF(F)F3F)F;FQ
+#F@F?" }}{PARA 11 "" 1 "" {XPPMATH 20 "/**&I#C~G6\"6#I&ThetaGF&\"\"\"&
+I!GF&6#I$PhiGF&F)&I\"~GF&F,F)&I#~~GF&6#I\"TGF&F),$*&,B*(-I$expG6$%*pro
+tectedGI(_syslibGF&6#I\"bGF&\"\"#I$PsiGF:F?&F>F2F)\"\"$*(FAF)-F96#I\"a
+GF&F?F@F?F)*(FAF)-F96#I\"cGF&F?F@F?!\"\"*(F8F?F@F?&FFF2F)FK*(FDF?F@F?F
+MF)!\"$*(FHF?F@F?FMF)F)*(F8F?&FJF2F)F@F?!\"#*(FDF?FRF)F@F?F?*&F8F?FAF)
+FO*&FAF)FDF?F)*&FAF)FHF?FK*&FMF)F8F?F?*&FMF)FHF?FS*&FRF)F8F?F)*&FRF)FD
+F?FK*&FHF?FRF)FBF)F(F)#F)F?" }}{PARA 11 "" 1 "" {XPPMATH 20 "/**&I#C~G
+6\"6#I&ThetaGF&\"\"\"&I!GF&6#I$PhiGF&F)&I\"~GF&6#I$PsiG6$%*protectedGI
+(_syslibGF&F)&I#~~GF&6#I\"TGF&F),$*&,0*&-I$expGF26#I\"bGF&\"\"#&F@F7F)
+F)*&FBF)-F>6#I\"aGF&FA!\"\"*&FBF)-F>6#I\"cGF&FAF)*&&FFF7F)F=FAFG*&FDFA
+FMF)F)*&FMF)FIFAF)*&FIFA&FKF7F)!\"#F),$*&,&F1F)FGF)F),&F1F)F)F)F)FG#FG
+FAFW" }}{PARA 11 "" 1 "" {XPPMATH 20 "/**&I#C~G6\"6#I&ThetaGF&\"\"\"&I
+!GF&6#I$PsiG6$%*protectedGI(_syslibGF&F)&I\"~GF&F'F)&I#~~GF&F,F),$*0,
+\\o**&I\"cGF&6#I\"TGF&F)&I\"bGF&F;F)-I$expGF.6#I\"aGF&\"\"#F-FC!\"#**F
+9F)&FBF;F)-F@6#F>FCF-FCFC*(F9F)F=F)F?FCFC*(-I%diffGF/6$F=F<F)F?FCF-FCF
+C*(-FL6$FFF<F)FGFCF-FCFD*&FKF)F?FCFD*(FGFCF-FC-FL6$F9F<F)F)*(F?FCF-FCF
+SF)!\"\"*&F?FCFSF)F)*(F?FCF-FC-F@6#F:\"\"%F)*(F?FCFFF)F9F)!\"%*(FGFCF-
+FCFYFenFV*(F?FCFFF)F=F)FC*(FGFCF-FCFKF)F)*(F?FCF-FCFOF)FV*(FGFenF-FCFY
+FCFC*(F?FenF-FCFYFCFD*&F?FCFYFenFV*&FG\"\"'F-FCFV*&F?F`oF-FCF)*&F?FenF
+YFCFC*&F?FCFOF)F)*$F?F`oFV*(FGFenF?FCF-FC!\"$*(FGFCF?FenF-FC\"\"$*(FGF
+CF?FCFYFCFV*&FGFenF?FCFC*&FGFCF?FenFV**FGFCF-FCF=F)FFF)FC**F?FCF-FCFFF
+)F=F)FD**FGFCF-FCF=F)F9F)Fgn**F?FCF-FCFFF)F9F)FenF)F?FDFGFD,&F-F)F)F)F
+V,&F-F)FVF)FV,&F(F)FVF)FV,&F(F)F)F)FV#FVF`o" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "/**&I#C~G6\"6#I&ThetaGF&\"\"\"&I!GF&6#I$PsiG6$%*protected
+GI(_syslibGF&F)&I\"~GF&F'F)&I#~~GF&6#I\"TGF&F),$**F-F),2*&-I$expGF.6#I
+\"bGF&\"\"#&F>F5F)\"\"$*&F@F)-F<6#I\"aGF&F?F)*&F@F)-F<6#I\"cGF&F?!\"\"
+*&&FEF5F)F;F?FJ*&FCF?FLF)!\"$*&FLF)FGF?F)*&&FIF5F)F;F?!\"#*&FQF)FCF?F?
+F),&F(F)FJF)FJ,&F(F)F)F)FJ#F)F?" }}{PARA 11 "" 1 "" {XPPMATH 20 "/**&I
+#C~G6\"6#I&ThetaGF&\"\"\"&I!GF&6#I$PsiG6$%*protectedGI(_syslibGF&F)&I
+\"~GF&6#I$PhiGF&F)&I#~~GF&F,F),$*0,&F-F)!\"\"F)F),&F-F)F)F)F),J*$-I$ex
+pGF.6#I\"bGF&\"\"'F:*&F>\"\"%-F?6#I\"aGF&\"\"#!\"$*&F>FD-F?6#I\"cGF&FH
+FH*&F>FHFEFD\"\"$*&F>FHFKFDF:*$FEFBF)*&FEFDFKFH!\"#*&FEFHFKFDF)*(F>FH&
+FA6#I\"TGF&F)&FGFWF)FH*(FEFHFYF)FVF)FS*(F>FHFVF)&FMFWF)!\"%*(FfnF)FVF)
+FEFHFS*(F>FHFYF)FfnF)FH*(FEFHFYF)FfnF)FD*&-I%diffGF/6$FfnFXF)F>FHF)*&F
+EFHF\\oF)F:*&F>FH-F]o6$FYFXF)FS*&FEFHFaoF)F:*&F>FH-F]o6$FVFXF)F)*&FeoF
+)FEFHFHF)F-F),$*&F9F)F;F)F:#FIFHFEFSF>FS#F)FB" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "/**&I#C~G6\"6#I&ThetaGF&\"\"\"&I!GF&6#I$PsiG6$%*protected
+GI(_syslibGF&F)&I\"~GF&6#I$PhiGF&F)&I#~~GF&6#I\"TGF&F),$*&,@*(-I$expGF
+.6#I\"bGF&\"\"#F-FA&F@F7F)\"\"$*(FBF)-F>6#I\"aGF&FAF-FAF)*(FBF)-F>6#I
+\"cGF&FAF-FA!\"\"*(F=FAF-FA&FGF7F)FL*(FEFAF-FAFNF)!\"$*(FIFAF-FAFNF)F)
+*(F=FA&FKF7F)F-FA!\"#*(FEFAFSF)F-FAFA*&F=FAFBF)FT*&FNF)F=FAF)*&FEFAFNF
+)F)*&FNF)FIFAFL*&FSF)F=FAF)*&FSF)FEFAFL*&FIFAFSF)F)F),$*&,&F-F)FLF)F),
+&F-F)F)F)F)FL#FLFA#F)FA" }}{PARA 11 "" 1 "" {XPPMATH 20 "/**&I#C~G6\"6
+#I&ThetaGF&\"\"\"&I!GF&6#I\"TGF&F)&I\"~GF&F'F)&I#~~GF&F,F),$*(,hn**&I
+\"cGF&F,F)&I\"bGF&F,F)-I$expG6$%*protectedGI(_syslibGF&6#I\"aGF&\"\"#I
+$PsiGF<FA\"\"%**F6F)&F@F,F)-F;6#F9FAFBFA!\"%*(F6F)F8F)F:FAFH*(-I%diffG
+F=6$F8F-F)F:FAFBFA!\"\"*(-FL6$FEF-F)FFFAFBFAF)*&FKF)F:FAF)*(FFFAFBFA-F
+L6$F6F-F)F)*(F:FAFBFAFTF)FN*&F:FAFTF)F)*(F:FAFBFA-F;6#F7FCF)*(F:FAFEF)
+F6F)FA*(FFFAFBFAFYFCFN*(F:FAFEF)F8F)FA*(FFFAFBFAFKF)!\"#*(F:FAFBFAFPF)
+FA*(FFFCFBFAFYFAFN*(F:FCFBFAFYFAF)*&F:FAFYFCFN*&FF\"\"'FBFAFA*&F:F_oFB
+FAFin*&F:FCFYFAFN*&F:FAFPF)Fin*$F:F_oFA*(FFFAF:FAFYFAFA*&FFFCF:FAFN*&F
+FFAF:FCFN**FFFAFBFAF8F)FEF)FA**F:FAFBFAFEF)F8F)Fin**FFFAFBFAF8F)F6F)FA
+**F:FAFBFAFEF)F6F)FinF),&F(F)FNF)FN,&F(F)F)F)FN#FNF_o" }}{PARA 11 "" 1
+ "" {XPPMATH 20 "/**&I#C~G6\"6#I&ThetaGF&\"\"\"&I!GF&6#I\"TGF&F)&I\"~G
+F&6#I$PhiGF&F)&I#~~GF&6#I$PsiG6$%*protectedGI(_syslibGF&F),$*&,@*(-I$e
+xpGF66#I\"bGF&\"\"#F5FA&F@F,F)\"\"$*(FBF)-F>6#I\"aGF&FAF5FAF)*(FBF)-F>
+6#I\"cGF&FAF5FA!\"\"*(F=FAF5FA&FGF,F)FL*(FEFAF5FAFNF)!\"$*(FIFAF5FAFNF
+)F)*(F=FA&FKF,F)F5FA!\"#*(FEFAFSF)F5FAFA*&F=FAFBF)FL*&FBF)FEFAFL*&FBF)
+FIFAF)*&FEFAFNF)FA*&FSF)F=FAF)*&FSF)FEFAFL*&FIFAFSF)FLF),$*&,&F5F)FLF)
+F),&F5F)F)F)F)FL#FLFA#F)FA" }}{PARA 11 "" 1 "" {XPPMATH 20 "/**&I#C~G6
+\"6#I&ThetaGF&\"\"\"&I!GF&6#I\"TGF&F)&I\"~GF&6#I$PhiGF&F)&I#~~GF&F,F),
+$*,I$PsiG6$%*protectedGI(_syslibGF&F),&F6F)!\"\"F)\"\"#,&F6F)F)F)F<,F*
+$-I$expGF76#I\"bGF&\"\"'F<*&F@\"\"%-FA6#I\"cGF&F<F;*&F@F<FGFFF;*$-FA6#
+I\"aGF&FD!\"#*&FLFFFGF<F)*&FLF<FGFFF)*(F@F<&FCF,F)&FNF,F)F<*(FLF<FTF)F
+SF)FO*(F@F<FSF)&FIF,F)F<*(FWF)FSF)FLF<FF*(F@F<FTF)FWF)!\"%*(FLF<FTF)FW
+F)FO*&-I%diffGF86$FWF-F)F@F<F)*&FLF<FgnF)F;*&F@F<-Fhn6$FTF-F)F)*&FLF<F
+\\oF)F<*&F@F<-Fhn6$FSF-F)FO*&F`oF)FLF<F;F),$*&F:F)F=F)F;#!\"$F<#F)FD" 
+}}{PARA 11 "" 1 "" {XPPMATH 20 "/**&I#C~G6\"6#I$PhiGF&\"\"\"&I!GF&6#I$
+PsiG6$%*protectedGI(_syslibGF&F)&I\"~GF&F'F)&I#~~GF&F,F),$*0,&I&ThetaG
+F&F)!\"\"F)F),&F8F)F)F)F),\\o*&-I$expGF.6#I\"bGF&\"\"#-I%diffGF/6$&I\"
+aGF&6#I\"TGF&FHF)FA*(F=FAFEF)&I\"cGF&FGF)!\"#*&-FC6$FJFHF)F=FAF9**FJF)
+&F@FGF)-F>6#FFFAF-FAFL**FJF)FEF)F=FAF-FAFA*(-FC6$FQFHF)FRFAF-FAFA*(FBF
+)F=FAF-FAFL*(F=FAF-FAFNF)F)*(FRFAF-FAFNF)F9*(F=FAFQF)FJF)\"\"%*(FRFAF-
+FA-F>6#FKFfnF)*(F=FAF-FAFhnFfnF9*(F=FAFQF)FEF)FL*(F=FAF-FAFVF)F)*(FRFA
+F-FAFBF)F9*(F=FfnF-FAFhnFAFA*(FRFfnF-FAFhnFAFL*&F=FAFhnFfnF)*&F=FAFVF)
+F9*&F=\"\"'F-FAF9*&F=FfnFhnFAFL*&FRFcoF-FAF)*$F=FcoF)*(F=FfnFRFAF-FA!
+\"$*(F=FAFRFfnF-FA\"\"$*(F=FAFRFAFhnFAF)*&F=FfnFRFAF)*&F=FAFRFfnFL**F=
+FAF-FAFQF)FEF)FA**FRFAF-FAFEF)FQF)FL**F=FAF-FAFQF)FJF)!\"%**FRFAF-FAFE
+F)FJF)FfnF)FRFLF=FL,&F-F)F9F)F9,&F-F)F)F)F9#F)Fco" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "/**&I#C~G6\"6#I$PhiGF&\"\"\"&I!GF&6#I$PsiG6$%*protectedGI
+(_syslibGF&F)&I\"~GF&F'F)&I#~~GF&6#I\"TGF&F),$**F-F),&I&ThetaGF&F)!\"
+\"F)F),&F:F)F)F)F),2*&-I$expGF.6#I\"bGF&\"\"#&FBF5F)\"\"$*&FDF)-F@6#I
+\"aGF&FCF)*&FDF)-F@6#I\"cGF&FCF;*&&FIF5F)F?FCF;*&FGFCFOF)!\"$*&FOF)FKF
+CF)*&&FMF5F)F?FC!\"#*&FTF)FGFCFCF)#F;FC" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "/**&I#C~G6\"6#I$PhiGF&\"\"\"&I!GF&6#I\"TGF&F)&I\"~GF&F'F)&I#~~GF&F
+,F),`s**-I$expG6$%*protectedGI(_syslibGF&6#I\"bGF&\"\"%-F56#I\"cGF&\"
+\"#I$PsiGF6F?I&ThetaGF&F?#!\"\"\"\"'**F4F?F<F;F@F?FAF?FB**-F56#I\"aGF&
+F;F<F?F@F?FAF?#F)FD**FGF?F<F;F@F?FAF?FJ*,FGF?&F:F,F)&F>F,F)F@F?FAF?#F?
+\"\"$*,F4F?&FIF,F)FNF)F@F?FAF?#!\"#FP**FGF?-I%diffGF76$FMF-F)F@F?FAF?F
+B**F<F?FMF)FRF)FAF?FS**F4F?FRF)FNF)FAF?FO**F4F?-FW6$FRF-F)F@F?FAF?FJ*&
+F4F?FfnF)FJ**-FW6$FNF-F)F4F?F@F?FAF?FJ**FjnF)FGF?F@F?FAF?FB*(FjnF)F4F?
+FAF?FB*(F4F?FRF)FNF)FS*(F4F?FfnF)FAF?FB*(F<F?FfnF)FAF?FJ*(F<F?FVF)FAF?
+FJ*&FjnF)F4F?FJ**FNF)FMF)FGF?F@F?FS**FNF)FRF)F4F?F@F?FO*(FVF)FGF?F@F?F
+J*(FfnF)F4F?F@F?FB*(F4F?F@F?FjnF)FB*(FGF?F@F?FjnF)FJ*&F4FDFAF?#FCFP*&F
+<FDFAF?#F)FP*(F4FDF@F?FAF?F\\p*(FGFDF@F?FAF?Fjo*,F4F?F@F?FAF?FMF)FNF)F
+\\p*,FGF?F@F?FAF?FRF)FNF)Fjo**F4F?FAF?FMF)FNF)Fjo**F4F?F@F?FAF?FVF)Fjo
+**FGF?F@F?FAF?FfnF)F\\p**FRF)F4F?FAF?FMF)Fjo**FRF)FAF?F<F?FNF)F\\p*(F4
+F?FAF?FVF)F\\p*(FAF?F<F?FjnF)Fjo*(F4F?FMF)FNF)F\\p*(FGF?F@F?F<F;FB*(F4
+F?F@F?F<F;FJ*(F4F?FMF)FRF)F\\p*(F4F?F@F?FVF)F\\p*(FGF?F@F?FfnF)Fjo*(F4
+F;F@F?F<F?FJ*(FGF;F@F?F<F?FB*&F4F?F<F;FB*&F4F?FVF)Fjo*&F4FDF@F?Fjo*&F4
+F;F<F?FB*&FGFDF@F?F\\p*$F4FDF\\p*(F4F;FGF?FAF?FJ*(F4F?FGF;FAF?FJ*(FGF;
+F<F?FAF?FB*(FGF?F<F;FAF?FB*(F4F?FGF?F<F?F\\p*&F4F;FGF?FB*&F4F?FGF;FB*,
+FMF)FGF?F@F?FAF?FRF)Fjo*,FRF)F4F?F@F?FAF?FMF)F\\p**F4F?F@F?FMF)FRF)Fjo
+**FGF?F@F?FRF)FMF)F\\p**F4F?F@F?FMF)FNF)Fjo**FGF?F@F?FRF)FNF)F\\p**FMF
+)FAF?F<F?FNF)F\\p" }}{PARA 11 "" 1 "" {XPPMATH 20 "/**&I#C~G6\"6#I$Phi
+GF&\"\"\"&I!GF&6#I\"TGF&F)&I\"~GF&6#I$PsiG6$%*protectedGI(_syslibGF&F)
+&I#~~GF&F,F),$*.I&ThetaGF&F)-I$expGF26#I\"cGF&\"\"#,&F1F)!\"\"F)F),&F1
+F)F)F)F),:*$-F;6#I\"bGF&\"\"%F)*&FDF>-F;6#I\"aGF&F>!\"#*&FDF>F:F>F)*$F
+IFGF)*&FIF>F:F>F)*$F:FGFL*&&FFF,F)&FKF,F)FG*&&F=F,F)FRF)FL*&FUF)FSF)FL
+-I%diffGF36$FUF-F>-FX6$FSF-F@-FX6$FRF-F@F),$*&F?F)FAF)F@#!\"$F>#F)\"\"
+'" }}{PARA 11 "" 1 "" {XPPMATH 20 "/**&I#C~G6\"6#I$PsiG6$%*protectedGI
+(_syslibGF&\"\"\"&I!GF&6#I\"TGF&F,&I\"~GF&F'F,&I#~~GF&F/F,,$**,:*$-I$e
+xpGF)6#I\"bGF&\"\"%F,*&F9\"\"#-F:6#I\"aGF&F?!\"#*&F9F?-F:6#I\"cGF&F?F,
+*$F@F=F,*&F@F?FEF?F,*$FEF=FC*&&F<F/F,&FBF/F,F=*&&FGF/F,FLF,FC*&FOF,FMF
+,FC-I%diffGF*6$FOF0F?-FR6$FMF0!\"\"-FR6$FLF0FVF,FEF?,&F(F,FVF,FV,&F(F,
+F,F,FV#F,\"\"'" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}}
+{MARK "0 0 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2
+ 33 1 1 }

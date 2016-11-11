@@ -1,0 +1,282 @@
+{VERSION 4 0 "Mac OS X" "4.0" }
+{USTYLETAB {PSTYLE "Heading 1" -1 3 1 {CSTYLE "" -1 -1 "Times" 1 18 0
+ 0 0 1 2 1 2 2 2 2 1 0 0 1 }1 1 0 0 8 4 2 0 2 0 2 2 -1 1 }{PSTYLE "War
+ning" -1 7 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1 1 0
+ 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Left Justified Maple Outp
+ut" -1 12 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 
+}1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Fixed Width" -1 17 1 {CSTYLE "
+" -1 -1 "Courier" 1 10 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 0 0 2 0 2 
+0 2 2 -1 1 }{PSTYLE "Help" -1 10 1 {CSTYLE "" -1 -1 "Courier" 1 9 0 0 
+255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Head
+ing 4" -1 20 1 {CSTYLE "" -1 -1 "Times" 1 10 0 0 0 1 1 1 2 2 2 2 1 0 0
+ 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Line Printed Output" -1 6 1
+ {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 
+0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Heading 2" -1 4 1 {CSTYLE "" -1 -1 "T
+imes" 1 14 0 0 0 1 2 1 2 2 2 2 1 0 0 1 }1 1 0 0 8 2 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Maple Output" -1 11 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2
+ 1 2 2 2 2 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Heading 3" 
+-1 5 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 1 1 2 2 2 2 1 0 0 1 }1 1 
+0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Diagnostic" -1 9 1 {CSTYLE "" -1 -1
+ "Courier" 1 10 64 128 64 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2
+ 2 -1 1 }{PSTYLE "Ordered List 1" -1 200 1 {CSTYLE "" -1 -1 "Times" 1 
+12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }{PSTYLE 
+"Text Output" -1 2 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2
+ 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Ordered List 2" 
+-1 201 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 
+1 0 0 3 3 2 36 2 0 2 2 -1 1 }{PSTYLE "Ordered List 3" -1 202 1 {CSTYLE
+ "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 72 2
+ 0 2 2 -1 1 }{PSTYLE "R3 Font 0" -1 203 1 {CSTYLE "" -1 -1 "Helvetica"
+ 1 10 255 0 0 1 2 1 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Ordered List 4" -1 204 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 
+1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 108 2 0 2 2 -1 1 }{PSTYLE "Ordere
+d List 5" -1 205 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1
+ 0 0 1 }1 1 0 0 3 3 2 144 2 0 2 2 -1 1 }{PSTYLE "Annotation Title" -1 
+206 1 {CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 2 2 2 2 1 0 0 1 }3 1 0
+ 0 12 12 2 0 2 0 2 2 -1 1 }{PSTYLE "HyperlinkError" -1 207 1 {CSTYLE "
+" -1 -1 "Courier New" 1 12 255 0 255 1 2 2 1 2 2 1 1 0 0 1 }1 1 0 0 0 
+0 2 0 2 0 2 2 -1 1 }{PSTYLE "HyperlinkWarning" -1 208 1 {CSTYLE "" -1 
+-1 "Courier New" 1 12 0 0 255 1 2 2 1 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2
+ 0 2 2 -1 1 }{PSTYLE "Bullet Item" -1 15 1 {CSTYLE "" -1 -1 "Times" 1 
+12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }{PSTYLE 
+"Maple Plot" -1 13 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2
+ 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "List Item" -1 14 1 
+{CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3
+ 2 0 2 0 2 2 -1 1 }{PSTYLE "Dash Item" -1 16 1 {CSTYLE "" -1 -1 "Times
+" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Error" -1 8 1 {CSTYLE "" -1 -1 "Courier" 1 10 255 0 255 1 2 2
+ 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Title" -1 18 
+1 {CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 1 2 2 2 1 0 0 1 }3 1 0 0 
+12 12 2 0 2 0 2 2 -1 1 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "Time
+s" 1 12 0 0 0 1 2 1 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }
+{PSTYLE "R3 Font 2" -1 209 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 0 1 2
+ 2 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Author" -1 
+19 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 
+0 8 8 2 0 2 0 2 2 -1 1 }{CSTYLE "Help Variable" -1 25 "Courier" 1 12 0
+ 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Underlined Bold" -1 41 "Time
+s" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "Copyright" -1 34 "Times"
+ 1 10 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Maple Comment" -1 21 "Cour
+ier" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Popup" -1 31 "Times" 1
+ 12 0 128 128 1 1 2 1 2 2 2 0 0 0 1 }{CSTYLE "Atomic Variable" -1 200 
+"Times" 1 12 175 0 175 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Dictionary Hype
+rlink" -1 45 "Times" 1 12 147 0 15 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "Plo
+t Text" -1 28 "Times" 1 8 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Inp
+ut" -1 19 "Times" 1 12 255 0 0 1 2 2 2 2 1 2 0 0 0 1 }{CSTYLE "Code" 
+-1 201 "Courier New" 1 12 255 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D M
+ath Italic" -1 3 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D
+ Math Small" -1 7 "Times" 1 1 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D
+ Math Bold Small" -1 10 "Times" 1 1 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Bold" -1 39 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Menus" -1 36 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Heading" -1 26 "Times" 1 14 0 0 0 1 2 1 2 2 2 2 0 0 0 1 
+}{CSTYLE "2D Output" -1 20 "Times" 1 12 0 0 255 1 2 2 2 2 2 2 0 0 0 1 
+}{CSTYLE "2D Inert Output" -1 202 "Times" 1 12 144 144 144 1 2 2 2 2 1
+ 2 0 0 0 1 }{CSTYLE "Help Normal" -1 30 "Times" 1 12 0 0 0 1 2 2 2 2 2
+ 2 0 0 0 1 }{CSTYLE "Maple Input" -1 0 "Courier" 1 12 255 0 0 1 2 1 2 
+2 1 2 0 0 0 1 }{CSTYLE "Page Number" -1 33 "Times" 1 12 0 0 0 1 2 2 2 
+2 2 2 0 0 0 1 }{CSTYLE "Header and Footer" -1 203 "Times" 1 10 0 0 0 1
+ 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Fixed" -1 23 "Courier" 1 10 0 0 0 
+1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Output Labels" -1 29 "Times" 1 8 0 0 0
+ 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Notes" -1 37 "Times" 1 12 0 0 0 
+1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Help Underlined" -1 44 "Times" 1 12 0 
+0 0 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic Small" -1 204 "Time
+s" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Symbol 2" -1 16 "
+Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times
+" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Nonterminal" -1 24 "
+Courier" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Annotation Text" 
+-1 205 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Maple N
+ame" -1 35 "Times" 1 12 104 64 92 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Text
+" -1 206 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Plot Title
+" -1 27 "Times" 1 10 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Help Underl
+ined Italic" -1 43 "Times" 1 12 0 0 0 1 1 2 1 2 2 2 0 0 0 1 }{CSTYLE "
+Caption Reference" -1 207 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Default" -1 38 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Italic Bold" -1 40 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 
+0 1 }{CSTYLE "Maple Input Placeholder" -1 208 "Courier New" 1 12 200 0
+ 200 1 2 1 2 2 1 2 0 0 0 1 }{CSTYLE "LaTeX" -1 32 "Times" 1 12 0 0 0 1
+ 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Emphasized" -1 22 "Times" 1 12 0 0
+ 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Equation Label" -1 209 "Times" 1 12
+ 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D Comment" -1 18 "Times" 1 12 
+0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Italic" -1 42 "Times" 1 12 
+0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Prompt" -1 1 "Courier" 1 12 0 0 
+0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Bold" -1 5 "Times" 1 12 0 0 
+0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Hyperlink" -1 17 "Times" 1 12 0 128 
+128 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "Caption Text" -1 210 "Times" 1 12 
+0 0 0 1 2 1 2 2 2 2 0 0 0 1 }}
+{SECT 0 {EXCHG {PARA 0 "" 0 "" {TEXT 211 75 "Self-similar demostratio
+n 2. The Einstein tensor and the Kretschmann scalar" }}{PARA 0 "" 0 ""
+ {TEXT 211 76 "are calculated for the spherically symmetric self-simil
+ar metric in comoving" }}{PARA 0 "" 0 "" {TEXT 211 12 "coordinates." }
+}{PARA 0 "> " 0 "" {MPLTEXT 1 0 8 "restart:" }}}{EXCHG {PARA 0 "> " 0 
+"" {MPLTEXT 1 0 27 "interface(labelling=false):" }}}{EXCHG {PARA 0 "> 
+" 0 "" {MPLTEXT 1 0 15 "with(grtensor);" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "Q-GRTensor~III6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "QZCopyright~201
+6,~Peter~Musgrave,~Denis~Pollney,~Kayll~Lake6\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "Q-grtensor.org6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "7<I%As
+ymG6\"I.KillingCoordsGF$I-PetrovReportGF$I$SymGF$I*autoAliasGF$I(gralt
+erGF$I'grcalcGF$I,grcalcalterGF$I(grcalcdGF$I,grcomponentGF$I-grconstr
+aintGF$I(grdebugGF$I&grdefGF$I*grdisplayGF$I'grinitGF$I'grloadGF$I*grl
+oaddefGF$I&grmapGF$I*groptionsGF$I*grsavedefGF$I,grtestinputGF$I,grtra
+nsformGF$I'kdeltaGF$I&makegGF$I)nptetradGF$I&qloadGF$" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 11 "qload(ss2):" }}{PARA 6 "" 1 "" 
+{TEXT 212 37 "Calculated ds for ss2 (0.000000 sec.)" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "/I2Default~spacetimeG6\"I$ss2GF$" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "I7For~the~ss2~spacetime:G6\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "I,CoordinatesG6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "-I\"xG
+6\"6#I#upGF$" }}{PARA 11 "" 1 "" {XPPMATH 20 "/)I#x~G6\"I\"aGF%=F%6#;
+\"\"\"\"\"%E\\[l%F*I\"rGF%\"\"#I&thetaGF%\"\"$I$phiGF%F+I\"tGF%" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "I-Line~elementG6\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "/*$I$~dsG6\"\"\"#,**(-I$expG6$%*protectedGI(_syslibGF%6#-
+I'LambdaGF%6#*&I\"rGF%\"\"\"I\"tGF%!\"\"F4I#~dGF%F4)F3I#2~GF%F4F4**-I
+\"RGF%F1F&F5F&F7F4)I&thetaGF%F9F4F4*,F;F&F5F&-I$sinGF+6#F>F&F7F4)I$phi
+GF%F9F4F4*(-F*6#-I&DeltaGF%F1F4F7F4)F5F9F4F6" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "IL~~~~Self-similar~metric~\"comoving~form\"~~~~G6\"" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 27 "grOptionDisplayLimit:=7000:"
+ }}}{EXCHG {PARA 0 "" 0 "" {TEXT 211 81 "First we verify that the vect
+or $\\xi^\{\\alpha\} = c(r,0,0,t)$ is indeed homothetic." }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 31 "grdef(`xi\{^a\}:=[c*r,0,0,c*t]`):" 
+}}{PARA 6 "" 1 "" {TEXT 212 35 "Components assigned for metric: ss2" }
+}{PARA 6 "" 1 "" {TEXT 212 29 "Created definition for xi(up)" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "grcalc(KillingTest[xi]):" }}
+{PARA 6 "" 1 "" {TEXT 212 35 "Created a definition for xi(up,cdn)" }}
+{PARA 6 "" 1 "" {TEXT 212 30 "Created definition for xi(dn) " }{TEXT 
+212 36 "\nCreated a definition for xi(dn,cdn)" }{TEXT 212 48 "\nCalcul
+ated g(dn,dn,pdn) for ss2 (0.012000 sec.)" }{TEXT 212 49 "\nCalculated
+ Chr(dn,dn,dn) for ss2 (0.003000 sec.)" }{TEXT 212 40 "\nCalculated de
+tg for ss2 (0.001000 sec.)" }{TEXT 212 8 "\nprecalc" }{TEXT 212 44 "\n
+Calculated g(up,up) for ss2 (0.003000 sec.)" }{TEXT 212 49 "\nCalculat
+ed Chr(dn,dn,up) for ss2 (0.004000 sec.)" }{TEXT 212 46 "\nCalculated \+
+xi(up,cdn) for ss2 (0.002000 sec.)" }{TEXT 212 45 "\nCalculated expsc[
+xi] for ss2 (0.000000 sec.)" }{TEXT 212 44 "\nCalculated conf[xi] for \+
+ss2 (0.000000 sec.)" }{TEXT 212 42 "\nCalculated xi(dn) for ss2 (0.000
+000 sec.)" }{TEXT 212 46 "\nCalculated xi(dn,cdn) for ss2 (0.002000 se
+c.)" }{TEXT 212 58 "\nCalculated ktest(dn,dn) || `[xi]` for ss2 (0.000
+000 sec.)" }{TEXT 212 51 "\nCalculated KillingTest[xi] for ss2 (0.0000
+00 sec.)" }}{PARA 11 "" 1 "" {XPPMATH 20 "/I*CPU~Time~G6\"$\"$R\"!\"$"
+ }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 13 "grdisplay(_);" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "I7For~the~ss2~spacetime:G6\"" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "I5~Killing~Test~ResultG6\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "/I1Killing~Test[xi]G6\"/Ign~a~homothetic/conformal~Killin
+g~vector~with~conformal~factorGF$I\"cGF$" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT 211 70 "We now calculate the mixed Einstein tensor and the Krets
+chmann scalar." }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 24 "grcalc(G(dn,up),R
+iemSq);" }}{PARA 6 "" 1 "" {TEXT 212 32 "Created definition for G(dn,u
+p) " }}{PARA 6 "" 1 "" {TEXT 212 38 "Created definition for R(dn,dn,up
+,up) " }{TEXT 212 44 "\nCalculated R(dn,dn) for ss2 (0.020000 sec.)" }
+{TEXT 212 47 "\nCalculated Ricciscalar for ss2 (0.003000 sec.)" }{TEXT
+ 212 44 "\nCalculated G(dn,dn) for ss2 (0.022000 sec.)" }{TEXT 212 44 
+"\nCalculated G(dn,up) for ss2 (0.013000 sec.)" }{TEXT 212 50 "\nCalcu
+lated R(dn,dn,dn,dn) for ss2 (0.042000 sec.)" }{TEXT 212 50 "\nCalcula
+ted R(dn,dn,up,up) for ss2 (0.123000 sec.)" }}{PARA 6 "" 1 "" {TEXT 
+212 41 "Calculated RiemSq for ss2 (0.007000 sec.)" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "/I*CPU~Time~G6\"$\"$R#!\"$" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT 211 37 "The following substitutes  $\\xi=r/t$." }}{PARA 0 "> " 0
+ "" {MPLTEXT 1 0 25 "grmap(_,subs,t=r/xi,`x`):" }}{PARA 6 "" 1 "" 
+{TEXT 212 33 "Applying routine subs to G(dn,up)" }}{PARA 6 "" 1 "" 
+{TEXT 212 31 "Applying routine subs to RiemSq" }}}{EXCHG {PARA 0 "" 0 
+"" {TEXT 211 36 "We now convert to $\\xi$ derivatives." }}{PARA 0 "> "
+ 0 "" {MPLTEXT 1 0 29 "grmap(_,convert,`x`,diff,xi):" }}{PARA 6 "" 1 "
+" {TEXT 212 36 "Applying routine convert to G(dn,up)" }}{PARA 6 "" 1 "
+" {TEXT 212 34 "Applying routine convert to RiemSq" }}}{EXCHG {PARA 0 
+"" 0 "" {TEXT 211 42 "The quatities are simplified and factored." }}
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 15 "gralter(_,1,7);" }}{PARA 6 "" 1 "" 
+{TEXT 212 48 "Component simplification of a GRTensorII object:" }}
+{PARA 6 "" 1 "" {TEXT 212 1 "\n" }{TEXT 212 44 "Applying routine simpl
+ify to object G(dn,up)" }{TEXT 212 43 "\nApplying routine simplify to \+
+object RiemSq" }{TEXT 212 43 "\nApplying routine factor to object G(dn
+,up)" }{TEXT 212 41 "\nApplying routine factor to object RiemSq" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "/I*CPU~Time~G6\"$\"$/\"!\"$" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT 211 74 "In order to write the $\\xi$ derivatives
+ as subscripts we use the autoAlias" }}{PARA 0 "" 0 "" {TEXT 211 31 "f
+eature in the grtools package." }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 23 "g
+rmap(_,autoAlias,`x`):" }}{PARA 6 "" 1 "" {TEXT 212 48 "Applying routi
+ne grtensor:-autoAlias to G(dn,up)" }}{PARA 208 "" 1 "" {TEXT 213 0 ""
+ }{HYPERLNK 213 "Warning, alias or macro Delta[xi] defined in terms of
+ Delta" 4 "http://www.maplesoft.com/support/help/errors/view.aspx?path
+=Warning,%20alias%20or%20macro%20Delta%5Bxi%5D%20defined%20in%20terms%
+20of%20Delta" "" }{TEXT 213 0 "" }}{PARA 6 "" 1 "" {TEXT 212 127 "Warn
+ing: R corresponds to a previously defined GRTensor object -- to avoid
+ ambiguities, only its derivatives have been aliased." }}{PARA 208 "" 
+1 "" {TEXT 213 0 "" }{HYPERLNK 213 "Warning, alias or macro Lambda[xi]
+ defined in terms of Lambda" 4 "http://www.maplesoft.com/support/help/
+errors/view.aspx?path=Warning,%20alias%20or%20macro%20Lambda%5Bxi%5D%2
+0defined%20in%20terms%20of%20Lambda" "" }{TEXT 213 0 "" }}{PARA 6 "" 1
+ "" {TEXT 212 127 "Warning: R corresponds to a previously defined GRTe
+nsor object -- to avoid ambiguities, only its derivatives have been al
+iased." }{TEXT 212 128 "\nWarning: R corresponds to a previously defin
+ed GRTensor object -- to avoid ambiguities, only its derivatives have \+
+been aliased." }{TEXT 212 128 "\nWarning: R corresponds to a previousl
+y defined GRTensor object -- to avoid ambiguities, only its derivative
+s have been aliased." }{TEXT 212 128 "\nWarning: R corresponds to a pr
+eviously defined GRTensor object -- to avoid ambiguities, only its der
+ivatives have been aliased." }{TEXT 212 128 "\nWarning: R corresponds \+
+to a previously defined GRTensor object -- to avoid ambiguities, only \+
+its derivatives have been aliased." }{TEXT 212 47 "\nApplying routine \+
+grtensor:-autoAlias to RiemSq" }{TEXT 212 128 "\nWarning: R correspond
+s to a previously defined GRTensor object -- to avoid ambiguities, onl
+y its derivatives have been aliased." }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+211 26 "We now display the reults." }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 
+13 "grdisplay(_);" }}{PARA 11 "" 1 "" {XPPMATH 20 "I7For~the~ss2~space
+time:G6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "I)G(dn,up)G6\"" }}{PARA 11 
+"" 1 "" {XPPMATH 20 "-I\"GG6\"6$I#dnGF$I#upGF$" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "/*&&I#G~G6\"6#I\"rGF&\"\"\")I!GF&F(F),$*,-I$expG6$%*prote
+ctedGI(_syslibGF&6#,&I'LambdaGF&!\"\"I&DeltaGF&F6F)F(!\"#,4*,-F/6#F5F)
+-I\"RGF&6#I#xiGF&F)&F7F?F)&F>F?F)F@\"\"#F6**F;F)F=FCFAF)F@F)F)**F;F)F=
+F)-I%diffGF16$FBF@F)F@FCFC*(F;F)FBFCF@FCF)**F;F)F=F)FBF)F@F)F8**-F/6#F
+7F)F=F)FAF)FBF)F6*&F;F)F=FCF)*&FLF)FBFCF6-F/6#,&F5F)F7F)F)F)F@FCF=F8F6
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "/*&&I#G~G6\"6#I\"tGF&\"\"\")I!GF&I\"
+rGF&F)*,-I$expG6$%*protectedGI(_syslibGF&6#,$I'LambdaGF&!\"\"F)F,!\"#,
+**(&I&DeltaGF&6#I#xiGF&F)&I\"RGF&F<F)F=F)F6*(F>F)&F5F<F)F=F)F6*&-F?F<F
+)F:F)F)*&-I%diffGF16$F>F=F)F=F)\"\"#F)F=FHFCF6" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "/*&&I#G~G6\"6#I&thetaGF&\"\"\")I!GF&F(F),$*,I#xiGF&\"\"#I
+\"rGF&!\"#,>*,-I$expG6$%*protectedGI(_syslibGF&6#I'LambdaGF&F)-I\"RGF&
+6#F.F)&I&DeltaGF&F=F)&F:F=F)F.F/F)**F4F)F;F)F@F/F.F/!\"\"**F4F)F;F)-I%
+diffGF76$F@F.F)F.F/F1**F4F)F>F)&F<F=F)F.F/F/**F4F)FHF)F@F)F.F/F1**F4F)
+F;F)F>F)F.F)F1**F4F)F;F)F@F)F.F)F1*(F4F)-FE6$FHF.F)F.F/!\"%*(-F56#F?F)
+F;F)F>F/F)**FQF)F;F)F>F)F@F)FB*(FQF)F;F)-FE6$F>F.F)F/*(FQF)F>F)FHF)F/*
+(FQF)FHF)F@F)F1*&FQF)FMF)\"\"%F)-F56#,&F:FBF?FBF)F;FB#F)FZ" }}{PARA 11
+ "" 1 "" {XPPMATH 20 "/*&&I#G~G6\"6#I$phiGF&\"\"\")I!GF&F(F),$*,I#xiGF
+&\"\"#I\"rGF&!\"#,>*,-I$expG6$%*protectedGI(_syslibGF&6#I'LambdaGF&F)-
+I\"RGF&6#F.F)&I&DeltaGF&F=F)&F:F=F)F.F/F)**F4F)F;F)F@F/F.F/!\"\"**F4F)
+F;F)-I%diffGF76$F@F.F)F.F/F1**F4F)F>F)&F<F=F)F.F/F/**F4F)FHF)F@F)F.F/F
+1**F4F)F;F)F>F)F.F)F1**F4F)F;F)F@F)F.F)F1*(F4F)-FE6$FHF.F)F.F/!\"%*(-F
+56#F?F)F;F)F>F/F)**FQF)F;F)F>F)F@F)FB*(FQF)F;F)-FE6$F>F.F)F/*(FQF)F>F)
+FHF)F/*(FQF)FHF)F@F)F1*&FQF)FMF)\"\"%F)-F56#,&F:FBF?FBF)F;FB#F)FZ" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "/*&&I#G~G6\"6#I\"rGF&\"\"\")I!GF&I\"tGF&
+F),$*,-I$expG6$%*protectedGI(_syslibGF&6#,$I&DeltaGF&!\"\"F)F(!\"#,**(
+&F66#I#xiGF&F)&I\"RGF&F<F)F=F)F7*(F>F)&I'LambdaGF&F<F)F=F)F7*&-F?F<F)F
+;F)F)*&-I%diffGF26$F>F=F)F=F)\"\"#F)F=FIFDF7F7" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "/*&&I#G~G6\"6#I\"tGF&\"\"\")I!GF&F(F)*,-I$expG6$%*protect
+edGI(_syslibGF&6#,&I'LambdaGF&!\"\"I&DeltaGF&F5F)I\"rGF&!\"#,4*,-F.6#F
+4F)-I\"RGF&6#I#xiGF&F)&F>F?F)&F4F?F)F@\"\"#F5**F;F)F=FCFBF)F@F)F)*(F;F
+)FAFCF@FCF5**F;F)F=F)FAF)F@F)FC**-F.6#F6F)F=F)FAF)FBF)F5*&F;F)F=FCF5*(
+FHF)F=F)-I%diffGF06$FAF@F)FC*&FHF)FAFCF)-F.6#,&F4F)F6F)F5F)F@FCF=F8" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "I<Full~Contraction~of~RiemannG6\"" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "/I#K~G6\",$*,I\"rGF$!\"%,jr**-I\"RGF$6#I
+#xiGF$\"\"%&I'LambdaGF$F-F/-I$expG6$%*protectedGI(_syslibGF$6#,$F1\"\"
+#\"\"\"F.F/F:**F+F/F2F:-I%diffGF56$F0F.F9F.F/F/**F+F/F0\"\"$F2F:F.F@\"
+\")**F+F/F0F:-F36#,$I&DeltaGF$F9F:&FFF-F@!\"#**F+F/F2F:FGF9F.F9FA**F+F
+/F0F9FCF:FGF9F:**F+F/F0F9F2F:F.F9\"#C**F+F9-F=6$&F,F-F.F9F2F:F.F/\"#K*
+*F+F/FCF:FGF9-F=6$FGF.F:F/**F+F:FPF@F2F:F.F@!#k**F+F9FNF9-F36#,&F1F:FF
+F:F:F.F9FV**F+F9FPF9FCF:FGF9FA**F+F9FPF9F2F:F.F9\"#'***F+F9F0F9FPF9FCF
+:FA**F+F:FPF@FXF:F.F:\"#k**F+F@FPF:F2F:F.F:FV**F+F:FPF:-F36#,&FFF:F1F9
+F:F.F:FV*&F+F/F2F:\"#;*&FPF/FCF:Fao*&F+F9F]oF:FQ*&FPF9-F36#,&FFF9F1F:F
+:!#K-F36#,&FFF9F1F9Fao*.F+F/F0F:F2F:FGF:F<F:F.F/F(*.F+F/F0F:FXF:FGF:FS
+F:F.F9F/*.F+F/F0F:FXF:FGF:F<F:F.F9F/*.F+F9FNF:FPF:F2F:FGF:F.F/Fho*.F+F
+9F0F:FPF9FXF:FGF:F.F9Fho*.F+F@F0F:FPF:FXF:FGF:F.F:FQ*.F+F9FNF:FPF:FXF:
+FGF:F.F9FQ*.F+F9FNF:F0F:FPF:FXF:F.F9FQ*(F+F/FCF:FGF/F:*(FPF/F2F:F.F/Fa
+o*(F+F/FXF:FGF9!#;*(FPF/FXF:F.F9Fho*(F+F/FCF:FSF9F/*(F+F9FPF9FXF:Fho*(
+F+F9FNF9FCF:FQ*(FPF9F]oF:F.F9FQ*,F+F/F0F9F2F:FGF9F.F/F:*,F+F/F0F@F2F:F
+GF:F.F/FH*,F+F/F0F9F2F:F<F:F.F/F/*,F+F/F0F:FXF:FGF@F.F9F9*,F+F/F0F9FXF
+:FGF9F.F9F(*,F+F/F0F@FXF:FGF:F.F9F9*,F+F/F0F9F2F:FGF:F.F@!\")*,F+F9FPF
+9F2F:FGF9F.F/FA*,F+F9F0F9FPF9F2F:F.F/FA*,F+F/FXF:FGF9F<F:F.F9F(*,F+F/F
+0F9FXF:FSF:F.F9F(*,F+F/F0F:F2F:F<F:F.F@Fao*,F+F@FPF:F2F:FGF9F.F@Fgp*,F
++F@F0F9FPF:F2F:F.F@Fgp*,F+F/F0F:FXF:FGF9F.F:Fdq*,F+F/F0F9FXF:FGF:F.F:F
+A*,F+F/FXF:F<F:FSF:F.F9Fdq*,F+F@FNF:F2F:FGF:F.F@FQ*,F+F/F0F:FXF:FSF:F.
+F:Fgp*,F+F@FPF:FXF:FGF9F.F:Fao*,F+F@F0F9FPF:FXF:F.F:Fgp*,F+F/F0F:FCF:F
+GF:FSF:F(*,F+F@FNF:FXF:FGF:F.F:FV*,F+F@FNF:F0F:FXF:F.F:FQ*,F+F9FNF:F0F
+:FPF:FCF:FhoF:F.F/-F36#,&F1FHFFFHF:F+F(#F:F/" }}}{EXCHG {PARA 0 "" 0 "
+" {TEXT 211 97 "Note that Kretschmann is of the form $f(\\xi)/r^\{n\}$
+. This holds for all the algebraic invariants." }}{PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}}}
+{MARK "0 0 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2
+ 33 1 1 }

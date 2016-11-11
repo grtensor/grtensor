@@ -1,0 +1,12 @@
+Ndim_ := 5:
+x1_ := t:
+x2_ := r:
+x3_ := theta:
+x4_ := phi:
+x5_ := y:
+complex_ := {}:
+g11_ := -exp(F(r))^2*A(t,y)^2:
+g22_ := exp(G(r))^2*B(t,y)^2:
+g33_ := exp(G(r))^2*B(t,y)^2*H(t,y)^2*r^2:
+g44_ := exp(G(r))^2*B(t,y)^2*H(t,y)^2*r^2*sin(theta)^2:
+g55_ := exp(K(r))^2*C(t,y)^2:

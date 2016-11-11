@@ -1,0 +1,10 @@
+Ndim_ :=    3   :
+x1_   :=   t   :
+x2_   :=   theta   :
+x3_   :=   r   :
+sig_   :=   1 :
+g11_   :=   -cos(2*alpha(r))   :
+g12_   :=   -r*sin(2*alpha(r))   :
+g22_   :=   r^2*cos(2*alpha(r))   :
+g33_   :=   1   :
+Info_:=`Combed hedgehog metric (Williams G.R.G. 23, 181)`:

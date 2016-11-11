@@ -1,0 +1,12 @@
+Ndim_ := 4:
+x1_ := r:
+x2_ := psi:
+x3_ := theta:
+x4_ := phi:
+complex_ := {}:
+g11_ := 1/alpha(r):
+g22_ := 1/4*r^2*beta(r):
+g24_ := 1/4*r^2*beta(r)*cos(theta):
+g33_ := 1/4*r^2*alpha(r)*cos(psi)^2+1/4*r^2/beta(r)*sin(psi)^2:
+g34_ := 1/4*r^2*alpha(r)*cos(psi)*sin(psi)*sin(theta)-1/4*r^2/beta(r)*cos(psi)*sin(psi)*sin(theta):
+g44_ := 1/4*r^2*alpha(r)*sin(psi)^2*sin(theta)^2+1/4*r^2/beta(r)*cos(psi)^2*sin(theta)^2+1/4*r^2*beta(r)*cos(theta)^2:

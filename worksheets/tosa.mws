@@ -1,0 +1,256 @@
+{VERSION 4 0 "Mac OS X" "4.0" }
+{USTYLETAB {PSTYLE "Heading 1" -1 3 1 {CSTYLE "" -1 -1 "Times" 1 18 0
+ 0 0 1 2 1 2 2 2 2 1 0 0 1 }1 1 0 0 8 4 2 0 2 0 2 2 -1 1 }{PSTYLE "War
+ning" -1 7 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1 1 0
+ 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Left Justified Maple Outp
+ut" -1 12 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 
+}1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Fixed Width" -1 17 1 {CSTYLE "
+" -1 -1 "Courier" 1 10 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 0 0 2 0 2 
+0 2 2 -1 1 }{PSTYLE "Help" -1 10 1 {CSTYLE "" -1 -1 "Courier" 1 9 0 0 
+255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Head
+ing 4" -1 20 1 {CSTYLE "" -1 -1 "Times" 1 10 0 0 0 1 1 1 2 2 2 2 1 0 0
+ 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Line Printed Output" -1 6 1
+ {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 
+0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Heading 2" -1 4 1 {CSTYLE "" -1 -1 "T
+imes" 1 14 0 0 0 1 2 1 2 2 2 2 1 0 0 1 }1 1 0 0 8 2 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Maple Output" -1 11 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2
+ 1 2 2 2 2 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Heading 3" 
+-1 5 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 1 1 2 2 2 2 1 0 0 1 }1 1 
+0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Diagnostic" -1 9 1 {CSTYLE "" -1 -1
+ "Courier" 1 10 64 128 64 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2
+ 2 -1 1 }{PSTYLE "Ordered List 1" -1 200 1 {CSTYLE "" -1 -1 "Times" 1 
+12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }{PSTYLE 
+"Text Output" -1 2 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2
+ 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Ordered List 2" 
+-1 201 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 
+1 0 0 3 3 2 36 2 0 2 2 -1 1 }{PSTYLE "Ordered List 3" -1 202 1 {CSTYLE
+ "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 72 2
+ 0 2 2 -1 1 }{PSTYLE "R3 Font 0" -1 203 1 {CSTYLE "" -1 -1 "Helvetica"
+ 1 10 255 0 0 1 2 1 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Ordered List 4" -1 204 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 
+1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 108 2 0 2 2 -1 1 }{PSTYLE "Ordere
+d List 5" -1 205 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1
+ 0 0 1 }1 1 0 0 3 3 2 144 2 0 2 2 -1 1 }{PSTYLE "Annotation Title" -1 
+206 1 {CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 2 2 2 2 1 0 0 1 }3 1 0
+ 0 12 12 2 0 2 0 2 2 -1 1 }{PSTYLE "HyperlinkError" -1 207 1 {CSTYLE "
+" -1 -1 "Courier New" 1 12 255 0 255 1 2 2 1 2 2 1 1 0 0 1 }1 1 0 0 0 
+0 2 0 2 0 2 2 -1 1 }{PSTYLE "HyperlinkWarning" -1 208 1 {CSTYLE "" -1 
+-1 "Courier New" 1 12 0 0 255 1 2 2 1 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2
+ 0 2 2 -1 1 }{PSTYLE "Bullet Item" -1 15 1 {CSTYLE "" -1 -1 "Times" 1 
+12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }{PSTYLE 
+"Maple Plot" -1 13 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2
+ 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "List Item" -1 14 1 
+{CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3
+ 2 0 2 0 2 2 -1 1 }{PSTYLE "Dash Item" -1 16 1 {CSTYLE "" -1 -1 "Times
+" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Error" -1 8 1 {CSTYLE "" -1 -1 "Courier" 1 10 255 0 255 1 2 2
+ 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Title" -1 18 
+1 {CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 1 2 2 2 1 0 0 1 }3 1 0 0 
+12 12 2 0 2 0 2 2 -1 1 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "Time
+s" 1 12 0 0 0 1 2 1 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }
+{PSTYLE "R3 Font 2" -1 209 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 0 1 2
+ 2 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Author" -1 
+19 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 
+0 8 8 2 0 2 0 2 2 -1 1 }{CSTYLE "Help Variable" -1 25 "Courier" 1 12 0
+ 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Underlined Bold" -1 41 "Time
+s" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "Copyright" -1 34 "Times"
+ 1 10 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Maple Comment" -1 21 "Cour
+ier" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Popup" -1 31 "Times" 1
+ 12 0 128 128 1 1 2 1 2 2 2 0 0 0 1 }{CSTYLE "Atomic Variable" -1 200 
+"Times" 1 12 175 0 175 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Dictionary Hype
+rlink" -1 45 "Times" 1 12 147 0 15 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "Plo
+t Text" -1 28 "Times" 1 8 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Inp
+ut" -1 19 "Times" 1 12 255 0 0 1 2 2 2 2 1 2 0 0 0 1 }{CSTYLE "Code" 
+-1 201 "Courier New" 1 12 255 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D M
+ath Italic" -1 3 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D
+ Math Small" -1 7 "Times" 1 1 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D
+ Math Bold Small" -1 10 "Times" 1 1 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Bold" -1 39 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Menus" -1 36 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Heading" -1 26 "Times" 1 14 0 0 0 1 2 1 2 2 2 2 0 0 0 1 
+}{CSTYLE "2D Output" -1 20 "Times" 1 12 0 0 255 1 2 2 2 2 2 2 0 0 0 1 
+}{CSTYLE "2D Inert Output" -1 202 "Times" 1 12 144 144 144 1 2 2 2 2 1
+ 2 0 0 0 1 }{CSTYLE "Help Normal" -1 30 "Times" 1 12 0 0 0 1 2 2 2 2 2
+ 2 0 0 0 1 }{CSTYLE "Maple Input" -1 0 "Courier" 1 12 255 0 0 1 2 1 2 
+2 1 2 0 0 0 1 }{CSTYLE "Page Number" -1 33 "Times" 1 12 0 0 0 1 2 2 2 
+2 2 2 0 0 0 1 }{CSTYLE "Header and Footer" -1 203 "Times" 1 10 0 0 0 1
+ 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Fixed" -1 23 "Courier" 1 10 0 0 0 
+1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Output Labels" -1 29 "Times" 1 8 0 0 0
+ 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Notes" -1 37 "Times" 1 12 0 0 0 
+1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Help Underlined" -1 44 "Times" 1 12 0 
+0 0 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic Small" -1 204 "Time
+s" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Symbol 2" -1 16 "
+Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times
+" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Nonterminal" -1 24 "
+Courier" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Annotation Text" 
+-1 205 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Maple N
+ame" -1 35 "Times" 1 12 104 64 92 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Text
+" -1 206 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Plot Title
+" -1 27 "Times" 1 10 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Help Underl
+ined Italic" -1 43 "Times" 1 12 0 0 0 1 1 2 1 2 2 2 0 0 0 1 }{CSTYLE "
+Caption Reference" -1 207 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Default" -1 38 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Italic Bold" -1 40 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 
+0 1 }{CSTYLE "Maple Input Placeholder" -1 208 "Courier New" 1 12 200 0
+ 200 1 2 1 2 2 1 2 0 0 0 1 }{CSTYLE "LaTeX" -1 32 "Times" 1 12 0 0 0 1
+ 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Emphasized" -1 22 "Times" 1 12 0 0
+ 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Equation Label" -1 209 "Times" 1 12
+ 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D Comment" -1 18 "Times" 1 12 
+0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Italic" -1 42 "Times" 1 12 
+0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Prompt" -1 1 "Courier" 1 12 0 0 
+0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Bold" -1 5 "Times" 1 12 0 0 
+0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Hyperlink" -1 17 "Times" 1 12 0 128 
+128 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "Caption Text" -1 210 "Times" 1 12 
+0 0 0 1 2 1 2 2 2 2 0 0 0 1 }}
+{SECT 0 {EXCHG {PARA 0 "" 0 "" {TEXT 211 88 "Demonstration 1 (tosa): \+
+Demonstration that the Tomimato-Sato metric (delta=2) is vacuum." }}
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 8 "restart;" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$QJ/Users/peter/maple/gitlab/GRTensorIII/lib6\"QV/Librar
+y/Frameworks/Maple.framework/Versions/2016/libF$" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "QT/Users/peter/maple/gitlab/GRTensorIII/kayll/metrics6\""
+ }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 15 "with(grtensor);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "Q-GRTensor~III6\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "QZCopyright~2016,~Peter~Musgrave,~Denis~Pollney,~Kayll~La
+ke6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "Q-grtensor.org6\"" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "7<I%AsymG6\"I.KillingCoordsGF$I-PetrovReportGF$I$S
+ymGF$I*autoAliasGF$I(gralterGF$I'grcalcGF$I,grcalcalterGF$I(grcalcdGF$
+I,grcomponentGF$I-grconstraintGF$I(grdebugGF$I&grdefGF$I*grdisplayGF$I
+'grinitGF$I'grloadGF$I*grloaddefGF$I&grmapGF$I*groptionsGF$I*grsavedef
+GF$I,grtestinputGF$I,grtransformGF$I'kdeltaGF$I&makegGF$I)nptetradGF$I
+&qloadGF$" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 211 0 "" }}{PARA 0 "> " 0 "
+" {MPLTEXT 1 0 12 "qload(tosa);" }}{PARA 6 "" 1 "" {TEXT 212 38 "Calcu
+lated ds for tosa (0.000000 sec.)" }}{PARA 11 "" 1 "" {XPPMATH 20 "/I2
+Default~spacetimeG6\"I%tosaGF$" }}{PARA 11 "" 1 "" {XPPMATH 20 "I8For~
+the~tosa~spacetime:G6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "I,Coordinates
+G6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "-I\"xG6\"6#I#upGF$" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "/)I#x~G6\"I\"aGF%=F%6#;\"\"\"\"\"%E\\[l%F*I\"uGF%
+\"\"#I\"vGF%\"\"$I\"tGF%F+I$phiGF%" }}{PARA 11 "" 1 "" {XPPMATH 20 "I-
+Line~elementG6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "/*$I$~dsG6\"\"\"#,,*
+,-I\"UGF%6$I\"uGF%I\"vGF%\"\"\",&F.F.F,F.!\"\"F,F0I#~dGF%F.)F,I#2~GF%F
+.F.*,F)F.,&F.F.F-F0F0F-F0F1F.)F-F3F.F.*(-I\"fGF%F+F.F1F.)I\"tGF%F3F.F0
+*.F8F.-I&omegaGF%F+F.F1F.)F;I\"~GF%F.I#d~GF%F.)I$phiGF%F@F.F&*(,&*,I\"
+mGF%F&I\"pGF%F&F,F.F-F.F8F0#F.\"\"%*&F8F.F=F&F0F.F1F.)FCF3F.F." }}
+{PARA 11 "" 1 "" {XPPMATH 20 "/I,ConstraintsG6\"7%/-I&omegaGF$6$I\"uGF
+$I\"vGF$,$*,I\"mGF$\"\"\"I\"qGF$F/-I\"cGF$F)F/F+F/-I\"aGF$F)!\"\"\"\"#
+/-I\"UGF$F),$**-I\"bGF$F)F/F.F6I\"pGF$!\"#,&F*F/F+F/!\"$#F/\"#;/-I\"fG
+F$F)*&F3F/F<F5" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 211 0 "" }}{PARA 0 "> 
+" 0 "" {MPLTEXT 1 0 20 "gralter(g(dn,dn),7);" }}{PARA 6 "" 1 "" {TEXT 
+212 48 "Component simplification of a GRTensorII object:" }}{PARA 6 ""
+ 1 "" {TEXT 212 1 "\n" }{TEXT 212 42 "Applying routine factor to objec
+t g(dn,dn)" }}{PARA 11 "" 1 "" {XPPMATH 20 "/I*CPU~Time~G6\"$\"\"&!\"$
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 38 "grcalc(R(dn,dn),R(dn,up
+),Ricciscalar);" }}{PARA 6 "" 1 "" {TEXT 212 32 "Created definition fo
+r R(dn,up) " }}{PARA 6 "" 1 "" {TEXT 212 48 "Calculated g(dn,dn,pdn) f
+or tosa (0.004000 sec.)" }{TEXT 212 50 "\nCalculated Chr(dn,dn,dn) for
+ tosa (0.002000 sec.)" }{TEXT 212 41 "\nCalculated detg for tosa (0.00
+2000 sec.)" }{TEXT 212 8 "\nprecalc" }{TEXT 212 45 "\nCalculated g(up,
+up) for tosa (0.004000 sec.)" }{TEXT 212 50 "\nCalculated Chr(dn,dn,up
+) for tosa (0.004000 sec.)" }{TEXT 212 45 "\nCalculated R(dn,dn) for t
+osa (0.080000 sec.)" }{TEXT 212 45 "\nCalculated R(dn,up) for tosa (0.
+008000 sec.)" }{TEXT 212 48 "\nCalculated Ricciscalar for tosa (0.0020
+00 sec.)" }}{PARA 11 "" 1 "" {XPPMATH 20 "/I*CPU~Time~G6\"$\"$4\"!\"$"
+ }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 14 "gralter(_,12);" }}{PARA 
+6 "" 1 "" {TEXT 212 48 "Component simplification of a GRTensorII objec
+t:" }}{PARA 6 "" 1 "" {TEXT 212 1 "\n" }{TEXT 212 55 "Applying routine
+ `Apply constraints` to object R(dn,dn)" }{TEXT 212 56 "\nApplying rou
+tine `Apply constraints` to object R(dn,up)" }{TEXT 212 59 "\nApplying
+ routine `Apply constraints` to object Ricciscalar" }}{PARA 11 "" 1 ""
+ {XPPMATH 20 "/I*CPU~Time~G6\"$\"\"$!\"$" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 34 "gralter(R(dn,dn),Ricciscalar,7,1);" }}{PARA 6 "" 1 ""
+ {TEXT 212 48 "Component simplification of a GRTensorII object:" }
+{TEXT 212 1 "\n" }}{PARA 6 "" 1 "" {TEXT 212 42 "Applying routine fact
+or to object R(dn,dn)" }{TEXT 212 46 "\nApplying routine factor to obj
+ect Ricciscalar" }{TEXT 212 45 "\nApplying routine simplify to object \+
+R(dn,dn)" }{TEXT 212 48 "\nApplying routine simplify to object Riccisc
+alar" }}{PARA 11 "" 1 "" {XPPMATH 20 "/I*CPU~Time~G6\"$\"$G\"!\"$" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT 211 61 "Note that each component of $R[dn
+,dn]$ has been reduced to a " }}{PARA 0 "" 0 "" {TEXT 211 24 "common d
+enominator form." }}{PARA 0 "" 0 "" {TEXT 211 0 "" }}{PARA 0 "> " 0 ""
+ {MPLTEXT 1 0 50 "A(u,v):=(p^2*u^2+q^2*v^2)^2-4*p^2*q^2*u*v*(u+v)^2;" 
+}}{PARA 11 "" 1 "" {XPPMATH 20 ",&*$,&*&I\"pG6\"\"\"#I\"uGF'F(\"\"\"*&
+I\"qGF'F(I\"vGF'F(F*F(F**,F&F(F,F(F)F*F-F*,&F)F*F-F*F(!\"%" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 94 "B(u,v):=(p^2*(u+1)^2+q^2*(1-v)^2-1+
+2*p*u*(u+1)^(1/2))^2+4*q^2*(1-v)*(p*(u+1)^(1/2)*(u+v)+v)^2;" }}{PARA 
+11 "" 1 "" {XPPMATH 20 ",&*$,**&I\"pG6\"\"\"#,&\"\"\"F*I\"uGF'F*F(F**&
+I\"qGF'F(,&F*F*I\"vGF'!\"\"F(F*F0F**(F&F*F+F*F)#F*F(F(F(F**(F-F(F.F*,&
+*(F&F*F)F2,&F+F*F/F*F*F*F/F*F(\"\"%" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 102 "C(u,v):=p^2*u*(u*v-4*(u+1)*(u+v))-p^3*(u+1)^(1/2)*u*
+(2*((u+1)^2-1)+(u+4)*v)+q^2*(1+p*(u+1)^(1/2))*v^3;" }}{PARA 11 "" 1 ""
+ {XPPMATH 20 ",(*(I\"pG6\"\"\"#I\"uGF%\"\"\",&*&F'F(I\"vGF%F(F(*&,&F(F
+(F'F(F(,&F'F(F+F(F(!\"%F(F(**F$\"\"$F-#F(F&F'F(,(*$F-F&F&!\"#F(*&,&F'F
+(\"\"%F(F(F+F(F(F(!\"\"*(I\"qGF%F&,&F(F(*&F$F(F-F2F(F(F+F1F(" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT 211 0 "" }}{PARA 0 "> " 0 "" {MPLTEXT 1 
+0 76 "grmap(_,subs,a(u,v)=A(u,v),b(u,v)=B(u,v),c(u,v)=C(u,v),q=(1-p^2)
+^(1/2),'x');" }}{PARA 6 "" 1 "" {TEXT 212 33 "Applying routine subs to
+ R(dn,dn)" }}{PARA 6 "" 1 "" {TEXT 212 36 "Applying routine subs to Ri
+cciscalar" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 211 41 "First we reduce the
+ Ricci scalar to zero." }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 23 "gralter(R
+icciscalar,8);" }}{PARA 6 "" 1 "" {TEXT 212 48 "Component simplificati
+on of a GRTensorII object:" }{TEXT 212 1 "\n" }{TEXT 212 46 "\nApplyin
+g routine normal to object Ricciscalar" }}{PARA 11 "" 1 "" {XPPMATH 20
+ "/I*CPU~Time~G6\"$\"$4\"!\"$" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 13 "grdisplay(_);" }}{PARA 11 "" 1 "" {XPPMATH 20 "I8For~the~tosa~sp
+acetime:G6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "I-Ricci~scalarG6\"" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "/I#R~G6\"\"\"!" }}}{EXCHG {PARA 0 "" 0 "
+" {TEXT 211 40 "The size of $Ricci[dn,dn]$ is now shown." }}{PARA 0 ">
+ " 0 "" {MPLTEXT 1 0 20 "grdisplay(R(dn,dn));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "I8For~the~tosa~spacetime:G6\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "I0Covariant~RicciG6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "-I
+\"RG6\"6$I#dnGF$F&" }}{PARA 11 "" 1 "" {XPPMATH 20 "/*&&I#R~G6\"6#I\"u
+GF&\"\"\"&I!GF&F'F)IK~12441~words.~Exceeds~grOptionDisplayLimitGF&" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "/*&&I#R~G6\"6#I\"uGF&\"\"\"&I!GF&6#I\"vG
+F&F)IJ~7551~words.~Exceeds~grOptionDisplayLimitGF&" }}{PARA 11 "" 1 ""
+ {XPPMATH 20 "/*&&I#R~G6\"6#I\"vGF&\"\"\"&I!GF&F'F)IK~14195~words.~Exc
+eeds~grOptionDisplayLimitGF&" }}{PARA 11 "" 1 "" {XPPMATH 20 "/*&&I#R~
+G6\"6#I\"tGF&\"\"\"&I!GF&F'F)IK~19585~words.~Exceeds~grOptionDisplayLi
+mitGF&" }}{PARA 11 "" 1 "" {XPPMATH 20 "/*&&I#R~G6\"6#I\"tGF&\"\"\"&I!
+GF&6#I$phiGF&F)IK~33071~words.~Exceeds~grOptionDisplayLimitGF&" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "/*&&I#R~G6\"6#I$phiGF&\"\"\"&I!GF&F'F)IK
+~54260~words.~Exceeds~grOptionDisplayLimitGF&" }}}{EXCHG {PARA 0 "" 0 
+"" {TEXT 211 85 "The $[u,u]$,$[u,v]$,$[v,v]$, and $[t,t]$ components o
+f Ricci are now reduced to zero." }}{PARA 0 "" 0 "" {TEXT 211 19 "Each
+ step is timed." }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 11 "st:=time():" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 43 "normal(numer(grcomponent(R(d
+n,dn),[1,1])));" }}{PARA 11 "" 1 "" {XPPMATH 20 "\"\"!" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 10 "time()-st;" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "$\"#[!\"$" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 11 "s
+t:=time():" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 43 "normal(numer(
+grcomponent(R(dn,dn),[1,2])));" }}{PARA 11 "" 1 "" {XPPMATH 20 "\"\"!"
+ }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 10 "time()-st;" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "$\"#H!\"$" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 11 "st:=time():" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 43 "normal
+(numer(grcomponent(R(dn,dn),[2,2])));" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"\"\"!" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 10 "time()-st;" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "$\"#X!\"$" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 11 "st:=time():" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 43 "normal(numer(grcomponent(R(dn,dn),[3,3])));" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "\"\"!" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 10 "time(
+)-st;" }}{PARA 11 "" 1 "" {XPPMATH 20 "$\"#U!\"$" }}}{EXCHG {PARA 0 ""
+ 0 "" {TEXT 211 70 "The following steps reduce the $[t,^\\phi]$ compon
+ent of Ricci to zero." }}{PARA 0 "" 0 "" {TEXT 211 83 "This shows that
+ the $[t,\\phi]$ component is zero given that $Ricci[t,t]=0$ (above)."
+ }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 11 "st:=time():" }}}{EXCHG {PARA 0 "
+> " 0 "" {MPLTEXT 1 0 36 "factor(grcomponent(R(dn,up),[3,4])):" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 13 "simplify(%): " }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 6 "RR:=%:" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 12 "time()-st();" }}{PARA 11 "" 1 "" {XPPMATH 20 "$\"$m\"
+!\"$" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 11 "st:=time():" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 39 "subs(a(u,v)=A(u,v),q=(1-p^2)
+^(1/2),RR):" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 10 "normal(%):" 
+}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 38 "subs(b(u,v)=B(u,v),q=(1-p
+^2)^(1/2),%):" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 10 "normal(%):
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 38 "subs(c(u,v)=C(u,v),q=(1
+-p^2)^(1/2),%):" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 10 "normal(%
+);" }}{PARA 11 "" 1 "" {XPPMATH 20 "\"\"!" }}}{EXCHG {PARA 0 "> " 0 ""
+ {MPLTEXT 1 0 10 "time()-st;" }}{PARA 11 "" 1 "" {XPPMATH 20 "$\"$a\"!
+\"$" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 211 83 "Since the $[t,\\phi]$ and
+ $[t,t]$ components vanish, so does the $[t,^t]$ component." }}{PARA 0
+ "" 0 "" {TEXT 211 64 "Since $Ricciscalar=0$, $R[\\phi,^\\phi]=0$ and \+
+so $R[\\phi,\\phi]=0." }}{PARA 0 "" 0 "" {TEXT 211 46 "This completes \+
+the demonstration that Ricci=0." }}{PARA 0 "" 0 "" {TEXT 211 0 "" }}
+{PARA 0 "" 0 "" {TEXT 211 73 "To query the state of the calculation lo
+ok at  ?kernelopts; in Release 5." }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 
+20 "kernelopts(cputime);" }}{PARA 11 "" 1 "" {XPPMATH 20 "]3FF3AA62AA1
+9439E" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}}
+{MARK "0 0 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2
+ 33 1 1 }
