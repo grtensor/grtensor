@@ -11,5 +11,3 @@ Instructions on how to install the package are
 on the Wiki tab for this project in GITLAB 
 (https://github.com/grtensor/grtensor/wiki)
 
-The source code is available in the GRTensorIII source repo. 
- 
