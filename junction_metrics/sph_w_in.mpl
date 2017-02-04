@@ -1,0 +1,10 @@
+Ndim_ := 4:
+x1_ := w:
+x2_ := r:
+x3_ := theta:
+x4_ := phi:
+complex_ := {}:
+g11_ := -exp(p(w,r))*f(w,r)*exp(p(w,r)):
+g12_ := -exp(p(w,r))*zeta:
+g33_ := r^2:
+g44_ := r^2*sin(theta)^2:
