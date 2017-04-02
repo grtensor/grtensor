@@ -1,10 +1,10 @@
 =================================
 GRTensorIII for Maple
 =================================
-Version 2.0.2, Feb 20, 2017
+Version 2.1, Feb 20, 2017
 
 This project contains the distribution of GRTensorIII 
-version 2.0, the tensor component calulation package for Maple.
+version 2.1, the tensor component calulation package for Maple.
 
 GRTensorIII provides pre-defined curvature tensors and a
 grdef command to create definitions of new objects without

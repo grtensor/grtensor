@@ -1,0 +1,279 @@
+{VERSION 4 0 "Mac OS X" "4.0" }
+{USTYLETAB {PSTYLE "Heading 1" -1 3 1 {CSTYLE "" -1 -1 "Times" 1 18 0
+ 0 0 1 2 1 2 2 2 2 1 0 0 1 }1 1 0 0 8 4 2 0 2 0 2 2 -1 1 }{PSTYLE "War
+ning" -1 7 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1 1 0
+ 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Left Justified Maple Outp
+ut" -1 12 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 
+}1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Fixed Width" -1 17 1 {CSTYLE "
+" -1 -1 "Courier" 1 10 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 0 0 0 2 0 2 
+0 2 2 -1 1 }{PSTYLE "Help" -1 10 1 {CSTYLE "" -1 -1 "Courier" 1 9 0 0 
+255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Head
+ing 4" -1 20 1 {CSTYLE "" -1 -1 "Times" 1 10 0 0 0 1 1 1 2 2 2 2 1 0 0
+ 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Line Printed Output" -1 6 1
+ {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 
+0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Heading 2" -1 4 1 {CSTYLE "" -1 -1 "T
+imes" 1 14 0 0 0 1 2 1 2 2 2 2 1 0 0 1 }1 1 0 0 8 2 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Maple Output" -1 11 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2
+ 1 2 2 2 2 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Heading 3" 
+-1 5 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 1 1 2 2 2 2 1 0 0 1 }1 1 
+0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Diagnostic" -1 9 1 {CSTYLE "" -1 -1
+ "Courier" 1 10 64 128 64 1 2 2 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2
+ 2 -1 1 }{PSTYLE "Ordered List 1" -1 200 1 {CSTYLE "" -1 -1 "Times" 1 
+12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }{PSTYLE 
+"Text Output" -1 2 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2
+ 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Ordered List 2" 
+-1 201 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 
+1 0 0 3 3 2 36 2 0 2 2 -1 1 }{PSTYLE "Ordered List 3" -1 202 1 {CSTYLE
+ "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 72 2
+ 0 2 2 -1 1 }{PSTYLE "R3 Font 0" -1 203 1 {CSTYLE "" -1 -1 "Helvetica"
+ 1 10 255 0 0 1 2 1 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Ordered List 4" -1 204 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 
+1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 108 2 0 2 2 -1 1 }{PSTYLE "Ordere
+d List 5" -1 205 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1
+ 0 0 1 }1 1 0 0 3 3 2 144 2 0 2 2 -1 1 }{PSTYLE "Annotation Title" -1 
+206 1 {CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 2 2 2 2 1 0 0 1 }3 1 0
+ 0 12 12 2 0 2 0 2 2 -1 1 }{PSTYLE "HyperlinkError" -1 207 1 {CSTYLE "
+" -1 -1 "Courier New" 1 12 255 0 255 1 2 2 1 2 2 1 1 0 0 1 }1 1 0 0 0 
+0 2 0 2 0 2 2 -1 1 }{PSTYLE "HyperlinkWarning" -1 208 1 {CSTYLE "" -1 
+-1 "Courier New" 1 12 0 0 255 1 2 2 1 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2
+ 0 2 2 -1 1 }{PSTYLE "Bullet Item" -1 15 1 {CSTYLE "" -1 -1 "Times" 1 
+12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }{PSTYLE 
+"Maple Plot" -1 13 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2
+ 1 0 0 1 }3 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "List Item" -1 14 1 
+{CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3
+ 2 0 2 0 2 2 -1 1 }{PSTYLE "Dash Item" -1 16 1 {CSTYLE "" -1 -1 "Times
+" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }1 1 0 0 3 3 2 0 2 0 2 2 -1 1 }
+{PSTYLE "Error" -1 8 1 {CSTYLE "" -1 -1 "Courier" 1 10 255 0 255 1 2 2
+ 2 2 2 1 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Title" -1 18 
+1 {CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 1 2 2 2 1 0 0 1 }3 1 0 0 
+12 12 2 0 2 0 2 2 -1 1 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "Time
+s" 1 12 0 0 0 1 2 1 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }
+{PSTYLE "R3 Font 2" -1 209 1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 0 1 2
+ 2 2 2 2 2 1 0 0 1 }1 1 0 0 0 0 2 0 2 0 2 2 -1 1 }{PSTYLE "Author" -1 
+19 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 0 0 1 }3 1 0 
+0 8 8 2 0 2 0 2 2 -1 1 }{CSTYLE "Help Variable" -1 25 "Courier" 1 12 0
+ 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Underlined Bold" -1 41 "Time
+s" 1 12 0 0 0 1 1 1 2 2 2 2 0 0 0 1 }{CSTYLE "Copyright" -1 34 "Times"
+ 1 10 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Maple Comment" -1 21 "Cour
+ier" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Popup" -1 31 "Times" 1
+ 12 0 128 128 1 1 2 1 2 2 2 0 0 0 1 }{CSTYLE "Atomic Variable" -1 200 
+"Times" 1 12 175 0 175 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Dictionary Hype
+rlink" -1 45 "Times" 1 12 147 0 15 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "Plo
+t Text" -1 28 "Times" 1 8 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Inp
+ut" -1 19 "Times" 1 12 255 0 0 1 2 2 2 2 1 2 0 0 0 1 }{CSTYLE "Code" 
+-1 201 "Courier New" 1 12 255 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D M
+ath Italic" -1 3 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D
+ Math Small" -1 7 "Times" 1 1 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D
+ Math Bold Small" -1 10 "Times" 1 1 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Bold" -1 39 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Menus" -1 36 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Heading" -1 26 "Times" 1 14 0 0 0 1 2 1 2 2 2 2 0 0 0 1 
+}{CSTYLE "2D Output" -1 20 "Times" 1 12 0 0 255 1 2 2 2 2 2 2 0 0 0 1 
+}{CSTYLE "2D Inert Output" -1 202 "Times" 1 12 144 144 144 1 2 2 2 2 1
+ 2 0 0 0 1 }{CSTYLE "Help Normal" -1 30 "Times" 1 12 0 0 0 1 2 2 2 2 2
+ 2 0 0 0 1 }{CSTYLE "Maple Input" -1 0 "Courier" 1 12 255 0 0 1 2 1 2 
+2 1 2 0 0 0 1 }{CSTYLE "Page Number" -1 33 "Times" 1 12 0 0 0 1 2 2 2 
+2 2 2 0 0 0 1 }{CSTYLE "Header and Footer" -1 203 "Times" 1 10 0 0 0 1
+ 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic Small204" -1 204 "Times"
+ 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Fixed" -1 23 "Courier"
+ 1 10 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Output Labels" -1 29 "Time
+s" 1 8 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Notes" -1 37 "Times"
+ 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Help Underlined" -1 44 "Ti
+mes" 1 12 0 0 0 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "2D Math Italic Small" 
+-1 205 "Times" 1 1 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Symbo
+l 2" -1 16 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math"
+ -1 2 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Nontermi
+nal" -1 24 "Courier" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Annota
+tion Text" -1 206 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "H
+elp Maple Name" -1 35 "Times" 1 12 104 64 92 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Text" -1 207 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }
+{CSTYLE "Plot Title" -1 27 "Times" 1 10 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }
+{CSTYLE "Help Underlined Italic" -1 43 "Times" 1 12 0 0 0 1 1 2 1 2 2 
+2 0 0 0 1 }{CSTYLE "Caption Reference" -1 208 "Times" 1 12 0 0 0 1 2 1
+ 2 2 2 2 0 0 0 1 }{CSTYLE "Default" -1 38 "Times" 1 12 0 0 0 1 2 2 2 2
+ 2 2 0 0 0 1 }{CSTYLE "Help Italic Bold" -1 40 "Times" 1 12 0 0 0 1 1 
+2 2 2 2 2 0 0 0 1 }{CSTYLE "Maple Input Placeholder" -1 209 "Courier N
+ew" 1 12 200 0 200 1 2 1 2 2 1 2 0 0 0 1 }{CSTYLE "LaTeX" -1 32 "Times
+" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Emphasized" -1 22 "T
+imes" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Equation Label" -1 
+210 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D Comment" -1 
+18 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 0 0 0 1 }{CSTYLE "Help Italic" -1 
+42 "Times" 1 12 0 0 0 1 1 2 2 2 2 2 0 0 0 1 }{CSTYLE "Prompt" -1 1 "Co
+urier" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "2D Math Bold" -1 5 "
+Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }{CSTYLE "Hyperlink" -1 17 "Ti
+mes" 1 12 0 128 128 1 2 2 1 2 2 2 0 0 0 1 }{CSTYLE "Caption Text" -1 
+211 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 0 0 0 1 }}
+{SECT 0 {EXCHG {PARA 0 "" 0 "" {TEXT 212 76 "Demonstration 2(em):Eins
+tein-Maxwell equations in the Kerr-Newman spacetime." }}{PARA 0 "> " 0
+ "" {MPLTEXT 1 0 8 "restart:" }}{PARA 11 "" 1 "" {XPPMATH 20 "Q;GRTens
+or~III~v2.0.2+~Debug6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "QZCopyright~2
+017,~Peter~Musgrave,~Denis~Pollney,~Kayll~Lake6\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "QYLatest~version~is~at~http://github.com/grtensor/grtenso
+r6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "Q3For~help~?grtensor6\"" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 15 "with(grtensor);" }}{PARA 11 
+"" 1 "" {XPPMATH 20 "7NI%AsymG6\"I.KillingCoordsGF$I-PetrovReportGF$I$
+SymGF$I*autoAliasGF$I)difftoolGF$I)grDaliasGF$I-grF_strToDefGF$I(gralt
+erGF$I(grapplyGF$I(grarrayGF$I'grcalcGF$I(grcalc1GF$I,grcalcalterGF$I(
+grcalcdGF$I(grclearGF$I,grcomponentGF$I-grconstraintGF$I'grdataGF$I(gr
+debugGF$I&grdefGF$I*grdisplayGF$I'grdumpGF$I*greqn2setGF$I'grinitGF$I'
+grloadGF$I.grload_mapletGF$I&grmapGF$I)grmetricGF$I,grnewmetricGF$I,gr
+normalizeGF$I*groptionsGF$I(grsavegGF$I,grtestinputGF$I,grtransformGF$
+I(grundefGF$I*hypersurfGF$I%joinGF$I'kdeltaGF$I&makegGF$I)nprotateGF$I
+)nptetradGF$I&qloadGF$I*spacetimeGF$" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 21 "grOptionTermSize:=30:" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 13 "qload(newkn);" }}{PARA 6 "" 1 "" {TEXT 213 39 "Calcul
+ated ds for newkn (0.001000 sec.)" }}{PARA 11 "" 1 "" {XPPMATH 20 "/I2
+Default~spacetimeG6\"I&newknGF$" }}{PARA 11 "" 1 "" {XPPMATH 20 "I9For
+~the~newkn~spacetime:G6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "I,Coordinat
+esG6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "-I\"xG6\"6#I#upGF$" }}{PARA 11
+ "" 1 "" {XPPMATH 20 "/)I#x~G6\"I\"aG6#/I'_localG%*protectedGI-_n45302
+07680GF%KI'vectorG6$F*I(_syslibGF%6#7&I\"rGF%I\"uGF%I$phiGF%I\"tGF%Q(p
+print0F%" }}{PARA 11 "" 1 "" {XPPMATH 20 "I-Line~elementG6\"" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "/*$I$~dsG6\"\"\"#,,**,&*$I\"rGF%F&\"\"\"*$I\"u
+GF%F&F,F,,**$I\"QGF%F&F,*$I\"aGF%F&F,*&I\"mGF%F,F+F,!\"#F*F,!\"\"I#~dG
+F%F,)F+I#2~GF%F,F,**F)F,,&F2F,F-F7F7F8F,)F.F:F,F,*,F<F,F3F6,(F*F,F2F,*
+(F<F,,&F0F7F4F&F,F)F7F,F,F8F,)I$phiGF%F:F,F,*2F<F,F3F7FAF,F)F7F8F,)FCI
+\"~GF%F,I#d~GF%F,)I\"tGF%FFF,F6*(,&F7F,*&FAF,F)F7F,F,F8F,)FIF:F,F," }}
+{PARA 11 "" 1 "" {XPPMATH 20 "I_oKerr~Newman~Solution~in~Boyer-Lindqui
+st~coordinates~(u=a*cos(theta))G6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "I
+9For~the~newkn~spacetime:G6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "I,const
+raintsG6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "/I,constraint~G6\"7#/I\"uG
+F$*&I\"aGF$\"\"\"-I$cosG6$%*protectedGI(_syslibGF$6#I&thetaGF$F*" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT 212 13 "a)Background:" }}{PARA 0 "" 0 "" 
+{TEXT 212 82 "Define the vector potential $A_\{a\}$ and the electromag
+netic field tensor $f_\{ab\}$:" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 64 "g
+rdef(`A\{a\}:=[0,0,Q*r*(a^2-u^2)/(a*(r^2+u^2)),-Q*r/(r^2+u^2)]`);" }}
+{PARA 6 "" 1 "" {TEXT 213 37 "Components assigned for metric: newkn" }
+}{PARA 6 "" 1 "" {TEXT 213 28 "Created definition for A(dn)" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 17 "grdisplay(A(dn));" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "I9For~the~newkn~spacetime:G6\"" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "I&A(dn)G6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "-I\"AG6
+\"6#I#dnGF$" }}{PARA 11 "" 1 "" {XPPMATH 20 "/&I\"AG6\"6#I\"aG6#/I'_lo
+calG%*protectedGI-_n4527092448GF%KI'vectorG6$F+I(_syslibGF%6#7&\"\"!F3
+*,I\"QGF%\"\"\"I\"rGF%F6,&*$F'\"\"#F6*$I\"uGF%F:!\"\"F6F'F=,&*$F7F:F6F
+;F6F=,$*(F5F6F7F6F>F=F=Q(pprint0F%" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 32 "grdef(`f\{[a b]\}:=2*A\{[b ; a]\}`);" }}{PARA 6 "" 1 
+"" {TEXT 213 34 "Created a definition for A(dn,cdn)" }}{PARA 6 "" 1 ""
+ {TEXT 213 31 "Created definition for f(dn,dn)" }}}{EXCHG {PARA 0 "" 0
+ "" {TEXT 212 95 " Two scalar invariants associated with the field ten
+sor are $f_\{ab\}f^\{ab\}$ and $f_\{ab\}f*^\{ab\}$:" }}{PARA 0 "> " 0 
+"" {MPLTEXT 1 0 28 "grdef(`I1:=f\{a b\}*f\{^a^b\}`);" }}{PARA 6 "" 1 "
+" {TEXT 213 32 "Created definition for f(up,up) " }}{PARA 6 "" 1 "" 
+{TEXT 213 25 "Created definition for I1" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 43 "grdef(`fstar\{a b\}:=LevC\{a b c d\}*f\{^c^d\}`);" }}
+{PARA 6 "" 1 "" {TEXT 213 35 "Created definition for fstar(dn,dn)" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 32 "grdef(`I2:=f\{a b\}*fstar\{^
+a^b\}`);" }}{PARA 6 "" 1 "" {TEXT 213 36 "Created definition for fstar
+(up,up) " }}{PARA 6 "" 1 "" {TEXT 213 25 "Created definition for I2" }
+}}{EXCHG {PARA 0 "" 0 "" {TEXT 212 55 "The 4-current is defined by$J^
+\{a\}=f^\{ab\}_\{~~;b\}/(4\\pi)$" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 33 
+"grdef(`J\{^a\}:=f\{^a^b;b\}/(4*Pi)`);" }}{PARA 6 "" 1 "" {TEXT 213 
+37 "Created a definition for f(up,up,cdn)" }}{PARA 6 "" 1 "" {TEXT 
+213 28 "Created definition for J(up)" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 
+212 83 "and for the field tensor we construct the permutation $f_\{ab;
+c\}+f_\{bc;a\}+f_\{ca;b\}$." }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 53 "grde
+f(`Id\{a b c\}:=f\{a b ; c\}+f\{b c ; a\}+f\{c a ; b\}`);" }}{PARA 6 "
+" 1 "" {TEXT 213 37 "Created a definition for f(dn,dn,cdn)" }}{PARA 6 
+"" 1 "" {TEXT 213 35 "Created definition for Id(dn,dn,dn)" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT 212 167 "b)Calculations: First we calculate, sim
+plify and display the field tensor and invariants. The four-current an
+d permutaion of the field tensor are then reduced to zero." }}{PARA 0 
+"> " 0 "" {MPLTEXT 1 0 17 "grcalc(f(dn,dn));" }}{PARA 6 "" 1 "" {TEXT 
+213 49 "Calculated g(dn,dn,pdn) for newkn (0.075000 sec.)" }}{PARA 6 "
+" 1 "" {TEXT 213 50 "Calculated Chr(dn,dn,dn) for newkn (0.001000 sec.
+)" }{TEXT 213 42 "\nCalculated detg for newkn (0.005000 sec.)" }{TEXT 
+213 46 "\nCalculated g(up,up) for newkn (0.011000 sec.)" }{TEXT 213 
+51 "\nCalculated Chr(dn,dn,up) for newkn (0.026000 sec.)" }{TEXT 213 
+47 "\nCalculated A(dn,cdn) for newkn (0.007000 sec.)" }{TEXT 213 46 "
+\nCalculated f(dn,dn) for newkn (0.004000 sec.)" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "/I*CPU~Time~G6\"$\"$D\"!\"$" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 15 "gralter(_,2,7);" }}{PARA 6 "" 1 "" {TEXT 213 49 "Comp
+onent simplification of a GRTensorIII object:" }}{PARA 6 "" 1 "" {TEXT
+ 213 1 "\n" }{TEXT 213 52 "Applying routine `simplify[trig]` to object
+ f(dn,dn)" }{TEXT 213 43 "\nApplying routine factor to object f(dn,dn)
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "/I*CPU~Time~G6\"$\"#J!\"$" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 13 "grdisplay(_);" }}{PARA 11 ""
+ 1 "" {XPPMATH 20 "I9For~the~newkn~spacetime:G6\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "I)f(dn,dn)G6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "-I\"fG6\"
+6$I#dnGF$F&" }}{PARA 11 "" 1 "" {XPPMATH 20 "/*&&I\"fG6\"6#I\"rGF&\"\"
+\"&I!GF&6#I$phiGF&F),$*0,&F(F)I\"uGF&!\"\"F),&F(F)F1F)F)I\"QGF&F),&I\"
+aGF&F)F1F2F),&F6F)F1F)F)F6F2,&*$F(\"\"#F)*$F1F:F)!\"#F2" }}{PARA 11 ""
+ 1 "" {XPPMATH 20 "/*&&I\"fG6\"6#I\"rGF&\"\"\"&I!GF&6#I\"tGF&F)**I\"QG
+F&F),&F(F)I\"uGF&!\"\"F),&F(F)F1F)F),&*$F(\"\"#F)*$F1F6F)!\"#" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "/*&&I\"fG6\"6#I\"uGF&\"\"\"&I!GF&6#I$phi
+GF&F),$*.I\"QGF&F)I\"rGF&F)F(F),&*$I\"aGF&\"\"#F)*$F1F5F)F)F4!\"\",&F6
+F)*$F(F5F)!\"#F:" }}{PARA 11 "" 1 "" {XPPMATH 20 "/*&&I\"fG6\"6#I\"uGF
+&\"\"\"&I!GF&6#I\"tGF&F),$**I\"QGF&F)I\"rGF&F),&*$F1\"\"#F)*$F(F4F)!\"
+#F(F)F4" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 14 "grcalc(I1,I2);" 
+}}{PARA 6 "" 1 "" {TEXT 213 45 "Calculated f(up,up) for newkn (0.00200
+0 sec.)" }}{PARA 6 "" 1 "" {TEXT 213 39 "Calculated I1 for newkn (0.00
+1000 sec.)" }{TEXT 213 55 "\nCalculated LevC(dn,dn,dn,dn) for newkn (0
+.042000 sec.)" }{TEXT 213 50 "\nCalculated fstar(dn,dn) for newkn (0.0
+01000 sec.)" }{TEXT 213 50 "\nCalculated fstar(up,up) for newkn (0.003
+000 sec.)" }{TEXT 213 40 "\nCalculated I2 for newkn (0.001000 sec.)" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "/I*CPU~Time~G6\"$\"#_!\"$" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 18 "gralter(_,2,7,10);" }}{PARA 6 "" 1 
+"" {TEXT 213 49 "Component simplification of a GRTensorIII object:" }}
+{PARA 6 "" 1 "" {TEXT 213 1 "\n" }{TEXT 213 46 "Applying routine `simp
+lify[trig]` to object I1" }{TEXT 213 47 "\nApplying routine `simplify[
+trig]` to object I2" }{TEXT 213 37 "\nApplying routine factor to objec
+t I1" }{TEXT 213 37 "\nApplying routine factor to object I2" }{TEXT 
+213 47 "\nApplying routine `simplify[sqrt]` to object I1" }{TEXT 213 
+47 "\nApplying routine `simplify[sqrt]` to object I2" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "/I*CPU~Time~G6\"$\"#i!\"$" }}}{EXCHG {PARA 0 "> " 0 ""
+ {MPLTEXT 1 0 13 "grdisplay(_);" }}{PARA 11 "" 1 "" {XPPMATH 20 "I9For
+~the~newkn~spacetime:G6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "I#I1G6\"" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "/I#I1G6\",$**I\"QGF$\"\"#,(*$I\"rGF$F(
+\"\"\"*&F+F,I\"uGF$F,!\"#*$F.F(!\"\"F,,(F*F,F-F(F0F1F,,&F*F,F0F,!\"%F/
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "I#I2G6\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "/I#I2G6\",$*.I\"QGF$\"\"#I\"rGF$\"\"\"I\"uGF$F*,&F)F*F+!
+\"\"F*,&F)F*F+F*F*,&*$F)F(F**$F+F(F*!\"%\"#;" }}}{EXCHG {PARA 0 "> " 0
+ "" {MPLTEXT 1 0 14 "grcalc(J(up));" }}{PARA 6 "" 1 "" {TEXT 213 49 "C
+alculated f(up,up,cdn) for newkn (0.033000 sec.)" }}{PARA 6 "" 1 "" 
+{TEXT 213 42 "Calculated J(up) for newkn (0.000000 sec.)" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "/I*CPU~Time~G6\"$\"#M!\"$" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 13 "grdisplay(_);" }}{PARA 11 "" 1 "" {XPPMATH 20 "I
+9For~the~newkn~spacetime:G6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "I&J(up)
+G6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "-I\"JG6\"6#I#upGF$" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "/)I\"JG6\"I\"aG6#/I'_localG%*protectedGI-_n4532779
+200GF%I8All~components~are~zeroGF%" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 21 "grcalc(Id(dn,dn,dn));" }}{PARA 6 "" 1 "" {TEXT 213 
+49 "Calculated f(dn,dn,cdn) for newkn (0.037000 sec.)" }}{PARA 6 "" 1 
+"" {TEXT 213 49 "Calculated Id(dn,dn,dn) for newkn (0.003000 sec.)" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "/I*CPU~Time~G6\"$\"#S!\"$" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 13 "grdisplay(_);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "I9For~the~newkn~spacetime:G6\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "I-Id(dn,dn,dn)G6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "/I-Id
+(dn,dn,dn)G6\"I8All~components~are~zeroGF$" }}}{EXCHG {PARA 0 "" 0 "" 
+{TEXT 212 237 "c)Einstein-Maxwell equations: We construct the energy-m
+omentum tensor out of the field tensor ($T_\{ab\}=(f_\{ac\}f_\{b\}^\{~
+c\}-g_\{ab\}f_\{cd\}f^\{cd\}/4)/(4\\pi)$) and then show that the Kerr-
+Newman spacetime satifies the Einstein-Maxwell equations." }}{PARA 0 "
+> " 0 "" {MPLTEXT 1 0 53 "grdef(`T\{a b\}:=(+f\{a c\}*f\{b^c\}-g\{a b
+\}*I1/4)/(4*Pi)`);" }}{PARA 6 "" 1 "" {TEXT 213 32 "Created definition
+ for f(dn,up) " }}{PARA 6 "" 1 "" {TEXT 213 31 "Created definition for
+ T(dn,dn)" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 38 "grdef(`Dif\{a \+
+b\}:=G\{a b\}-8*Pi*T\{a b\}`);" }}{PARA 6 "" 1 "" {TEXT 213 33 "Create
+d definition for Dif(dn,dn)" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+19 "grcalc(Dif(dn,dn));" }}{PARA 6 "" 1 "" {TEXT 213 45 "Calculated R(
+dn,dn) for newkn (0.007000 sec.)" }}{PARA 6 "" 1 "" {TEXT 213 48 "Calc
+ulated Ricciscalar for newkn (0.000000 sec.)" }{TEXT 213 46 "\nCalcula
+ted G(dn,dn) for newkn (0.001000 sec.)" }{TEXT 213 46 "\nCalculated f(
+dn,up) for newkn (0.008000 sec.)" }{TEXT 213 46 "\nCalculated T(dn,dn)
+ for newkn (0.004000 sec.)" }{TEXT 213 48 "\nCalculated Dif(dn,dn) for
+ newkn (0.000000 sec.)" }}{PARA 11 "" 1 "" {XPPMATH 20 "/I*CPU~Time~G6
+\"$\"#@!\"$" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 15 "gralter(_,6,
+7);" }}{PARA 6 "" 1 "" {TEXT 213 49 "Component simplification of a GRT
+ensorIII object:" }}{PARA 6 "" 1 "" {TEXT 213 1 "\n" }{TEXT 213 44 "Ap
+plying routine expand to object Dif(dn,dn)" }{TEXT 213 45 "\nApplying \+
+routine factor to object Dif(dn,dn)" }}{PARA 11 "" 1 "" {XPPMATH 20 "/
+I*CPU~Time~G6\"$\"\"!F&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 13 "
+grdisplay(_);" }}{PARA 11 "" 1 "" {XPPMATH 20 "I9For~the~newkn~spaceti
+me:G6\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "I+Dif(dn,dn)G6\"" }}{PARA 11 
+"" 1 "" {XPPMATH 20 "-I$DifG6\"6$I#dnGF$F&" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "/*&&I$DifG6\"6#I\"aG6#/I'_localG%*protectedGI-_n453207529
+6GF&\"\"\"&I!GF&6#I\"bG6#/F+I-_n4532778656GF&F.I8All~components~are~ze
+roGF&" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 212 0 "" }}{PARA 0 "" 0 "" 
+{TEXT 212 0 "" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}}
+{MARK "0 0 0" 0 }{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2
+ 33 1 1 }
