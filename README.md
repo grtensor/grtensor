@@ -1,7 +1,7 @@
 =================================
 GRTensorIII for Maple
 =================================
-Version 2.1, Feb 20, 2017
+Version 2.1.1, Apr 3, 2017
 
 This project contains the distribution of GRTensorIII 
 version 2.1, the tensor component calulation package for Maple.
