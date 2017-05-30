@@ -1,7 +1,9 @@
 =================================
 GRTensorIII for Maple
 =================================
-Version 2.1.3, Apr 10, 2017
+Version 2.1.4, May 30, 2017
+- support non-interactive grconstraint definition
+  (see ?grconstraint)
 
 This project contains the distribution of GRTensorIII 
 version 2.1, the tensor component calulation package for Maple.
