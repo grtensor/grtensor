@@ -1,0 +1,89 @@
+
+===============================================================================
+HELP FOR: autoAlias
+===============================================================================
+
+CALLING SEQUENCE: autoAlias ( function ):
+
+      PARAMETERS: function - A function which contain functions whose
+                               derivatives are to be aliased.
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- Automatically creates aliases for derivatives in functions as per
+
+                        d
+                        -- u(r)  --->  u
+                        dr              r
+
+  in order to simplify the appearance of output.
+
+- This function can be used in conjunction with gralter() to alias the
+  derivatives of functions contained in each component of a tensor.
+
+- The function makes use of the fact that arguments in square brackets
+  are represented as subscripts in windows versions of MapleV. Thus, it
+  will not help readability in terminal based MapleV.
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+> f(r) := diff ( g(r), r )/r;
+                                     d
+                                   ---- g(r)
+                                    dr
+                           f(r) := ---------
+                                       r
+
+> autoAlias ( f(r) ):
+                                 g[r]
+                                 ----
+                                   r
+> #(Note that square bracketed indices appear as subscripts in
+> #   Windows-type displays.)
+
+
+> with(grtensor); 
+> qload ( bondi ):
+                           Default spacetime = bondi
+ 
+                            For the bondi spacetime:
+ 
+                                  Coordinates
+ 
+                             a
+                           x   = [ r, v, theta, phi ]
+ 
+                                  Line element
+ 
+    2                                  2 /      m(r, v)\     2     2         2
+  ds  = 2 c(r, v)  d r  d  v  - c(r, v)  |1 - 2 -------|  d v   + r   d theta
+                                         \         r   /
+ 
+         2           2       2
+      + r  sin(theta)   d phi
+ 
+               Spherically Symmetric Metric in Bondi Coordinates
+ 
+
+> grcalc ( R(dn,dn) ):
+> gralter ( R(dn,dn), autoAlias ):
+> grdisplay ( _ ):
+                            For the bondi spacetime:
+ 
+                                Covariant Ricci
+ 
+                                             c[r]
+                            R [r] [r] = 2 ---------
+                                          c(r, v) r
+ 
+                              - 2 c(r, v) m[r] + c[r] r - 2 c[r] m(r, v)
+        R [theta] [theta] = - ------------------------------------------
+                                                c(r, v)
+ 
+   etc...
+
+-------------------------------------------------------------------------------
+SEE ALSO:  gralter, grmap, diffAlias, grDalias.
+===============================================================================

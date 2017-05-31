@@ -1,0 +1,76 @@
+
+===============================================================================
+HELP FOR: Info
+===============================================================================
+SYNOPSIS:
+
+ - The `Info' object stores the text description of metrics and bases loaded
+   via qload() (or grload()). 
+
+ - The contents of this variable can be displayed via grdisplay() or altered
+   using grcalc(), in which case the user is prompted to type a new line of 
+   text. [To change the value of the Info variable, remember to use
+   grclear() to clear its value before using grcalc().]
+
+ - Alterations to the Info variable can be saved using grsaveg() so that it
+   is retained for the next session using the same metric file.
+
+ - In metric files, the Info string is read from the variable Info_. This
+   variable can be modified using a text editor.
+
+ - The Info variable in metric files can be used to provide a convenient
+   listing of metrics using certain system-specific utilities external to
+   MapleV. For instance, from a metric directory, the following Unix
+   command will list the Info line for each metric in the directory:
+
+    % grep Info_ *.mpl
+       .
+       .
+       .
+     planewave.mpl:Info_ := `    Plane wave metric.    `: 
+     planewavempl.mpl:Info_ := `    The plane wave metric.    `: 
+     rw.mpl:Info_:= ` Robertson-Walker Metric `:
+     schmidt1.mpl:Info_ := `    A metric for which all curvature invariants 
+      vanish    `: 
+     schw.mpl:Info_:=`The Classical Schwarzschild metric`:
+     schwb.mpl:Info_ := `    Schwarzschild orthonormal basis   `: 
+     schwl.mpl:Info_:` Schwarzschild Metric with Lambda `:
+     schwx.mpl:Info_ := `    The Classical Schwarzschild metric    `: 
+     shw.mpl:Info_ := `    
+     ss.mpl:Info_ := `    Metric for the general homothetic spherical space
+      time.    `: 
+     ss1.mpl:Info_ := `    Self-similar metric "curvature form"    `: 
+     ss2.mpl:Info_ := `    Self-similar metric "comoving form"    `: 
+     ss3.mpl:Info_ := `    Self-similar metric "Bondi form"    `: 
+     tb.mpl:Info_ := `    Tolman-Bondi, no constraints.    `: 
+       .
+       .
+       .
+      etc.
+
+-------------------------------------------------------------------------------
+EXAMPLE:
+
+> qload ( rw ):
+
+> grdisplay ( Info ):
+ 
+                             For the rw spacetime:
+ 
+                  Text description  = Robertson-Walker Metric
+ 
+> grclear ( Info ):
+Cleared Info for the rw metric.
+
+> grcalc ( Info ):
+
+Enter text information:
+
+ Friedmann-Lemaitre-Robertson-Walker metric
+ 
+> grsaveg ( flrw ):
+Information written to: /home/grtensor/metrics/flrw.mpl
+
+-------------------------------------------------------------------------------
+SEE ALSO:  makeg, grsaveg, grclear.
+===============================================================================

@@ -1,0 +1,55 @@
+
+===============================================================================
+HELP FOR: join
+===============================================================================
+
+CALLING SEQUENCE: join ( outside, inside )
+
+      PARAMETERS: 
+          outside - name of the "outside" surface
+
+          inside  - name of the "inside" surface
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+Notation: M refers to the full spacetime, Sigma to the 3-surface
+
+- joins two hypersurfaces, with the normal/N vector pointing from "inside" to
+  "outside"
+
+- links the spacetimes and their manifolds M+/- to allow calculation of
+  tensors defined in terms of the Jump[] of quantities across the junction
+
+- calculates the Jump in the intrinsic metric of the surfaces
+
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+>join(shellOut, shellIn);
+shellOut and shellIn are now joined.
+The default metric name is shellOut.
+The exterior metric is: shellOut
+The interior metric is: shellIn
+Default metric is now shellOut.
+
+Calculated Jump[g(dn,dn), shellIn] for shellOut (0.000000 sec.)
+                       CPU Time  = 0.001
+                  For the shellOut spacetime:
+                 Jump from defaultMetric - Mint
+             Jump [a] [b] = All components are zero
+                            staticF
+
+
+Example Worksheets:
+   (these present the examples from "A Relativist's Toolkit" by Eric Poisson)
+
+   junction/os_dust_collapse.mw  Oppenheimer-Snyder dust collapse
+   junction/schw_shell.mw        Timelike dust shell
+
+   junction/null_accreting.mw
+
+-------------------------------------------------------------------------------
+SEE ALSO: hypersurf, hyper_objects
+===============================================================================

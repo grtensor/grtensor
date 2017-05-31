@@ -1,0 +1,121 @@
+
+===============================================================================
+HELP FOR: groptions
+===============================================================================
+
+CALLING SEQUENCE:  groptions():
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- This function displays the values of global variables controlling the
+  GRTensorII environment.
+
+- The values can be altered by re-assignment within the MapleV session.
+  Alternatively, the re-assignment can be placed in the default grtensor.ini
+  file so that they are set when GRTensorII is initialized by the grtensor()
+  command [see the ?grtensor help page for a description of the grtensor.ini
+  file].
+
+The following variables control GRTensorII options:
+
+grOptionAlterSize (boolean, default = false)
+  If true, the new size of each component is displayed when gralter() is
+  invoked..
+
+grOptionCoordNames (boolean, default = true)
+  If true then tensor indices are displayed as the coordinate name. 
+  If false then indices are displayed by coordinate number.
+
+grOptionDefaultSimp (integer or name, default = normal)
+  This variable controls the type of simplification called during the 
+  calculation of an object by the grcalc() command. The default is to use 
+  the Maple routine normal(). Default simp must be set to one of:
+
+     simplify, trig, power, hypergeom, radical, expand, factor,
+     normal, sort, sqrt, trigsin, cons, consr
+
+  [See ?gralter for details on simplification names.]
+
+  [In general, it is recommended that gralter() be used when simplification
+  becomes necessary rather than changing the global simplification via
+  this variable, as it is unlikely that any particular choice will work
+  well in general situations, and an incorrect choice can greatly increase
+  calculation times.]
+
+grOptionDisplayLimit (integer, default = 5000)
+  This integer variable controls the size threshold beyond which an object
+  will not be displayed. If the object exceeds this limit only its
+  size is displayed. `Size' is determined by the MapleV length() function
+  which estimates the number of words used by the object.
+
+grOptionLLSC (boolean, default = true)
+  This variable indicates whether the Landau-Lifshitz spacelike
+  signature convention is to be assumed on loading and defining new
+  spacetimes.  If set to true, then four dimensional spacetimes
+  specified by a metric, g(dn,dn), or a general basis for which the
+  signature has not been explicitly given, are assumed to 1have
+  signature +2 (where signature is defined as the number of positive
+  metric components minus the number of negative metric components in a
+  locally orthonormal basis). Bases satisfying an NP inner product are
+  assumed to have signature -2. If the grOptionLLSC variable is set to
+  false, then the sig object will not be assigned unless it is
+  explicitly given by the spacetime input file or specified in makeg().
+
+grOptionMapletInput (boolean, default = true)
+  Use dialog boxes (Maplets) for user input to a grtensor session. In 
+  graphical worksheets this is required. Users of command line Maple
+  may wish to set this to false for direct terminal input prompts 
+  (although Maplet input in e.g. command line Mac Maple works)
+
+grOptionMetricPath (string, default=homedir)
+  This option variable is a MapleV string which specifies the default
+  directory from which metric files are to be loaded or to which they will
+  be saved. The sub-directory names should be seperated using forward slash,
+  '/', even on MS-DOS/Windows systems. 
+
+grOptionqloadPath (sequence, default=unassigned)
+  This option variable can be used to specify a set of directories which
+  will be searched by qload() when loading metrics. Individual directory
+  names are listed as MapleV strings with sub-directories seperated by the
+  forward slash character, '/'. Directories are searched in the order in
+  which they are listed. If this variable is left unassigned or if the metric
+  file is not found in any of the listed directories, then the directory
+  specified in grOptionMetricPath is searched.
+
+grOptionTermSize (integer, default=100)
+  This variable effects the display of vectors and matrices. If the size
+  of individual components of a 1- or 2-index tensor are smaller than this
+  value (measured in MapleV words), then the object will appear in matrix
+  form when displayed using grdisplay(). If terms are larger than the value
+  of this variable, components are listed individually as they are for
+  tensors with 3+ indices. By setting this variable to some very high value
+  the matrix form of display can be assured, while setting this value to
+  zero will prevent matrix-type display.
+
+grOptionTrace (boolean, default = true)
+  If set to true, the names of objects calculated during the
+  the execution of grcalc() or grcalcalter() will be printed as they
+  are computed.
+
+grOptionVerbose (boolean, default = false)
+  If true, a message is displayed as each component of an object is
+  calculated using the grcalc() or grcalcalter() commands.
+
+grOptionWindows (boolean, default = true) 
+  If true, this variable selects the `Windows' display routine. 
+  If false, a text based display routine. These options affect how
+  indices appear in objects displayed using grdisplay().
+
+
+To change an option variable, assign it a new value. For example,
+
+  > grOptionDisplayLimit := 2500;
+
+will change the value of the display limit to 2500.
+
+Changing the variables to the wrong type of value (e.g assigning an integer
+value to a variable that is intended to be boolean) will result in errors 
+or unspecified operation.
+
+===============================================================================

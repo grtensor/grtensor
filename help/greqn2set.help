@@ -1,0 +1,119 @@
+
+===============================================================================
+HELP FOR: greqn2set
+===============================================================================
+
+CALLING SEQUENCE:  greqn2set ( object )
+
+      PARAMETERS: object - name of a GRTensorII object
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+ - This function returns the components of a tensor-equation as a set of
+   equations which can be used as input to the standard MapleV equation
+   solving routines (eg. solve(), dsolve(), etc.).
+
+ - Tensor equations can be defined using grdef(), as in the following example:
+
+     > grdef ( `EEqn{(a b)} := G{a b} = 8*Pi*T{a b}` ):
+
+   The right-hand side of this definition (to the right of the `:=') is
+   in the form of an equation, with consistent indices across the equality.
+   When EEqn(dn,dn) is calculated, each component will contain an individual
+   equation which is the matching of the components of G(dn,dn) with that of
+   T(dn,dn). The greqn2set() function can then be used to extract this set
+   of equations an attempt to solve them.
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+> qload ( static ):
+
+Calculated ds for static. (0.010000 sec.) 
+                           Default spacetime = static
+ 
+                           For the static spacetime:
+ 
+                                  Coordinates
+ 
+                             a
+                           x   = [ r, theta, phi, t ]
+ 
+                                  Line element
+ 
+                2
+        2    d r      2         2     2           2       2             2
+      ds  = ------ + r   d theta   + r  sin(theta)   d phi   - h(r)  d t
+             h(r)
+ 
+                    Static, spherically symmetric spacetime
+ 
+> grdef ( `A{a} := [ 0, 0, 0, -Q/r ]` ):
+Components assigned for metric: static
+Created definition for A(dn)
+
+> grdef ( `F{[a b]} := -2*A{[a;b]}` );
+Created a definition for    A(dn,cdn)
+Created definition for F(dn,dn)
+
+> grdef ( `T{(a b)} :=  1/(4*Pi)*(F{a c} *F{b ^c} - (1/4)*g{a b}*F{d e}*
+   F{^d ^e})` );
+Created definition for F(dn,up) 
+Created definition for F(up,up) 
+Created definition for T(dn,dn)
+
+> grdef ( `Eeqn{(a b)} := G{a b} = 8*Pi*T{a b}` );
+Created definition for lhs_Eeqn(dn,dn)
+Created definition for rhs_Eeqn(dn,dn)
+Created definition for Eeqn(dn,dn)
+
+> grcalc ( Eeqn(dn,dn) ):
+ 
+> eqns := greqn2set ( Eeqn(dn,dn) );
+ 
+                      Eeqn[r] [r],  changed to 88 (words)
+ 
+                  Eeqn[theta] [theta],  changed to 86 (words)
+ 
+                    Eeqn[phi] [phi],  changed to 134 (words)
+ 
+                      Eeqn[t] [t],  changed to 88 (words)
+ 
+         /  d      \
+         |---- h(r)| r - 1 + h(r)         2
+         \ dr      /                     Q
+eqns := {------------------------ = - -------,
+                        2                   4
+                  h(r) r              h(r) r
+ 
+                     /   2      \        2
+ /  d      \         |  d       |  2    Q
+ |---- h(r)| r + 1/2 |----- h(r)| r  = ----,
+ \ dr      /         |   2      |        2
+                     \ dr       /       r
+ 
+                                             /   2      \                2  2
+ /  d      \             2                 2 |  d       |  2   sin(theta)  Q
+ |---- h(r)| r sin(theta)  + 1/2 sin(theta)  |----- h(r)| r  = --------------,
+ \ dr      /                                 |   2      |             2
+                                             \ dr       /            r
+ 
+        //  d      \             \
+   h(r) ||---- h(r)| r - 1 + h(r)|    2
+        \\ dr      /             /   Q  h(r)
+ - ------------------------------- = -------}
+                   2                     4
+                  r                     r
+ 
+> dsolve ( eqns[1], h(r) );
+ 
+                                     2    2
+                                    r  + Q  + _C1 r
+                             h(r) = ---------------
+                                            2
+                                           r
+ 
+-------------------------------------------------------------------------------
+SEE ALSO: grdef, grcomponent, grarray, grt_objects.
+===============================================================================

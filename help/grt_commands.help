@@ -1,0 +1,73 @@
+
+===============================================================================
+HELP FOR: GRTensorIII commands
+===============================================================================
+SYNOPSIS:
+
+The following is a list of GRTensorIII commands. The individual help pages for
+each command describe their use.
+
+Calculation:
+    grcalc()    - calculate the components of a tensor
+    gralter()   - simplify/modify tensor components
+    grmap()     - apply a MapleV function to the components of a tensor
+    grcalc1()   - calculate a single component of a tensor
+    grcalcalter()   - calculate and apply simplification
+    grtransform()   - perform a coordinate transformation on a metric
+    grnormalize()   - normalize a vector/1-form for a given basis
+    nptetrad()  - create a null tetrad from a metric
+
+Output:
+    grdisplay() - display the components of an object
+    grcomponent()   - access a particular component of an object
+    grarray()   - place a 2-index tensor into a MapleV array
+    grapply()   - apply a MapleV function without altering a tensor
+
+Manipulation of output:
+    gralter()   - simplify/modify tensor components
+    grmap()     - apply a MapleV function to the components of a tensor
+    grcomponent()   - access a particular component of an object
+    grDalias()  - apply derivative aliases to tensor components
+    diffAlias() - apply derivative aliases to tensor components
+    autoAlias() - apply derivative aliases to tensor components
+    greqn2set() - return components of a tensor equation as a set
+    grnewmetric()   - create a new metric from a 2-index tensor
+    grapply()   - apply a MapleV function without altering a tensor
+
+Defining new objects:
+    grdef()     - define a new calculable object
+    grundef()   - clear an object definition
+
+Initialization:
+    grtensor()  - print version number and load init file(s)
+    makeg()     - specify a metric/basis/null-tetrad
+    qload()     - load a metric from the default directory
+    groptions() - display global option settings
+    grmetric()  - change default metric to name
+    grclear()   - clear the results of a calculation
+    grundef()   - clear an object definition
+
+Working with metrics/bases:
+    spacetime() - define a spacetime with command arguments
+    makeg()     - specify a metric/basis/null-tetrad (interactive)
+    nptetrad()  - create a null tetrad from a metric
+    grtransform()   - perform a coordinate transformation on a metric
+    grconstraint()  - add/modify constraint equations
+    nprotate()  - perform a rotation of null tetrad vectors
+
+Saving/Loading:
+    grsaveg()   - save a metric or basis to a file
+    qload()     - load a metric from the default directory
+    grload()    - load a metric from file from a specified directory
+
+Miscellanea:
+    difftool()  - convert active form of diff() to passive form (*)
+    PetrovReport()  - describe the intermediate calculations in generating
+                      the Petrov type of a spacetime.
+
+
+For lists of pre-defined objects see the help pages for
+        grt_objects, grt_basis, grt_invars, grt_operators
+
+===============================================================================
+

@@ -1,0 +1,181 @@
+
+===============================================================================
+HELP FOR: grconstraint
+===============================================================================
+
+CALLING SEQUENCE:  grconstraint ( metric ):
+
+      PARAMETERS:  metric - the name of a previously loaded metric
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- GRTensorII allows the specification of constraint equations that must be
+  satisfied by functions in the metric or basis.
+
+- Constraint equations may be added to a spacetime, removed or re-arranged 
+  using this command. grconstraint() may be used with arguments or 
+  interactivly
+
+- Constraints can be applied to an object calculated from a metric or basis
+  by using gralter().
+
+- Constraints specified using grconstraint() can be saved with the metric
+  file using grsaveg().
+
+- Constraints may also be specified by makeg(), and will be loaded
+  automatically as the spacetime is loaded.
+
+-------------------------------------------------------------------------------
+Non-Interactive example:
+# add the contraint to the current metric
+>grconstraint(add, diff(a(t),t) = H*a(t));
+# apply the constraint
+>gralter(R(dn,dn), cons); 
+# display the constraint
+>grdisplay(constraint);
+
+# to add multiple constraints use a list the second argument:
+grconstraint(add, [m(r,v)=C, c(r,v)=C]);
+
+
+INTERACTIVE EXAMPLE:
+# In the following example, the bondi metric is loaded and the constraints
+#           m(r,v) = M,  and  c(r,v) = C
+# are specified. The Ricci tensor is calculated for the metric in terms
+# of the general functions m(r,v) and c(r,v), and the constraints are then
+# applied to show that the Ricci tensor is zero when these functions are
+# constants.
+
+> qload ( bondi ):
+
+> grconstraint ( bondi ):
+
+    Constraint specification and manipulation
+ 
+    Do you wish to
+    1) Add a constraint to the metric
+    2) Remove a constraint from the metric
+    3) Modify a metric constraint
+    4) Display the existing constraints
+    5) Exit
+
+  Enter 1-5 > 1
+
+    Please enter the new constraint as an equation (of the form 
+    f(x,y) = g(x) + h(y), for example):
+
+  Enter equation : m(r,v) = M
+
+    The new constraint equation is :
+                                  m(r, v) = M
+ 
+
+    Constraint specification and manipulation
+ 
+    Do you wish to
+    1) Add a constraint to the metric
+    2) Remove a constraint from the metric
+    3) Modify a metric constraint
+    4) Display the existing constraints
+    5) Exit
+
+  Enter 1-5 > 1
+
+    Please enter the new constraint as an equation (of the form 
+    f(x,y) = g(x) + h(y), for example):
+
+  Enter equation : c(r,v) = C
+
+    The new constraint equation is :
+                                  c(r, v) = C
+ 
+
+    Constraint specification and manipulation
+ 
+    Do you wish to
+    1) Add a constraint to the metric
+    2) Remove a constraint from the metric
+    3) Modify a metric constraint
+    4) Display the existing constraints
+    5) Exit
+
+  Enter 1-5 > 4
+                            For the bondi spacetime:
+ 
+                                  constraints
+ 
+                    constraint  = [m(r, v) = M, c(r, v) = C]
+ 
+
+    Constraint specification and manipulation
+ 
+    Do you wish to
+    1) Add a constraint to the metric
+    2) Remove a constraint from the metric
+    3) Modify a metric constraint
+    4) Display the existing constraints
+    5) Exit
+
+  Enter 1-5 > 5
+
+
+> grcalc ( R(dn,dn) ):
+
+> grdisplay ( R(dn,dn) ):
+
+ 
+                            For the bondi spacetime:
+ 
+                                Covariant Ricci
+ 
+                                           d
+                                         ---- c(r, v)
+                                          dr
+                           R [r] [r] = 2 ------------
+                                           c(r, v) r
+                                       .
+                                       .
+                                       .
+                                      etc.
+
+
+> gralter ( R(dn,dn) );
+
+    Component Alteration of a grtensor object:
+ 
+    (use ?name for help on a particular simplification routine)
+ 
+    Choose which routine to apply:
+     0)  none
+     1)  simplify()          try all simplification techniques
+     2)  simplify[trig]      apply trig simplification
+     3)  simplify[power]     simplify powers, exp and ln
+     4)  simplify[hypergeom] simplify hypergeometric functions
+     5)  simplify[radical]   convert radicals,log,exp to canonical form
+     6)  expand()
+     7)  factor()
+     8)  normal()
+     9)  sort()
+    10)  simplify[sqrt,symbolic] allows sqrt(r^2) = r
+    11)  simplify[trigsin]       trig simp biased to sin
+    12)  Apply constraints
+    13)  Apply constraints repeatedly
+    14)  other               user specified routine
+
+  Number of routine to apply > 12;
+
+Applying routine Apply constraints to object R(dn,dn)
+
+
+> grdisplay ( R(dn,dn) );
+ 
+                            For the bondi spacetime:
+ 
+                                Covariant Ricci
+ 
+                       R(dn,dn) = All components are zero
+
+-------------------------------------------------------------------------------
+SEE ALSO: makeg, gralter, grsaveg.
+===============================================================================

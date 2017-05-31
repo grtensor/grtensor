@@ -1,0 +1,119 @@
+
+===============================================================================
+HELP FOR: GRTensorII Operators
+===============================================================================
+
+- GRTensorII `operators' are objects which require the specification of
+  an argument in order to be calculated (via grcalc()).
+
+- The argument is specified in square braces, [, ]. For some operators,
+  such as the vector operators listed below, the argument must be of a
+  particular form, such as a single index tensor.
+
+- Operators currently fall into two main groups, the differential operators
+  and vector operators, listed seperately below.
+
+
+I. Differential operators:
+
+- These operators take tensors or scalars with any number of indices as
+  arguments. They can be used in grcalc() with the object to be acted
+  upon in square braces:
+
+                  > grcalc ( Box[ R(dn,dn) ] ):
+                  > grdisplay ( Box[ R(dn,dn) ] ):
+
+  They can also be used in the same manner in grdef() in defining new
+  tensors:
+                  > grdef ( `bR{a b} := Box[R{a b}]` ):
+
+  In the definitions below, `object' refers to a GRTensorII object with any
+  number of indices in any configuration (eg. R(up,dn,dn,dn), R(bdn,bdn),
+  NPmu), `vector' refers to a single-index object, and `scalar' refers to
+  an un-indexed object (eg. Ricciscalar, NPmu).
+
+  The standard GRTensorII differential operators are:
+===============================================================================
+GRTensorIII name         Description
+-------------------------------------------------------------------------------
+  LieD[vector,object] - Lie derivative of `object' along `vector'
+
+  Box[object]         - D'Alembertian, (\nabla^a \nabla_a)[ object ]
+
+  Dl[object]          - derivatives along the null basis vectors, (*)
+  Dn[object]            eg. Dl[object] := (l^a \partial_a) [ object ]
+  Dm[object]
+  Dmbar[object]
+
+  Dsq[scalar]         - ordinary derivative of a scalar contracted with itself,
+                        Dsq[scalar] := \partial^a(scalar)\partial_a (scalar)
+
+  CDsq[scalar]        - covariant derivative of a scalar contracted with self,
+                        CDsq[scalar] := \nabla^a(scalar) \nabla_a(scalar)
+-------------------------------------------------------------------------------
+(*) In standard NP notation, these are commonly referred to as
+    {D, Delta\, delta, delta^*} respectively.
+===============================================================================
+
+
+II. Vector operators
+
+- A number of operators have been defined which calculate tensors which
+  are dependent on a vector field defined on the spacetime.
+
+- To use the vector operators, you must first define a single-index object
+  using grdef(), for example,
+
+                  > grdef ( `v{^a} := [v,r,0,0]` ):
+
+  The operators defined below would then take the name `v' of the object
+  as an argument in square braces, for example,
+
+                  > grcalc ( shear[v](dn,dn) )
+
+The vector operators are:
+===============================================================================
+GRTensorIII name         Description
+-------------------------------------------------------------------------------
+  h[v](dn,dn)         - projection of the metric onto the subspace orthogonal
+                        to v
+  acc[v](up)          - acceleration vector (v{a;b} v{^b})
+  expsc[v]            - expansion scalar (v{a;a})
+  vnorm[v]            - norm (v{a} v{^a})
+  vor[v](dn,dn)       - vorticity tensor
+  vor[v](up)          - vorticity vector
+  vor[v]              - vorticity scalar
+  shear[v](dn,dn)     - shear tensor
+  shear[v]            - shear scalar
+  RayEqn[v]           - Raychaudhuri's equation
+  E[v](dn,dn)         - `electric part' of the Weyl tensor
+  H[v](dn,dn)         - `magnetic part' of the Weyl tensor
+-------------------------------------------------------------------------------
+(* - these definitions are valid only for null vector fields.)
+-------------------------------------------------------------------------------
+
+- if the vector field is non-null, it can be normalized using the
+  grnormalize() command. See the ?grnormalize for more details.
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+> grcalc ( Box[R(dn,dn)] ):
+
+> grdef ( `u{^a} := [E^(-nu(t,r)/2), 0, 0, 0]` ):
+
+> grcalc ( vor[u](dn,dn), shear[u](dn,dn) ):
+> grdisplay ( _ ):
+
+> grcalc ( LieD[u,R(dn,dn)] ):
+
+> grcalc ( Dl[ NPmu ] ):
+
+> grdef ( `ldR{a b} := LieD[u,R{a b}]` ):
+
+> grdef ( `B1 := -Dmbar[Psi0] + Dl[Psi1] + (4*NPalpha - NPpi)*Psi0
+   -2*(2*NPrho + NPepsilon)*Psi1 + 3*NPkappa*Psi2` ):
+
+-------------------------------------------------------------------------------
+SEE ALSO: grt_objects, grt_basis, grcalc, grdef, grnormalize.
+===============================================================================

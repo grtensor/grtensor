@@ -1,0 +1,132 @@
+
+===============================================================================
+HELP FOR: grcalc
+===============================================================================
+
+CALLING SEQUENCE: grcalc ( objects )
+
+      PARAMETERS: objects - a GRTensorII object name or sequence of names
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- Calculates the GRTensorII objects specified by the parameters.
+
+- Objects are specified in the form:
+
+                        TensorName ( IndexList )
+
+  where IndexList is a list of indexes specifying their nature (covariant
+  or contravariant) and type (coordinate or basis). IndexList entries
+  can take the form:
+
+     dn, up   - covariant and contravariant coordinate indices, resp.
+    bdn, bup  - covariant and contravariant basis indices, resp.
+
+  Thus the `natural form' of the Riemann tensor calculated from a metric
+  would be specified as:
+
+                         R(up,dn,dn,dn)
+
+  The components of the same tensor in a basis would be:
+
+                         R(bup,bdn,bdn,bdn)
+
+  A full set of default tensors which are defined automatically
+  can be found in the help pages ?grt_objects and ?grt_basis. 
+  Tensors can also be defined using the grdef() command.
+
+- The covariant derivatives of a tensor can be calculated automatically 
+  by specifying the indices `cdn' and `cup'. Thus to calculate the
+  covariant derivative of the covariant Einstein tensor, one could use:
+
+                         G(dn,dn,cdn)
+
+  Similarly, the ordinary partial derivatives can be calculated using the
+  indices `pup' and `pdn', as in
+
+                         G(dn,dn,pdn)
+
+- Note that most objects require the calculation of `precursor' objects.
+  Implicit in a request to calculate an object is a request to calculate
+  all of these precursors, which GRTensorII will do automatically. The
+  program will keep track of which tensors have been calculated for a
+  given metric so that they can always be accessed later and will never
+  be calculated twice.
+
+  Thus, if a request is made to calculate the Riemann tensor, then the
+  Christoffel symbols will automatically be calculated and stored in the
+  process.
+
+  It is possible, then, to proceed directly from the metric to a calculation
+  of the Riemann tensor, or other complicated curvature tensors, in one
+  step. This is discouraged, however, since for complicated spacetimes the
+  intermediate steps of the calculation (such as the Christoffel symbols)
+  will often require simplification to reduce their size before any further
+  calculation can be done. Thus it is recommended that calculations be
+  carried out in steps with gralter() applied when necessary.
+
+- In addition to the standard tensor-type objects, a number of `operators'
+  are also defined in the standard GRTensorII library. These act on tensors
+  which are specified as arguments to the operator in square braces [, ].
+  For example, the commonly defined d'Alembertian (`Box') operator acting 
+  on a tensor can be calculated as follows:
+
+    > grcalc ( Box[R(dn,dn)] ):
+    > grdisplay ( Box[R(dn,dn)] ):
+  
+  For a full list of operators defined by the standard library, see
+  ?grt_operators.
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+# 1: Covariant Ricci tensor for the Schwarzschild metric.
+> qload ( schw ):
+
+> grcalc ( R(dn,dn) ):
+
+Calculated detg for schw. (0.030000 sec.) 
+Calculated g(up,up) for schw. (0.070000 sec.) 
+Calculated g(dn,dn,pdn) for schw. (0.070000 sec.) 
+Calculated Chr(dn,dn,dn) for schw. (0.060000 sec.) 
+Calculated Chr(dn,dn,up) for schw. (0.100000 sec.) 
+Calculated R(dn,dn) for schw. (0.100000 sec.) 
+                                CPU Time  = .430
+
+> grdisplay ( _ ):  # note that the `_' indicates `use the objects from the
+                    # last command.'
+ 
+                            For the schw spacetime:
+ 
+                                Covariant Ricci
+ 
+                       R(dn,dn) = All components are zero
+
+# 2: Covariant derivative of the mixed Ricci tensor for the Bondi metric. 
+> qload ( bondi ):
+
+> grcalc ( R(up,dn,cdn) ):
+
+Created definition for R(up,dn) 
+bytes used=1766732, alloc=917336, time=1.50
+bytes used=1777636, alloc=917336, time=1.61
+Created a definition for    R(up,dn,cdn)
+Calculated detg for bondi. (0.020000 sec.) 
+Calculated g(up,up) for bondi. (0.050000 sec.) 
+Calculated g(dn,dn,pdn) for bondi. (0.080000 sec.) 
+Calculated Chr(dn,dn,dn) for bondi. (0.070000 sec.) 
+Calculated Chr(dn,dn,up) for bondi. (0.120000 sec.) 
+Calculated R(dn,dn) for bondi. (0.170000 sec.) 
+Calculated R(up,dn) for bondi. (0.090000 sec.) 
+Calculated R(up,dn,cdn) for bondi. (0.510000 sec.) 
+                               CPU Time  = 1.450
+ 
+> grdisplay ( _ ):
+
+       [ Long output ... ]
+
+-------------------------------------------------------------------------------
+SEE ALSO: grdisplay, grt_objects, grt_basis, grt_operators, grt_invars,
+          gralter, grcalcalter.
+===============================================================================

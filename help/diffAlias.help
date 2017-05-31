@@ -1,0 +1,126 @@
+
+===============================================================================
+HELP FOR: diffAlias
+===============================================================================
+
+CALLING SEQUENCE: diffAlias ( varlist, functionlist )
+
+      PARAMETERS: varlist      - a set of variables (coordinates)
+                  functionlist - a set of functions in the variables specified
+                                 by varlist
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- Automatically creates aliases for derivatives in functions as per
+
+                        d
+                        -- u(r)  --->  u
+                        dr              r
+
+  in order to simplify the appearance of output.
+
+- In contrast to autoAlias(), derivative aliases are only created for
+  functions explicitly named in the second argument to diffAlias.
+
+- The function makes use of the fact that arguments in square brackets
+  are represented as subscripts in windows versions of MapleV. Thus, it
+  will not help readability in terminal based MapleV.
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+# output for the following commands have been suppressed ...
+> with(grtensor): 
+> h(r,t) := diff ( f(r,t), r )/r;
+
+                                         d
+                                       ---- f(r, t)
+                                        dr
+                            h(r, t) := ------------
+                                             r
+
+> diffAlias ( [r, t], [ f, g ] );
+> k(r,t) := diff(h(r,t),t)*diff(g(r,t),r);
+ 
+                                       f[t, r] g[r]
+                            k(r, t) := ------------
+                                             r
+
+> #(Note that the square bracketed indices appear as subscripts in
+> #   Windows-type displays.)
+
+> qload ( bondi );
+
+                           Default spacetime = bondi
+ 
+                            For the bondi spacetime:
+ 
+                                  Coordinates
+ 
+                             a
+                           x   = [ r, v, theta, phi ]
+ 
+                                  Line element
+ 
+    2                                  2 /      m(r, v)\     2     2         2
+  ds  = 2 c(r, v)  d r  d  v  - c(r, v)  |1 - 2 -------|  d v   + r   d theta
+                                         \         r   /
+ 
+         2           2       2
+      + r  sin(theta)   d phi
+ 
+
+> diffAlias ( [r,v], [c,m] );
+> grcalc ( R(dn,dn) );
+> grdisplay ( _ );
+
+                            For the bondi spacetime:
+ 
+                                Covariant Ricci
+ 
+                                             c[r]
+                            R [r] [r] = 2 ---------
+                                          c(r, v) r
+ 
+                              - 2 c(r, v) m[r] + c[r] r - 2 c[r] m(r, v)
+        R [theta] [theta] = - ------------------------------------------
+                                                c(r, v)
+ 
+  etc...
+
+-------------------------------------------------------------------------------
+SEE ALSO: autoAlias, grDalias.
+===============================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

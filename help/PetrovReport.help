@@ -1,0 +1,135 @@
+
+===============================================================================
+HELP FOR: PetrovReport
+===============================================================================
+
+CALLING SEQUENCE:  PetrovReport():
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- Generates a report detailing how the determination of the Petrov type
+  of a spacetime was carried out.
+
+- The object Petrov (calculated for null tetrads using grcalc) is determined
+  using an algorithm detailed in
+
+  Letniowski, F. W., and McLenaghan, R. G., 1988, Gen. Rel. Grav., 20,
+    463-83.
+
+  The notation of this paper is used by PetrovReport() in referring to
+  intermediate variables.
+
+  The success of the algorithm depends on determining whether certain 
+  functions of the Weyl scalars can be evaluated to zero. It is sometimes
+  the case that the computer can not simplify an expression which, upon
+  inspection, is clearly equal to zero. In these rare cases, the Petrov
+  algorithm will fail in that it will report a Petrov type which is more
+  complex than the true value. Using the report command, the intermediate
+  steps taken in determination of the Petrov type can be examined and
+  evaluated for correctness.
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+> qload ( schw ):
+
+                              Default metric = schw
+
+                                   Coordinates
+
+                              For the schw metric.
+
+                      1        2            3          4
+                    x   = r, x   = theta, x   = phi, x   = t
+
+                                  Line element
+
+                              For the schw metric.
+
+    2
+  ds  =
+
+           2
+        d r       2         2     2           2       2                      2
+     --------- + r   d theta   + r  sin(theta)   d phi   + (- 1 + 2 m/r)  d t
+     1 - 2 m/r
+
+> nptetrad ( [ 0, 0, 0, 1 ] ):
+
+Calculated detg for schw. (0.017000 sec.) 
+Calculated g(up,up) for schw. (0.100000 sec.) 
+
+The null tetrad has been stored as e(bdn,up).
+
+> grcalc ( WeylSc ):
+
+> grdisplay ( WeylSc ):
+
+                              For the schw metric.
+
+                                Weyl Scalar, Psi0
+
+                                    Psi0 = 0
+
+                                Weyl Scalar, Psi1
+
+                                    Psi1 = 0
+
+                                  Scalar, Psi2
+
+                                             m
+                                   Psi2 = - ----
+                                              3
+                                             r
+
+                                Weyl Scalar, Psi3
+
+                                    Psi3 = 0
+
+                                Weyl Scalar, Psi4
+
+                                    Psi4 = 0
+
+> grcalc ( Petrov ):
+
+> grdisplay ( Petrov ):
+
+                              For the schw metric.
+
+                                   Petrov Type
+
+                          Petrov Type  = D (or simpler)
+
+> PetrovReport ():
+
+                  The conclusion 'Petrov type = D (or simpler)'
+
+                               for the schw metric
+
+                       was based on the following results:
+
+                              Weyl scalar Psi0 = 0
+
+                              Weyl scalar Psi1 = 0
+
+                Weyl scalar Psi2 could not be evaluated to zero.
+
+                              Weyl scalar Psi3 = 0
+
+                              Weyl scalar Psi4 = 0
+
+               ---> Therefore the metric is Petrov D (or simpler).
+
+             -------------------------------------------------------
+
+            The quantities that could not be evaluated to zero are:
+
+                                                   m
+                             Weyl scalar Psi2 = - ----
+                                                    3
+                                                   r
+
+-------------------------------------------------------------------------------
+SEE ALSO: grt_basis, nptetrad, nprotate.
+===============================================================================

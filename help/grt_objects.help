@@ -1,0 +1,142 @@
+
+===============================================================================
+HELP FOR: GRTensorII Objects
+===============================================================================
+
+- The standard objects in the table below are loaded by default with
+  GRTensorII or automatically when their calculation is requested.
+
+- Index permutations of these objects are generated automatically. Thus
+  the index configuration R(up,dn,dn,up) can be calculated using grcalc()
+  even though this index configuration is not listed below.
+
+- Similarly covariant derivatives can calculated using grcalc() by
+  adding indices `cdn' or `cup' after the standard index list. Thus
+  the covariant derivative of R(dn,dn) could be calculated using the
+  command
+                       grcalc ( R(dn,dn,cdn) ):
+
+  Similarly, the ordinary partial derivative can be calculated using
+  the indices `pup' and `pdn', as in
+
+                       grcalc ( R(dn,dn,pdn) ):
+
+- For a table of standard objects defined on a set of basis vectors, see
+  the help page for ?grt_basis.
+
+- For a list of coordinate invariant scalars see ?grt_invars
+
+- New tensors can be defined using grdef().
+
+===============================================================================
+Curvature tensors:
+===============================================================================
+GRTensorIII names(s)  Description
+-------------------------------------------------------------------------------
+
+x(up)     Coordinates
+
+g(dn,dn), metric  metric
+
+g(up,up), invmetric metric (contravariant components)
+
+ds      line-element form of the metric
+
+kdelta      Kronecker delta (see ?kdelta)
+
+Info      metric text description (see ?Info)
+
+detg      metric determinant
+
+dimension   spacetime dimension
+
+sig     spacetime signature
+
+Chr(dn,dn,dn), Chr1 Christoffel symbol (first kind)
+Chr(dn,dn,up), Chr2 Christoffel symbol (second kind)
+
+R(dn,dn,dn,dn),   Riemann tensor
+Riemann
+
+R(dn,dn), Ricci   Ricci tensor
+
+S(dn,dn)    trace-free Ricci tensor
+
+C(dn,dn,dn,dn)    Weyl tensor (*)
+                                       1                 ef
+Cstar(dn,dn,dn,dn)  Dual of the Weyl tensor, C*   := - g^(1/2) eps    C
+                                abcd   2            abef   cd
+Ricciscalar   Ricci scalar
+
+G(dn,dn), Einstein  Einstein tensor (no cosmological constant)
+
+                                                       ab
+RicciSq     Ricci tensor contracted with itself, RicciSq := R  R
+                                                          ab
+                 abcd
+RiemSq      RiemSq := R    R
+                      abcd
+                 abcd
+WeylSq      WeylSq := C    C
+                      abcd
+        a     a  c
+S2(up,dn)   S2  := S  S
+         b     c  b
+
+        a     a  c  d
+S3(up,dn)   S3  := S  S  S
+         b     c  d  b
+
+        a     a  c  d  e
+S4(up,dn)   S4  := S  S  S  S
+         b     c  d  e  b
+
+        ab      ab   ef
+C2(up,up,dn,dn)   C2    := C    C
+          cd      ef   cd
+
+                   cd
+CS(dn,dn)   CS  := C    S
+        ab    acdb
+           cd
+CSstar(dn,dn)   CSstar  := C*   S
+            ab    abcd
+
+LevCS(dn,dn,dn)   Levi-Civita symbol (3 dimensional)
+LevCS(dn,dn,dn,dn)  Levi-Civita symbol (4 dimensional)
+
+LevC(dn,dn,dn)    Levi-Civita tensor (3 dimensional)
+LevC(dn,dn,dn,dn) Levi-Civita tensor (4 dimensional)
+
+------------------------------------------------------------------------------
+(*) See also ?grt_operators for the `electric' and `magnetic' parts of the
+    Weyl tensor.
+===============================================================================
+
+EXAMPLES:
+
+> qload ( schw ):
+> grcalc ( R(dn,dn) ):
+> grdisplay ( _ ):
+ 
+                            For the schw spacetime:
+ 
+                                Covariant Ricci
+ 
+                       R(dn,dn) = All components are zero
+
+> qload ( npschw ):
+> grcalc ( R(bdn,bdn) ):
+> grdisplay ( _ ):
+ 
+                            For the schw spacetime:
+ 
+                                Covariant Ricci
+ 
+                      R(bdn,bdn) = All components are zero
+
+
+-------------------------------------------------------------------------------
+SEE ALSO:  grcalc, grt_invars, grt_basis, grt_operators, killing, kdelta,
+  Info, grdef, grt_commands, grdisplay, grlib.
+===============================================================================

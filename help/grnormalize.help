@@ -1,0 +1,76 @@
+
+===============================================================================
+HELP FOR: grnormalize 
+===============================================================================
+
+CALLING SEQUENCE:  grnormalize ( object, norm )
+
+      PARAMETERS: object - a single index GRTensorII object
+                  norm   - a value for the norm of the vector, eg. -1 for 
+                           timelike vectors, +1 for spacelike vectors.
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- Normalizes non-null single-index GRTensorII objects (vectors and 1-forms) in
+  given spacetime.
+
+- Vectors can be defined using grdef(), as in:
+
+                 > grdef ( `v{^a}` ):
+
+- A metric/basis must be specified using makeg(), qload(), or grload(), before
+  the normalized vector can be normalized.
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+> qload ( ssym );
+                            For the ssym spacetime:
+ 
+                                  Coordinates
+ 
+                             a
+                           x   = [ t, r, theta, phi ]
+ 
+                                  Line element
+ 
+       2                        2                         2
+     ds  = - exp(2 g(t, r))  d t   + exp(2 psi(t, r))  d r
+ 
+                                   2                              2       2
+         + exp(2 mu(t, r))  d theta   + exp(2 mu(t, r)) sin(theta)   d phi
+ 
+> grdef ( `v{^a} := [1,0,0,0]` ): 
+
+Components assigned for metric: ssym
+Created definition for v(up)
+
+> grnormalize ( v(up), -1 );    
+ 
+                  The components of the normalized vector are
+ 
+                              t           1
+                             v  = -----------------
+                                                1/2
+                                  exp(2 g(t, r))
+ 
+                                      r
+                                     v  = 0
+ 
+                                    theta
+                                   v      = 0
+ 
+                                     phi
+                                    v    = 0
+ 
+Do you wish to overwrite   v(up)   with the normalized vector? (1=yes)
+
+> 1:
+
+v(up)   has been overwritten.
+
+-------------------------------------------------------------------------------
+SEE ALSO:  grdef, grt_operators.
+===============================================================================
+

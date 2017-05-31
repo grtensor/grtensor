@@ -1,0 +1,161 @@
+
+===============================================================================
+HELP FOR: nprotate
+===============================================================================
+
+CALLING SEQUENCE:  nprotate ( class, parm1, parm2 )
+
+      PARAMETERS:  class - rotation type (see below).
+
+                   parm1 - first rotation parameter:
+                             Re(a) for class I rotations,
+                             Re(b) for class II rotations,
+                             A for class III rotations.
+
+                   parm2 - second rotation parameter:
+                             Im(a) for class I rotations,
+                             Im(b) for class II rotations,
+                             theta for class III rotations.
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- Performs a rotation of a null tetrad.
+
+- Rotation classes for null tetrads {l,n,m,mbar} are defined as follows:
+
+    I: leaves the vector l unchanged, rotation given by a complex valued
+       parameter, a;
+   II: leaves the vector n unchanged, rotation given by a complex valued
+       parameter, b; and
+  III: leave the directions of l, n, unchanged and rotate m,mbar in the
+       (m,mbar) plane, rotation given by A*exp(i*theta) where A and theta
+       are real.
+
+- Explicit formulas for the effects of a rotation class on the tetrad are:
+
+  Class I:     l -> l,
+               n -> n + (a*)m + (a)mbar + (a)(a*)l,
+               m -> m + (a)l,
+               mbar -> mbar + (a*)l.
+
+  Class II:    l -> l + (b*)m + (b)mbar + (b)(b*)n,
+               n -> n,
+               m -> m + (b)n,
+               mbar -> mbar + (b*)n.
+
+  Class III:   l -> (1/A)l,
+               n -> (A)n,
+               m -> exp(i (theta))m,
+               mbar -> exp(-i (theta))mbar.
+
+  In the above equations, (a), (b) are complex, (A), (theta) are real.
+  The complex conjugate of (a) is represented by (a*).
+
+- Note, in the current versions of GRTensorII, only rotations of the basis
+  can be performed. The action of basis rotations on other curvature tensors
+  has not yet been implemented. Thus curvature tensors must be recalculated
+  from the rotated basis.
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+> qload ( schw ):
+
+                              Default metric = schw
+
+                                   Coordinates
+
+                              For the schw metric.
+
+                      1        2            3          4
+                    x   = r, x   = theta, x   = phi, x   = t
+
+                                  Line element
+
+                              For the schw metric.
+
+    2
+  ds  =
+
+           2
+        d r       2         2     2           2       2                      2
+     --------- + r   d theta   + r  sin(theta)   d phi   + (- 1 + 2 m/r)  d t
+     1 - 2 m/r
+
+> nptetrad ( [ 0, 0, 0, 1 ] ):
+
+Calculated detg for schw. (0.034000 sec.) 
+Calculated g(up,up) for schw. (0.116000 sec.) 
+
+> grdisplay ( e(bdn,up) ):
+
+                            For the schw spacetime:
+ 
+                                 Basis vectors
+ 
+       b
+e [(a)]  =
+ 
+ [             1/2                                                  1/2       ]
+ [            2                                                    2          ]
+ [  1/2 ----------------       0              0          1/2 ---------------- ]
+ [      /      r    \1/2                                     /  - r + 2 m\1/2 ]
+ [      |- ---------|                                        |- ---------|    ]
+ [      \  - r + 2 m/                                        \      r    /    ]
+ [                                                                            ]
+ [              1/2                                                 1/2       ]
+ [             2                                                   2          ]
+ [ - 1/2 ----------------      0              0          1/2 ---------------- ]
+ [       /      r    \1/2                                    /  - r + 2 m\1/2 ]
+ [       |- ---------|                                       |- ---------|    ]
+ [       \  - r + 2 m/                                       \      r    /    ]
+ [                                                                            ]
+ [                              1/2             1/2                           ]
+ [                             2             I 2                              ]
+ [            0            1/2 ----   1/2 ------------             0          ]
+ [                               r        r sin(theta)                        ]
+ [                                                                            ]
+ [                              1/2              1/2                          ]
+ [                             2              I 2                             ]
+ [            0            1/2 ----  - 1/2 ------------            0          ]
+ [                               r         r sin(theta)                       ]
+ 
+
+> nprotate ( III, sqrt(2)*sqrt(1-2*m/r), 0 ):
+
+Rotated tetrad stored as e(bdn,up).
+
+> gralter ( e(bdn,up), radsimp ):
+
+Component Alteration of a grtensor object:
+Applying routine simplify[sqrt] to object e(bdn,up)
+
+> grdisplay ( e(bdn,up) ):
+
+                            For the schw spacetime:
+ 
+                                 Basis vectors
+ 
+              [                                                      r     ]
+              [     -1/2         0              0          - 1/2 --------- ]
+              [                                                  - r + 2 m ]
+              [                                                            ]
+              [   - r + 2 m                                                ]
+              [ - ---------      0              0                 1        ]
+              [       r                                                    ]
+          b   [                                                            ]
+   e [(a)]  = [                   1/2             1/2                      ]
+              [                  2             I 2                         ]
+              [      0       1/2 ----   1/2 ------------          0        ]
+              [                    r        r sin(theta)                   ]
+              [                                                            ]
+              [                   1/2              1/2                     ]
+              [                  2              I 2                        ]
+              [      0       1/2 ----  - 1/2 ------------         0        ]
+              [                    r         r sin(theta)                  ]
+ 
+
+-------------------------------------------------------------------------------
+SEE ALSO: grt_basis, nptetrad, makeg, grsaveg.
+===============================================================================

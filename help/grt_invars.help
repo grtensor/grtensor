@@ -1,0 +1,213 @@
+
+===============================================================================
+HELP FOR: invars
+===============================================================================
+SYNOPSIS:
+
+ - GRTensorII includes a library of 18 scalar polynomial invariants of the
+   Riemann tensor:
+           { Ricciscalar, R1, R2, R3, M3, M4 }   [Real]
+                 { W1, W2, M1, M2, M5, M6 }   [Complex]
+
+ - The set includes those defined by
+
+[CM]: J. Carminati and R. G. McLenaghan (1991), J. Math. Phys., 32, 3135.
+
+   This set has been shown to be complete for perfect fluid, and null and
+   non-null Maxwell Ricci tensors.
+
+ - An additional invariant, M6, is included. It corresponds to that given by
+
+      E. Zakhary and C. B. G. McIntosh (1996) (preprint)
+
+   who suggest that the set including this invariant is complete for
+   all Ricci and Weyl tensor types.
+
+ - To refer to the full set of invariants the name `invars' is used,
+   as in `grcalc ( invars ):'.
+
+ - Individual invariants can be referred to by their names outlined in
+   the table below and the following paragraphs.
+
+ - Four invariants are constructed from the Ricci tensor (or spinor)
+   alone. The GRTensorII names for these invariants corresponds to that
+   of [CM]. These are { Ricciscalar, R1, R2, R3 }. They are all real
+   valued. They can be referred to as a group using the name Rinvars,
+   as in `grcalc ( Rinvars ):'.
+
+ - Four invariants are constructed from the Weyl tensor (or spinor) alone.
+   The GRTensor names for these invariants corresponds to that of [CM],
+   These are { W1, W2 }. They are both complex valued, and the
+   individual real and imaginary parts can be accessed via the names
+   W1R, W1I, W2R, W1I. They can also be referred to as a group using the
+   name Winvars, as in `grcalc ( Winvars ):'.
+
+ - Ten invariants can be constructed from combinations of Ricci and Weyl
+   tensors. The GRTensorII names for these invariants corresponds to those of
+   [CM] except for the additional invariant which is named M6. The names are
+   { M1, M2, M3, M4, M5, M6 }. The real and imaginary parts of the complex
+   invariants can be accessed via the names M1R, M1I, M2R, M2I, M5R, M5I, 
+   M6R, M6I. They can also be referred to as a group using the name Minvars,
+   as in `grcalc ( Minvars ):'.
+
+ - The invariants listed in [CM] can be calculated as a group using the
+   names CM (for the full set), CMR (for the Ricci invariants), CMW (for
+   the Weyl set) and CMM (for the `mixed' invariants).
+
+These are summarized in the following table (for definitions in terms of
+the Ricci and Weyl tensors, see ?cmscalar):
+
+===============================================================================
+GRTensorII name		Spinor definition
+-------------------------------------------------------------------------------
+			            A B A'B'
+ R1			Phi      Phi
+			   ABA'B'
+
+			   A  A'     B  B'    C  C'
+ R2			Phi       Phi      Phi
+			    B  B'     C  C'    A  A'
+
+
+			   A  A'     B  B'    C  C'    D  D'
+ R3			Phi       Phi      Phi      Phi
+			    B  B'     C  C'    D  D'    A  A'
+
+			          ABCD
+ W1			Psi    Psi
+			   ABCD
+
+			   AB     CD     EF
+ W2			Psi    Psi    Psi
+			     CD     EF     AB
+
+			          ABA'B'   CD
+ M1			Psi    Phi      Phi
+			   ABCD              A'B'
+
+			          AB     CDA'B'   EF
+ M2			Psi    Psi    Phi      Phi
+			   ABCD     EF              A'B'
+
+			       ___           ABA'B'  CDC'D'
+ M3			Psi    Psi        Phi     Phi
+			   ABCD   A'B'C'D'   
+
+			       ___           ABC'E'   CEA'B'   D D'
+ M4			Psi    Psi        Phi      Phi      Phi
+			   ABCD   A'B'C'D'                      E E'
+
+                	          CDEF   A'B'E'F'   AB
+ M5			Psi    Psi    Psi        Phi      Phi
+			   ABCD                       A'B'   EFE'F'
+
+			          ABA'B'   CDC'D'            EF
+ M6			Psi    Phi      Phi      Phi      Phi
+			   ABCD                     EFA'B'     C'D'
+
+-------------------------------------------------------------------------------
+
+ W1R, W2R, M1R, M2R,	Re(W1), Re(W2), Re(M1), Re(M2), Re(M5), Re(M6)
+ M5R, M6R
+
+ W1I, W2I, M1I, M2I,	Im(W1), Im(W2), Im(M1), Im(M2), Im(M5), Im(M6)
+ M5I, M6I
+
+ invars			{ Ricciscalar, R1, R2, R3, W1, W2, M1, ... , M6 }
+
+ Rinvars 		{ Ricciscalar, R1, R2, R3 }
+
+ Winvars		{ W1, W2 }
+
+ Minvars		{ M1, M2, M3, M4, M5, M6 }
+
+ CMinvars		{ Ricciscalar, R1, R2, R3, W1, W2, M1, ... , M5 }
+
+ SSinvars (*)		{ Ricciscalar, R1, R2, R3, W1R, M1R, M2a, M5a }
+
+ CM			CMinvars
+
+ CMR			Rinvars
+
+ CMW			Winvars
+
+ CMM			{ M1, M2, M3, M4, M5 }
+
+ CMS			SSinvars
+
+-------------------------------------------------------------------------------
+(*) In spherical symmetry, only a subset of the invariants need be calculated.
+    See ?cmscalars for definitions of M2a, M5a.
+===============================================================================
+
+Notes:
+
+ - It can be shown for general spacetimes that any invariant, I, of order 
+   five or less can be written as a polynomial, P, in this set of 18 
+   invariants,
+
+                  I := P (Ricciscalar, R1, ... , M6)
+
+ - It is not difficult to show that the 18 listed invariants are not
+   related by polynomials of the above form. However, it is not known if
+   relationships of the form
+
+                  P ( Ricciscalar, R1, ... , M6 ) = 0
+
+   exist between these invariants.
+
+Calculation algorithms:
+
+  i. If the spacetime has been specified by a null tetrad, spinor polynomials
+     in Weyl and Ricci curvature components (of the form given in the appendix
+     of [CM]) are used in the calculation by default.
+
+ ii. If the spacetime has been specified by a non-null basis, the basis
+     components of Ricci and Weyl are used by default. For the definitions
+     of these invariants in terms of the Ricci and Weyl tensors, see
+     ?cmscalar.
+
+iii. Otherwise the regular metric components of the Ricci and Weyl tensor are
+     used.
+
+
+ - In cases (ii) and (iii) intermediate tensors C2(dn,dn,up,up), CS(up,dn) and 
+   CSstar(up,dn) are calculated in the course of calculating the invariants.
+   Intermediate simplification of these objects (via gralter) may help if a
+   MapleV `Object to large' error is encountered.
+
+-------------------------------------------------------------------------------
+EXAMPLE:
+
+> qload ( schw ):
+> grcalc ( Winvars ):
+> grdisplay ( Winvars ):
+                            For the schw spacetime:
+ 
+                              CM invariant Re(W1)
+ 
+                                            2
+                                           m
+                                 W1R  = 6 ----
+                                            6
+                                           r
+ 
+                              CM invariant Im(W1)
+ 
+                                    W1I  = 0
+ 
+                              CM invariant Re(W2)
+ 
+                                             3
+                                            m
+                                W2R  = - 6 ----
+                                             9
+                                            r
+ 
+                              CM invariant Im(W2)
+ 
+                                    W2I  = 0
+
+-------------------------------------------------------------------------------
+SEE ALSO: cmscalar, dinvar, grt_objects, basis, grcalc, gralter.
+===============================================================================

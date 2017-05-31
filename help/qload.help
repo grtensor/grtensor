@@ -1,0 +1,85 @@
+
+===============================================================================
+HELP FOR: qload
+===============================================================================
+
+CALLING SEQUENCE:  qload ( fileName ):
+
+      PARAMETERS:  fileName - name of metric or basis file (without the
+                              .mpl extension) to be loaded
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- Reads the metric or basis contained in the file indicated by fileName
+  with a .mpl extension.
+
+- Files are read by directories specified in the global variable
+  grOptionqloadPath. These directories are searched in order. If the
+  file is not found in one of these directories, or the
+  grOptionqloadPath is not assigned, the directory specified by
+  grOptionMetricPath is searched.
+
+- The metric or basis which is loaded becomes the default spacetime for
+  subsequent calculations.
+
+- Metric files can be created using the makeg() command. A number of commonly
+  used spacetimes are included in the GRTensorII distribution. An online
+  collection is kept at http://astro.queensu.ca/~grtensor/.
+
+- Older metric files do not have an entry specifying the spacetime
+  signature. If the global grOptionLLSC variable is set true, then
+  the following assumptions are made: if the spacetime is specified
+  by a four dimensional metric or general basis, then the signature
+  is set to +2; if the spacetime is specified by a set of basis vectors
+  satisfying an NP inner product, then the signature is set to -2.
+  These assumptions are overridden if the signature is explicitly
+  contained in the metric file. If the grOptionLLSC variable is set
+  false, then the signature is left unnassigned unless the signature
+  is explicitly given by the metric file. See ?groptions for a
+  description of the grOptionLLSC variable. To see the signature
+  of the current spacetime, use grdisplay(sig).
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+> grOptionMetricPath := 'c:/metrics':
+
+                              c:/metrics
+
+> qload ( schw ):
+                            Default spacetime = schw
+ 
+                            For the schw spacetime:
+ 
+                                  Coordinates
+ 
+                             a
+                           x   = [ r, theta, phi, t ]
+ 
+                                  Line element
+ 
+    2
+  ds  =
+ 
+           2
+        d r       2         2     2           2       2                      2
+     --------- + r   d theta   + r  sin(theta)   d phi   + (- 1 + 2 m/r)  d t
+     1 - 2 m/r
+ 
+                       The Classical Schwarzschild metric
+ 
+
+> grcalc ( R(dn,dn) ):
+> grdisplay ( R(dn,dn) ):
+ 
+                            For the schw spacetime:
+ 
+                                Covariant Ricci
+ 
+                       R(dn,dn) = All components are zero
+ 
+
+-------------------------------------------------------------------------------
+SEE ALSO: grload, makeg, groptions.
+===============================================================================

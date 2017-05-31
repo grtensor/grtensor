@@ -1,0 +1,104 @@
+
+===============================================================================
+HELP FOR: hypersurf
+===============================================================================
+
+CALLING SEQUENCE: hypersurf ( mname, [name = value] )
+
+      PARAMETERS: 
+          mname - name of the metric of the hyper-surface to be created
+
+      NAME/VALUE parameters:
+          type - nature of the surface (timelike, spacelike or null)
+
+          coord - a list of the intrinsic co-ordinates y{^a} on the hyper-surface
+                  For null surfaces the first co-ordinate must be the co-ord
+                  associated with the null generator of k{^a}
+
+                  e.g. coord=[tau, theta, phi]
+
+          xform - transform from the co-ordinates of the full spacetime as
+                  functions of the intrinsic co-ords.  x{^a} = f{y^a}
+
+                  e.g. xform = [tau = tau, chi = X0, theta = theta, phi = phi]
+
+          Timelike/spacelike (non-null) hyper-surfaces:
+
+          surf  - scalar equation for the surface Phi(x{^a}) = 0
+                  If specified the gradient will taken to determine the
+                  normal to the surface (normalized based on timelike/spacelike
+                  nature of the surface)
+                  e.g. surf = chi - X0
+
+          ndn/nup - components of the normal vector to the surface
+                  e.g. ndn=[0,1,0,0]
+
+          Null hyper-surfaces
+
+          Ndn/Nup - components of the null lapse vector to the surface N{a}
+                  e.g. Ndn=[-1/2,-1/2,0,0]
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+Notation: M refers to the full spacetime, Sigma to the 3-surface
+
+- defines a hyper-surface, calculates the instrinsic metric and then makes that
+  metric the default metric in the Maple session
+
+- non-null surfaces result in the specification of the normal vector n(dn) in M
+
+- null surfaces require the specification of the lapse vector N(dn) (in M)
+
+- the null surface basis vectors k(up), eA(up) and eB(up) are determined in M
+
+- the extrinsic curvature on Sigma can be calculated (making reference to 
+  n(dn) or N(dn) in M)
+     K(dn,dn) - non-null hypersurfaces
+     C(dn,dn) - null hypersurfaces
+
+- the co-ordinate xforms define contraints associated with Sigma. These can 
+  be applied with gralter(<object>, cons);
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+>hypersurf(os_hyper, type = timelike, coord = [tau, theta, phi], 
+      xform = [tau = tau, chi = X0, theta = theta, phi = phi], surf = chi-X0);
+Surface is timelike 
+Calculated nsign for osdust (0.000000 sec.)
+Calculated n(dn) for osdust (0.024000 sec.)
+                       CPU Time  = 0.025
+                   For the osdust spacetime:
+                         Normal Vector
+                             n(dn)
+                        n [chi] = a(tau)
+Default metric is now os.
+Calculated g(dn,dn) for os (0.005000 sec.)
+                       CPU Time  = 0.006
+Component simplification of a GRTensorIII object:
+
+Applying routine `Apply constraints` to object g(dn,dn)
+                       CPU Time  = 0.002
+                     For the os spacetime:
+                          Line element
+            2          2          2        2         2 
+          ds  = - d tau   + a(tau)  sin(X0)   d theta  
+
+                    2        2           2       2 
+            + a(tau)  sin(X0)  sin(theta)   d phi  
+
+Example Worksheets:
+   (these present the examples from "A Relativist's Toolkit" by Eric Poisson)
+
+   junction/os_dust_collapse.mw  Oppenheimer-Snyder dust collapse
+   junction/schw_shell.mw        Timelike dust shell
+   junction/spinning_shell.mw    Spinning shell as source of Kerr (order a)
+
+   junction/null_shells.mw
+   junction/null_cosmo.mw
+   junction/null_accreting.mw
+
+-------------------------------------------------------------------------------
+SEE ALSO: grmetric, join, hyper_objects
+===============================================================================

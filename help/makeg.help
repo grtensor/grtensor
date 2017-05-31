@@ -1,0 +1,281 @@
+
+===============================================================================
+HELP FOR: makeg
+===============================================================================
+
+CALLING SEQUENCE:  makeg ( newMetric, [metricPath] )
+
+PARAMETERS:  newMetric   - the name to be given to the new metric or basis.
+                           This will also be used to create the filename 
+                           (with a .mpl extension) for the metric so it 
+                           should conform to file name conventions for your
+                           system.
+
+             metricPath  - (optional) a string indicating the directory in 
+                           which the metric file is to be saved. If not 
+                           specified then the value of grOptionMetricPath is
+                           used instead.
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- This is the standard program used to enter the data required to specify
+  a spacetime geometry in GRTensorII.
+
+- The user is prompted for all required information, such as the coordinate
+  names and individual components of each tensor.
+
+- Currently spacetimes can be specified in the following forms:
+
+	 i. metric (a covariant nxn two-tensor)
+	ii. set of basis vectors, or
+       iii. set of basis 1-forms.
+
+  Null tetrads form a sub-class of the basis options.
+
+  Upon entering the makeg() command, the user is presented with the following
+  menu:
+
+        Do you wish to enter a 1) metric [g(dn,dn)],
+                               2) line element [ds],
+                               3) non-holonomic basis [e1...e4], or
+                               4) null tetrad [l,n,m,mbar]?
+
+  Each of these options is outlined below. At any point the user may exit
+  the makeg() program by typing the command `exit;'.
+
+- Metrics and bases of any dimension can be constructed.
+
+- The metric can be saved in the directory specified by the global variable
+  grOptionMetricPath. This directory can be overridden by the value of the
+  (optional) metricPath argument to makeg.
+
+
+-- 1) Input of a metric in the form of a 2-tensor, g(dn,dn) -------------------
+
+This option allows the user to specify the spacetime as a covariant 2-tensor.
+
+The user is prompted to enter the following information:
+
+  I. Coordinates. These are entered as a MapleV list, eg. [r,theta,phi,t].
+       The names used as coordinates must be previously unassigned.
+
+ II. Signature: This is an integer corresponding to the number of positive
+       components of the metric diagonal minus the number of negative
+       components in a locally orthonormal basis. If the grOptionLLSC
+       variable is set true, then this prompt does not appear. See ?groptions.
+
+III. Form of the metric (diagonal or symmetric). This will restrict the
+       metric components which the user is required to input in Step IV.
+       If the metric is `diagonal', then off diagonal terms are automatically
+       set to zero. Note that GRTensorII does not currently handle
+       non-symmetric metrics.
+
+ IV. Metric components. The user is prompted to input each unknown component
+       of the metric tensor. Keep in mind that if a component involves
+       functions of the coordinates, the coordinate dependence must be
+       given explicity, as in M(r,t), for example.
+
+After entering the components, the user is presented with another set of
+menu options:
+
+You may choose to 0) Use the metric without saving it,
+                  1) Save the metric as it is,
+                  2) Correct an element of the metric, 
+                  3) Re-enter the metric, 
+                  4) Add/change constraint equations, 
+                  5) Add a text description, or
+                  6) Abandon this metric and return to Maple.
+
+(0) Use the metric without saving it:
+   The metric is initialized in the current session as g(dn,dn), and can
+   thus be displayed via the command `grdisplay ( g(dn,dn) )'.
+   The components are not saved to a file, and so will be lost when the
+   MapleV session is ended. The components of the metric can be saved at
+   a later time using the grsaveg() command.
+
+(1) Save the metric as it is:
+   Any information that has been entered in this invocation of makeg() is
+   saved to the file `metricName.mpl' (where metricName is the name specified
+   in the argument to makeg()) and in the directory given by the global
+   variable grOptionMetricPath or by the optional metricPath argument to
+   makeg().
+   The metric is initialized in the current session as in Option (0) above.
+
+(2) Correct an element of the metric:
+   The user is prompted to enter the index values of the metric component 
+   to be corrected. This should take the form of a two-component MapleV list
+   which contains coordinate names, eg. [r,theta].
+
+(3) Re-enter the metric:
+   The user is prompted to re-enter each component of the metric in
+   succession as in Step IV. above.
+
+(4) Add/change constraint equations:
+   The user has the opportunity to add information taking the form of
+   constraint equations to the metric. For example, a function m(r,t) in
+   the metric may be required to satisfy the partial differential equations
+
+	d           2                  d           2       2
+       -- m(r,t) = r  m(r,t),   and   -- m(r,t) = t  m(r,t) .
+       dr                             dt
+
+    Choosing option (4), the user is prompted to enter these constraint
+    equations as a list:
+
+    [ diff ( m(r,t), r ) = r^2*m(r,t), diff ( m(r,t), t ) = t^2*m(r,t)^2 ]
+
+    These constraints could then be applied to objects calculated from this
+    metric via grcalc() by using the appropriate options from gralter().
+
+(5) Add a text description:
+   A line of text describing the metric can be saved along with its components
+   so that it may be more easily identified later. Such a note might include
+   its full name, a journal reference, or some descriptive adjectives.
+
+   Inclusion of such descriptions is strongly recommended as it can make
+   large directories of metrics much more manageable. For instance, in Unix
+   systems, some idea of the contents of each file in a metrics directory
+   can be obtained using the command:
+                        grep Info *.mpl
+   This command will list the text descriptions of each metric file (see
+   Metric Files, below).
+
+(6) Abandon this metric and return to Maple:
+   If this option is chosen, makeg() exits without saving the metric or
+   initializing it into the current session.
+
+
+-- 2) Input of a metric in the form of a line element, ds^2 -------------------
+
+This option allows the user to enter a metric in the form that it
+is most commonly presented in journals and texts, ie. as a line element.
+
+The user is first prompted to enter the coordinates. As above, this should
+take the form of a MapleV list of unnassigned names, eg. [r,theta,phi,t].
+
+The line element is then entered using the notation d[x] to represent the
+coordinate differential dx. For example, the line element
+
+                       2       2                2
+                     ds  =   dx  + ( dy  +  dz )
+
+would be entered as
+
+                         d[x]^2 + (d[y] + d[z])^2;
+
+Naturally, the line element must be a quadratic form in the coordinate
+differentials.
+
+Once the line element is entered, it is converted to a nxn covariant
+two-tensor (g(dn,dn)) which is displayed. The save/modify option menu
+is presented and functions identically to that described above.
+
+-- 3) Input of sets of basis vectors ------------------------------------------
+
+Choosing Options 3. or 4. from the makeg() starting menu allows one to
+enter the components of a non-holonomic basis. The first of these options
+allows the user to specify the inner product between individual basis
+vectors. The second assumes the inner product of the standard null tetrad.
+
+In both cases, the user is first prompted to input the coordinate names
+as a Maple list, eg. [r,theta,phi,t].
+
+The next prompt asks if covariant or contravariant components of the tetrad
+are to be entered. The option to enter both forms of tetrad also exists,
+since in certain cases the inversion of the tetrad introduces complicated 
+terms (especially radicals) which MapleV has difficulty simplifying. In such
+cases it is sometimes preferable to enter both forms of the vector if they
+are known in a simple form. The user must be careful, however, that the
+forms are consistent.
+
+The next set of prompts ask the user to enter the vectors of the basis.
+These should be in the form of a MapleV list, eg. [1,0,0,0]. The number
+of vectors that are entered is determined by the number of coordinates
+making up the spacetime. For general bases, the vectors are labelled
+1,...,n. For null tetrads, the basis vectors are labelled l,n,m,mbar
+respectively.
+
+If the user has chosen to enter a general basis (Option 3. from the makeg()
+starting menu), the next prompts ask for the inner product between the
+basis vectors. This is a contravariant two-tensor whose (a,b) component
+is the intended value of the inner product of basis vectors a and b.
+In common applications, this tensor will have constant coefficients. The
+curvature tensors defined in the GRTensorII standard object libraries permit
+the use of inner products with non-constant coefficients.
+
+If a null tetrad has been selected (Option 4. from the starting menu), then
+the inner product between l,n,m,mbar is assumed to be of the form:
+
+                        (l,n) = 1,    (m,mbar) = -1,
+
+ (l,l) = (l,m) = (l,mbar) = (n,n) = (n,m) = (n,mbar) = (m,m) = (mbar,mbar) = 0
+
+Once the inner product is selected (or chosen by default in the case of null
+tetrads) the basis vectors and inner product are both displayed.
+
+The save/modify menu is presented with obvious analogies to the options
+available for metric entry, described above.
+
+
+-- 4) Metric files ------------------------------------------------------------
+
+Metric files are simply ascii files containing the coordinate components of
+the metric or basis. They can be modified (or created) with a text editor.
+
+Every metric or basis description file must contain a line
+                             Ndim_ := n:
+where `n' is a number giving the dimension of the spacetime.
+
+Every metric or basis file must contain a set of assignments to the variables
+                          x1_, x2_, ..., xn_,
+giving the names of the coordinates of the spacetime.
+
+If the file describes a metric, it must contain a set of assignments
+to the variables
+                        g11_, g12_, ..., gnn_,
+giving the components of the metric. Only the upper diagonal of the metric 
+needs to be specified. Any element of the upper diagonal that is not 
+assigned is assumed to have the value zero.
+
+If the file describes a set of basis vectors, it must contain assignments to
+the variables 
+                        b11_, b12_, ..., bnn_,
+giving the components of contravariant basis vectors, and/or assignments to 
+                       bd11_, bd12, ..., bdnn_, 
+in the case of covariant basis vectors. The inner product must also be 
+specified by assignments to the variables 
+                     eta11_, eta12_, ..., etann_. 
+Variables which are not assigned are assumed to have value zero when the 
+basis is loaded.
+
+If the metric or basis possesses constraint equations (see above), these
+are represented as a MapleV list assigned to the variable 
+                              constraint_
+
+Text descriptions can be included by assigning a string to the name 
+                                 Info_
+
+
+-- 5) Initialization of metrics and bases -------------------------------------
+
+The following objects are initialized by default when a spacetime is loaded
+using makeg() or qload() (or grload()):
+
+                       metric:  ds, g(dn,dn)
+      general covariant basis:  eta(up,up), e(bdn,dn), basis(dn)
+  general contravariant basis:  eta(up,up), e(bdn,up), basis(up)
+        covariant null tetrad:  eta(up,up), e(bdn,dn), nullt(dn)
+    contravariant null tetrad:  eta(up,up), e(bdn,up), nullt(up)
+
+Additionally, for all of the above types of spacetime the objects 
+                             x(up), dimension
+are also initialized, as well as 
+                             Info, constraint
+if applicable.
+
+-------------------------------------------------------------------------------
+SEE ALSO: qload, grload, Info, grconstraint, groptions, grmetric,
+          grnewmetric, grt_objects, grt_basis.
+===============================================================================
+

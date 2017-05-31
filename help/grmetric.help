@@ -1,0 +1,65 @@
+
+===============================================================================
+HELP FOR: grmetric
+===============================================================================
+
+CALLING SEQUENCE:  grmetric ( mname )
+
+      PARAMETERS:  mname - name of a previously loaded spacetime
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- Sets the default spacetime to that specified by mname.
+
+- The spacetime mname must have been previously initialized using qload(),
+  grload() or makeg().
+
+-------------------------------------------------------------------------------
+EXAMPLE:
+
+> qload ( schw ):
+> qload ( bondi ):
+> grdisplay ( g(dn,dn) ):
+ 
+                            For the bondi spacetime:
+ 
+                            Covariant metric tensor
+ 
+                [    0               c(r, v)            0         0       ]
+                [                                                         ]
+                [                   2 /      m(r, v)\                     ]
+                [ c(r, v)  - c(r, v)  |1 - 2 -------|   0         0       ]
+                [                     \         r   /                     ]
+    g [a] [b] = [                                                         ]
+                [                                       2                 ]
+                [    0                  0              r          0       ]
+                [                                                         ]
+                [                                           2           2 ]
+                [    0                  0               0  r  sin(theta)  ]
+ 
+
+> grmetric ( schw ):
+Default metric is now schw
+
+> grdisplay ( g(dn,dn) ):
+
+                            For the schw spacetime:
+ 
+                            Covariant metric tensor
+ 
+                       [     1                                      ]
+                       [ ---------   0         0             0      ]
+                       [ 1 - 2 m/r                                  ]
+                       [                                            ]
+                       [             2                              ]
+           g [a] [b] = [     0      r          0             0      ]
+                       [                                            ]
+                       [                 2           2              ]
+                       [     0       0  r  sin(theta)        0      ]
+                       [                                            ]
+                       [     0       0         0        - 1 + 2 m/r ]
+
+-------------------------------------------------------------------------------
+SEE ALSO: qload, grload, makeg.
+===============================================================================

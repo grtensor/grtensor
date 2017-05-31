@@ -1,0 +1,55 @@
+
+===============================================================================
+HELP FOR: grcomponent
+===============================================================================
+
+CALLING SEQUENCE:  grcomponent ( object, indexList );
+
+      PARAMETERS:  object      - a GRTensorII object name
+                   indexList   - index list specifying the component
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- This function can be used to access individual components of tensors.
+
+- The main use of this function is to allow you to assign individual
+  components of tensors to functions so that they can be manipulated
+  independently.
+
+- The number of entries in the index list must match the number
+  of indices of the tensor specified as object. The elements of
+  the list may be either coordinate numbers or coordinate names.
+
+- For scalars the indexList is omitted, or an empty list is used.
+
+- The default metric is assumed, however an alternate metric can be
+  specified as a parameter to the object name argument, eg.
+
+    > grcomponent ( R[schw](dn,dn,dn,dn), [1,1,1,1] ):
+
+  This command will display the [1,1,1,1] component of the schw metric
+  even if this is not the current default.
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+> qload ( schw ):
+> grcalc ( RiemSq ):
+> grcomponent ( Chr(dn,dn,up), [theta,theta,r] );
+
+                                   - r
+
+> grcomponent( Chr[schw](dn,dn,up), [2,2,1] ); # equivalent to the previous
+                                               # command
+                                   - r
+
+> K := grcomponent(RiemSq);
+                                          2
+                                      48 m
+                               K :=   ------
+                                         6
+                                        r
+-------------------------------------------------------------------------------
+SEE ALSO: grarray, grdisplay.
+===============================================================================

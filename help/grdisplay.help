@@ -1,0 +1,88 @@
+
+===============================================================================
+HELP FOR: grdisplay
+===============================================================================
+
+CALLING SEQUENCE: grdisplay ( objectSeq ):
+
+PARAMETERS:       objectSeq - GRTensorII object name or sequence of object
+                              names
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- Displays the components of the GRTensorII object(s) specified.
+
+- The object must have been previously calculated (using grcalc()) in
+  order to be displayed.
+
+- Only non-zero elements of tensors are displayed. The value of
+  a scalar is always displayed.
+
+- Symmetries of the tensor objects are used to reduce the number
+  of components displayed. For example, the metric tensor is symmetric
+  so only the non-zero components in the upper diagonal are displayed.
+
+- If multiple metrics have been loaded then the objects from the
+  non-default metric can be displayed by putting the metric name
+  in square braces. See the example below.
+
+- Objects whose size (measured in MapleV words) exceeds the value of the
+  global variable grOptionDisplaySize will have their length displayed
+  instead of their value. This limit can be changed by assigning the option
+  variable a new value. See ?groptions.
+
+- For 1- and 2-index objects, the output is in the form of a matrix
+  unless the size of one of the tensor components exceeds the value of the
+  global grOptionTermSize variable. Otherwise regular individual component
+  display is used. See ?groptions.
+
+- The use of coordinate names vs coordinate numbers in the output is
+  controlled by the global grOptionCoordNames variable. See ?groptions.
+
+- To reduce the size of tensor components, simplification routines 
+  can be applied using gralter() and grmap().
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+> qload ( schw ):
+> grcalc ( R(dn,dn) ):
+> grdisplay( R(dn,dn) ):
+                       Covariant Ricci
+
+                R(dn,dn) =  All components are zero
+
+> qload ( bondi ):
+> grdisplay ( R(dn,dn) ):
+
+R(dn,dn) has not been calculated.
+
+> grdisplay( R[schw](dn,dn) ):
+
+                       Covariant Ricci
+
+                R(dn,dn) =  All components are zero
+
+> grdisplay ( g[schw](dn,dn) ):
+
+                            Covariant metric tensor
+
+                              For the schw metric.
+
+                                             1
+                             g r r     = ---------
+                                         1 - 2 m/r
+
+                                                 2
+                             g theta theta  =   r
+
+                                          2           2
+                             g phi phi = r  sin(theta)
+
+                               g t t = - 1 + 2 m/r
+
+-------------------------------------------------------------------------------
+SEE ALSO: grcalc, gralter, grmap, grt_objects, grt_commands, groptions.
+===============================================================================
+

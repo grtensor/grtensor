@@ -1,0 +1,106 @@
+
+===============================================================================
+HELP FOR: grDalias
+===============================================================================
+
+CALLING SEQUENCE:  grDalias ( function, coord1, str1, coord2, str2..)
+                   grDalias ( function1, function2, ..., coord1, str1, ...)
+
+      PARAMETERS:  function - name of a function which appears in a metric
+                   coord    - name of a coordinate
+                   str      - string to denote differentiation with respect
+                              to coord1
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- Creates aliases for MapleV output of derivatives of functional
+  dependencies allowing them to be replaced by user specified characters,
+  in order to simplify the appearance of output.
+
+- The grDalias() command generates alias statements so e.g.  D[1](f)(x,y,z)
+  or diff(f(x,y,z),x) appears as f' if the string associated with x is '.
+
+           d 
+   ie.    -- f(x,y,z)  would be represented as  f'.
+          dx
+
+- grDalias() can be applied either at any time during a set of calculations.
+  All components displayed after the alias assignment will make use of the
+  aliases.
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+# Consider RiemSq (the Kretschmann scalar) for the Robertson Walker metric.
+# With the use of grDalais the output can be presented in a more
+# readable form denoting differentiation by using an apostrophe
+
+> qload ( rw ):
+> grcalc ( RiemSq ):
+> grdisplay ( _ ):
+ 
+                             For the rw spacetime:
+ 
+                          Full Contraction of Riemann
+ 
+                                                      /   2      \2
+                2       /  d      \2   /  d      \4   |  d       |      2
+               k  + 2 k |---- a(t)|  + |---- a(t)|  + |----- a(t)|  a(t)
+                        \ dt      /    \ dt      /    |   2      |
+                                                      \ dt       /
+       K  = 12 ----------------------------------------------------------
+                                              4
+                                          a(t)
+ 
+> grDalias ( a(t), t, `'` ):
+Aliases created
+
+> grdisplay ( RiemSq ):
+                              For the rw metric.
+
+                          Full contraction of Riemann
+
+                                     2     2    2         2     4
+                                  a''  a(t)  + k  + 2 k a'  + a'
+                          K  = 12 -------------------------------
+                                                   4
+                                               a(t)
+
+# similarly for the Bondi metric. The following example replaces
+# r-derivatives by an apostrophe (') and v-derivatives by a hat (^).
+
+> qload ( bondi ):
+> grcalc ( G(dn,up) ):
+
+> grDalias ( c(r,v), m(r,v), v, `^`, r, `'`):
+Aliases created
+
+> grdisplay ( G(dn,up) ):
+                             For the bondi metric.
+
+                  Mixed Einstein (second index contravariant)
+
+                        r     c' r - 2 c' m(r,v) - c(r,v) m'
+                   G  r   = 2 --------------------------------
+                                          2
+                                         r  c(r,v)
+
+                                   v         c'
+                              G  r   = 2 ----------
+                                                2
+                                         c(r,v) r
+
+                                    .
+                                    .
+                                    .
+                                   etc.
+
+-------------------------------------------------------------------------------
+SEE ALSO: autoAlias, diffAlias.
+===============================================================================
+
+
+
+
+

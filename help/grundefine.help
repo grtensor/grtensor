@@ -1,0 +1,32 @@
+
+===============================================================================
+HELP FOR: grundef
+===============================================================================
+
+CALLING SEQUENCE:  grundefine ( objectSeq ):
+
+      PARAMETERS:  objectSeq  - a GRTensorII object name or sequence of object 
+                                names
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- This command removes the definition of an object created with
+  grdef() or the definition of a built in tensor.
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+>grundef( T(dn,dn) );
+Removed definition for object T(dn,dn)
+
+>grundef( A(dn,dn), newScalar );
+Removed definition for object A(dn,dn)
+Removed definition for object newScalar
+
+-------------------------------------------------------------------------------
+SEE ALSO: grdef, grsavedef, grloaddef.
+===============================================================================
+
+
+

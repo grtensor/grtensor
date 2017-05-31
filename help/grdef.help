@@ -1,0 +1,284 @@
+
+===============================================================================
+HELP FOR: grdef
+===============================================================================
+
+CALLING SEQUENCE:  grdef ( `new_tensor_name{indices}` ):
+
+                   grdef ( `new_tensor_name{indices} := tensor_equation` ):
+
+                   grdef ( `new_tensor_name{indices} := tensor_eq{indices}`, 
+                     [symList], [asymList], [index_range] ):
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- This command is used to define new GRTensorII objects (eg. tensors)
+  which are not included in the standard libraries.
+
+- grdef() allows the user to specify:
+
+    exterior/interior products of tensors,
+    covariant derivatives of tensors,
+    summations over indices,
+    symmetrization over indices,
+    restricted summations over indices,
+    tensors dependent on multiple metrics.
+
+- Symmetries present in the newly defined tensor can be specified, allowing
+  optimized calculation.
+
+-- I. Defining a new tensor ---------------------------------------------------
+
+There are two ways to define a new tensor using grdef. The first method 
+is to simply give it a name and `index structure'. The second method
+provides a complete definition in terms of previously defined tensors.
+Compare the following two invocations of grdef():
+
+   EG1. grdef ( `A{a b}` ):
+
+This command simply defines a covariant two-index tensor, A. This
+tensor would be accessed as A(dn,dn) in commands such as grcalc() and
+grdisplay(). However, no prescription for calculating this tensor has
+been given. Thus, when the command
+
+    grcalc ( A(dn,dn) ):
+
+is issued, the user will be prompted to enter the components of A(dn,dn).
+
+
+   EG2. grdef ( `G2{a b} := R{a b} - (1/2)*Ricciscalar*g{a b} 
+                                   + Lambda*g{a b}` ):
+
+This command defines the contravariant two-index tensor G2 in terms
+of a number of previously defined tensors. In this case, when the
+command
+
+    grcalc ( G2(dn,dn) ):
+
+is issued, G2 will be calculated based on the given defining function.
+If R(dn,dn), Ricciscalar and g(dn,dn) have not already been calculated,
+then their calculation will be carried out automatically before that of
+G2(dn,dn).
+
+
+-- II. Index lists ------------------------------------------------------------
+
+The following rules can be used to specify index lists in tensors:
+
+ - indices must be specified as lower-case letters a,...,z seperated by
+   spaces. Contravariant indices are preceded by a hat, ^. Indexes in
+   a basis are enclosed in round brackets (, ).
+
+   a, b, c, ...         - covariant indices
+  ^a, ^b, ^c, ...       - contravariant indices
+  (a), (b), (c), ...    - covariant basis indices
+  ^(a), ^(b), ^(c), ... - contravariant basis indices
+ 
+ - indices that follow a semi-colon, `;', indicate covariant derivatives.
+   Indices that follow a comma, `,', indicate ordinary partial derivatives.
+
+ - if a particular index appears twice in a tensor-product, it must appear
+   once as a covariant index and once as a contravariant index. In this
+   case a summation over the given index is assumed. Such summations can
+   only occur on the right-hand side of tensor definitions.
+
+ - the product of tensors or the product of a tensor with a scalar function
+   is indicated with the * symbol. Such products can only occur on the
+   right-hand side of tensor definitions.
+
+ - for each index on the left-hand side of a tensor definition, there
+   must be a corresponding free index (ie. one that is not involved in
+   a summation) in each term of the right-hand side.
+
+ - Warning: Index and new tensor names should not conflict with any names
+   that are already assigned in the current MapleV session.
+
+The following are examples grdef() commands:
+
+  > grdef ( `A{^a b c}` ):
+
+  > grdef ( `dR{^a} := R{^a ^b ; b}` ):
+
+  > grdef ( `bR{(a) (b)} := R{c d}*e{(a) ^c}*e{(b) ^d}` ):
+
+  > grdef ( `RR{a c} := (1/2)*R{a b c d}*R{^b ^d} + R{a c}` ):
+
+  > grdef ( `X{a c} := R{a b c d}` ):   ### Invalid (indices on left and
+                                            right don't match) ###
+
+  > grdef ( `X{a b ^b}` ):   ### Invalid (summation implied on left-hand
+                                 side of the definition) ###
+
+  > grdef ( `X{a b}*X{c ^b} := X2{a c}` ):  ### Invalid (left-hand side
+                                          must consist of a single object) ###
+
+
+
+-- III. Symmetrizations -------------------------------------------------------
+
+The operation of symmetrization can be specified in the index lists on the
+right-hand side of tensor definitions.
+
+ - Round braces (, ), around a set of indices indicates that a symmetrization
+   should be performed overthese indices. That is, a summation over all
+   permutations of these indices is to be carried out and the result
+   divided by the number of permutations. The following command
+
+    EG3a. grdef ( `A{a b c d} := R{a (b c) d}` ):
+
+   is equivalent to
+
+    EG3b. grdef ( `A{a b c d} := (1/2)*( R{a b c d} + R{a c b d} )` ):
+
+
+ - Square braces [, ], around a set of indices indicates that an anti-
+   symmetrization is to be performed. That is, a summation over the even
+   permutations is carried out, and from this is subtracted a summation
+   over the odd permutations of the indices. The result is divided by
+   the total number of permutations. The following command
+
+    EG4a. grdef ( `A{a b c d} := R{[a b c] d}` ):
+
+   is equivalent to
+
+    EG4b. grdef ( `A{a b c d} := (1/6)*( R{a b c d} + R{b c a d} + R{c a b d}
+                                  - R{b a c d} - R{a c b d} - R{c b a d} )` ):
+
+ - The braces are determined to be `covariant' or `contravariant'
+   based on the index which immediately follows open braces, (, [, and
+   the index which precedes close braces, ), ]. Thus
+
+    EG5a. grdef ( `A{a ^b c} := Chr{(a ^b c)}` ):
+
+   is equivalent to
+
+    EG5b. grdef ( `A{a ^b c} := (1/2)*( Chr{a ^b c} + Chr{c ^b a} )` ):
+
+ - Indices enclosed in a pair of vertical bars, |, are excluded from the
+   symmetrization. Thus
+
+    EG6a. grdef ( `A{a b c d} := R{(a |b c| d)}` ):
+
+   is equivalent to
+
+    EG6b. grdef ( `A{a b c d} := (1/2)*( R{a b c d} + R{d b c a} )` ):
+
+
+-- IV. Symmetries -------------------------------------------------------------
+
+In the above examples, it is assumed that the newly defined tensors do 
+not possess any index symmetries. Thus, the calculations functions
+created automatically for these tensors can end up being very inefficient,
+as redundant components will be recalculated. Tensor indices can be
+indicated on the left-hand side of the tensor definition using brackets
+as for symmetrizations.
+
+ - Round braces (, ), indicate the newly defined tensor is symmetric in the
+   enclosed indices. The calculation function created by grdef() for the
+   the following tensor, A, will be symmetric in its two indices:
+
+    EG7a. grdef ( `A{(a c)} := R{a b c d}*R{^b ^d}` ):
+
+   The following tensor is symmetric in its first two and last two indices:
+
+    EG8a. grdef ( `A{(a b) (c d)}` ):
+
+ - Square braces [, ], indicate the newly defined tensor is anti-symmetric
+   in the enclosed indices. The following tensor is anti-symmetric in its
+   first three indices:
+
+    EG9a. grdef ( `A{[a b c] d}` ):
+
+   The following tensor is antisymmetric in its first two and symmetric in
+   its last two indices:
+
+    EG10a. grdef ( `A{[a b] (c d)}` ):
+
+ - The covariant or contravariant nature of the braces are determined by
+   the index which immediately follows an open brace (, [, or the index
+   which immediately precedes a close brace ), ]. The following tensor
+   is symmetric in its covariant first and third indices, the second
+   (contravariant) index does not enter into the symmetrization:
+
+    EG11a. grdef ( `A{(a ^b c)}` ):
+
+ - Indices enclosed in a pair of vertical bars, |, are excluded from the
+   symmetrization. The calculation function created for the following
+   tensor will be symmetric in its first and fourth indices:
+
+    EG12a. grdef ( `A{(a |b c| d)}` ):
+
+ - Alternatively, symmetries in newly defined tensors can also be specified
+   by the use of symmetry lists. grdef() possesses an optional sym={} and
+   asym={} arguments which can be used to list asymmetries.
+   
+   The symmetries are specified as sets of lists of the index numbers
+   involved in the symmetry. The above examples could be equivalently
+   written as:
+
+    EG7b. grdef ( `A{a c} := R{a b c d}*R{^b ^d}`, sym={[1,2]} ):
+
+    EG8b. grdef ( `A{a b c d}`, sym={[1,2],[3,4]} ):
+
+    EG9b. grdef ( `A{a b c d}`, aysm={[1,2,3]}  ):
+
+    EG10b. grdef ( `A{a b c d}`, sym={[3,4]}, asym={[1,2]} ):
+
+    EG11b. grdef ( `A{a ^b c}`, sym={[1,3]} ):
+
+    EG12b. grdef ( `A{a b c d}`, sym={[1,4]} ):
+
+ - Note, currently the specifiable symmetries are limited to direct
+   symmetries or antisymmetries among sets of indices. More complicated
+   symmetries, such as the cyclic permutation symmetry of the Riemann
+   tensor, for example, can not yet be easily specified using grdef().
+
+
+-- V. Other Notes ------------------------------------------------------------
+
+ - Using the optional restrict={} argument it is possible to restrict
+   the range over which summations over a particular index are
+   performed. Thus in the following example, summations over b and d are
+   only performed over the indices 2, 3, 4:
+
+    EG13. grdef ( `R3{a c} := R{a b c d}*g{^a ^b}`, restrict={c=2..4,d=2..4} ):
+
+ - It is possible for the definition to involve terms which are calculated
+   for alternate metrics (useful, for example, in junction calculations).
+   Tensors which are indexed usin angle braces, <, >, will refer to tensors
+   which are to be calculated for an alternate metric. Thus, the following
+   definition can be used to take the difference of two metrics:
+
+    EG14. grdef ( `Dg{a b} := g{a b} - g<1>{a b}` ):
+
+   When this object is calculated, the label `1' has to be assigned to the 
+   name of a metric which has previously been loaded. This is done as
+   follows:
+
+    > grcalc ( 1=r2, Dg(dn,dn) ):
+
+ - Single index objects can be assigned to a list explicitly using the
+   form:
+
+    EG15. grdef ( `v{^a} := [ 0, 0, 0, g(t) ]` ):
+
+   for instance.
+
+ - The Kronecker delta, kdelta{^a b} := diag(1,1,...,1), can be used to
+   explicitly specify particular indices of a tensor. For instance, if
+   the coordinates are [r,theta,phi,t], the t-component can be selected
+   using the form kdelta{^a $t}. The `$' character always precedes the
+   name of the component to be selected:
+
+     EG16. grdef ( `v{^a} := g(t)*kdelta{^a $t}` ):
+
+   This command produces a vector equivalent to that of EG15 (however
+   in this case, the vector must be grcalc()ed before its components are
+   assigned).
+
+ - The grdef() command supercedes the older grdefine() command.
+
+-------------------------------------------------------------------------------
+SEE ALSO: grcalc, grt_objects, grt_operators, grt_basis, kdelta, grdefine.
+===============================================================================

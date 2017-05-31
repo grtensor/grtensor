@@ -1,0 +1,65 @@
+
+===============================================================================
+HELP FOR: grapply
+===============================================================================
+
+CALLING SEQUENCE: grapply ( objectSeq, function, parameters, file=`fileName` ):
+
+PARAMETERS:  objectSeq   - object name, or sequence of names
+             function    - function to be applied
+             parameters  - sequence parameters to be passed to function.
+                           One MUST be 'x'. A file= parameter at the end
+                           of the sequence denotes an output filename.
+             fileName    - file in which to place the results
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- grapply() applies a function to each component of each object in objectSeq.
+
+- grapply() differs from grmap() in that the actual value of the components
+  of the tensor are not altered. The function is applied to each component
+  and the output sent to the screen or to the file specified by the
+  fileName parameter, but the values stored in the tensor are not changed.
+
+- 'x' (with forward quotes) is used to denote the position
+  in the parameter list of the GRTensorII object value(s). To apply
+  the function `subs ( f(r)=C, R(dn,dn) )', which takes two arguments 
+  (the substitution and the component of the tensor) you could use the 
+  command:
+
+     > grapply ( R(dn,dn), subs, f(r)=C, 'x' ):
+
+  where 'x' represents a place-holder indicating where the component of the
+  tensor should be substituted in the argument list for `subs'.
+
+- If the final argument is of the form file=`fileName`, then the output is 
+  written to the file named in the string. Note the direction of the 
+  quotation marks enclosing the fileName.
+
+- This is useful for creating latex output of tensor components. 
+  Generating fortan or C output is best handled by grarray().
+
+- The latex() function is handled as a special case and LaTeX
+  comments are provided to identify each component.
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+> grapply ( g(dn,dn), latex, 'x' );
+
+%    g(dn,dn)   [1, 1]
+\left (1-{\frac {2\,m}{r}}\right )^{-1}
+%    g(dn,dn)   [2, 2]
+{r}^{2}
+%    g(dn,dn)   [3, 3]
+{r}^{2}\left (\sin(\theta)\right )^{2}
+%    g(dn,dn)   [4, 4]
+-1+{\frac {2\,m}{r}}
+
+> grapply (g(dn,dn), latex, 'x', file=`latex.out`);
+# [Note the direction of quotation marks in the file parameter.]
+
+-------------------------------------------------------------------------------
+SEE ALSO: grsaveobj, grmap, grarray, grcomponent.
+===============================================================================

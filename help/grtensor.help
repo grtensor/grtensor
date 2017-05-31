@@ -1,0 +1,37 @@
+
+===============================================================================
+HELP FOR: grtensor()
+===============================================================================
+
+-------------------------------------------------------------------------------
+About GRTensorIII
+
+  GRTensorII is a package developed by Peter Musgrave, Denis Pollney and 
+  Kayll Lake. 
+
+  The most recent version of the complete package is distributed free of charge
+  from 
+
+                 http://gitlab.com/grtensor/grtensor
+
+
+  If you run into problems using any part of the package, we encourage
+  you to write us at
+
+                 <TBD>
+
+  We welcome any comments, criticism or suggestion for further improvement.
+
+  Though we distribute GRTensorIII free of charge, if you make use of this
+  package in published work, we ask that you provide the citation:
+
+       Peter Musgrave, Denis Pollney and Kayll Lake (2016) 
+          GRTensorIII software. Queen's University, Kingston, Ontario, Canada.
+
+  We are interested to know of any applications where this package may have
+  been useful and would be grateful if you e-mail us a message telling us of 
+  your citation.
+
+-------------------------------------------------------------------------------
+SEE ALSO:  grt_commands, grt_objects, groptions.
+===============================================================================

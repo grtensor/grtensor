@@ -1,0 +1,48 @@
+
+===============================================================================
+HELP FOR: grmap
+===============================================================================
+
+CALLING SEQUENCE: grmap ( objects, function, arg1, arg2,...)
+
+      PARAMETERS: objects  - GRTensorII object name or sequence of object names
+                  function - name of a procedure
+                  arg1..n  - arguments for function (one of which must be 'x' )
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- Applies MapleV function to each component of the GRTensorII objects
+  specified.
+
+- The function which is applied may take any number of arguments. These
+  are specified by the arguments `arg1', `arg2', etc., to grmap().
+  The argument which is to hold the tensor component is indicated by the
+  place-holder 'x'. For example, the MapleV subs function is usually
+  invoked as
+
+                       subs ( r=2*m, a=0.1, f(r,a) ):
+
+  If we wished to apply this same substitution to each component of the
+  covariant Ricci tensor we could use the following grmap command:
+
+                 grmap ( R(dn,dn), subs, r=2*m, a=0.1, 'x' ):
+
+- Note that for functions of only one variable, the command gralter() can
+  also be used with equivalent results.
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+# apply the routine normal() to the Riemann tensor
+> grmap ( R(dn,dn,dn,dn), normal, 'x' ):
+
+# perform taylor expansion to third order about r=a
+> grmap ( R(dn,dn,dn,dn), taylor, 'x', r=a, 2):
+
+# substitute m=5 in Riemann and Weyl
+> grmap ( R(dn,dn,dn,dn), C(dn,dn,dn,dn), subs, m=5, 'x' ):
+
+-------------------------------------------------------------------------------
+SEE ALSO:  gralter, map, grcalc, grt_objects.
+===============================================================================

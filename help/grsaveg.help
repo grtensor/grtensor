@@ -1,0 +1,68 @@
+
+===============================================================================
+HELP FOR: grsaveg
+===============================================================================
+
+CALLING SEQUENCE:  grsaveg ( savename, metricpath ):
+
+      PARAMETERS:  savename   - the name of the file (without the `.mpl'
+                                extension) in which the metric or basis is to
+                                be saved.
+                   metricpath - (optional) the directory in which the file
+                                is to be saved. If this value is not
+                                specified, the directory given by the
+                                global varialbe grOptionMetricPath is used.
+                                The directory should be specified in the form
+                                of a MapleV string with forward slashes, '/',
+                                seperating sub-directories.
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- Saves the information specifying a metric or basis.
+
+- The current default spacetime is saved to the file specified by the
+  savename parameter with `.mpl' appended, in the directory specified
+  by the global variable grOptionMetricPath or the metricpath
+  parameter, if specified.
+
+- Information saved includes:
+
+         coordinates, x(up),
+         metric components, g(dn,dn), [if the spacetime is specified via
+                                       a metric]
+         basis components, e(bdn,up) and/or e(bdn,dn), [if any]
+         constraint equations, constraint [if any]
+         text description, Info [if any]
+
+- If the current default spacetime has both a  metric and basis calculated
+  for it (for instance, if a basis was loaded and the metric calculated,
+  or a tetrad calculated from a metric using nptetrad()), a prompt asks
+  which objects are to be saved.
+
+- If both covariant and contravariant components of a basis are defined,
+  a prompt asks which are to be saved.
+
+- NOTE: MapleV.3 does not check for the existence of files before it
+  performs the write operation. Thus if a metric file already exists 
+  with the specified name, it will be overwritten.
+
+-------------------------------------------------------------------------------
+EXAMPLE:
+
+> qload ( schw ):
+
+> nptetrad ( [ t,r] ):
+
+> grsaveg ( npschw2 ):
+
+Would you like to save 1) the metric [g(dn,dn)], or
+                       2) the basis vectors?
+
+> 2
+
+Information written to: npschw2.mpl
+
+-------------------------------------------------------------------------------
+SEE ALSO: makeg(), nptetrad(), nprotate(), grtransform().
+===============================================================================

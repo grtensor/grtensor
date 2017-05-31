@@ -1,0 +1,86 @@
+
+===============================================================================
+HELP FOR: hyper_objects
+===============================================================================
+
+SYNOPSIS:
+
+- a number of objects related to hypersurfaces and junctions are provided
+  with GRTensorIII
+
+-------------------------------------------------------------------------------
+Objects Defined in the spacetime:
+-------------------------------------------------------------------------------
+
+eA              Null surface tangent for y^A (y^2)
+
+eB              Null surface tangent for y^B (y^3)
+
+Gnn             G{a b} n{^a} n{^b}
+
+Gxn(dn)         G{a b} diff(xform{^a}, y{c}) n{^b}
+
+k(up)           Null surface tangent (generator)
+
+kdotk           k{a} k{^a}
+
+kdotN           k{a} N{^a}
+
+n(dn)           Normal vector (non-null)
+
+ndotn           n{a} n{^a}
+
+N(dn)           Normal vector (null)
+
+NdotN           N{a} N{^a}
+
+Tnn             T{a b} n{^a} n{^b}
+
+Txn(dn)         T{a b} diff(xform{^a}, y{c}) n{^b}
+
+xform(up)       Surface defintions as x{^a}= f(y{^b})
+
+
+
+-------------------------------------------------------------------------------
+Objects Defined on the hyper-surface:
+-------------------------------------------------------------------------------
+
+K(dn,dn)        Extrinsic curvature (timelike/spacelike)
+
+trK             Trace of K(dn,dn)
+
+Ksq             K{a b} K{^a ^b}
+
+C1GeqnRHS       R + epsilon (Ksq - trk^2)
+
+C1Geqn          -2 epsilon G{i j} n{^i} n^j = C1GeqnRHS
+
+C1Teqn          16 pi T{a b} n{^a} n{^b} = C1GeqnRHS
+
+C2GeqnRHS       K{a ^b; b} - trK{,a}
+
+C2Geqn(dn)      G{a b} diff(xform{^a}, y{c}) n{^b} = C2GeqnRHS
+
+C2Teqn(dn)      8 pi T{a b} diff(xform{^a}, y{c}) n{^b} = C2GeqnRHS
+
+sigma(dn,dn)    sigma{a b} surface stress-energy tensor (non-null surface)
+
+C(dn,dn)        Extrinsic null curvature formed via N(dn)
+
+-------------------------------------------------------------------------------
+Objects Defined once join() has been used
+-------------------------------------------------------------------------------
+
+S(dn,dn)        S{a b} stress energy-tensor (non-null surface)
+
+j_null(dn)      Surface flux for null shell
+
+mu_null         Density for null shell
+
+p_null          Pressure of null shell
+
+
+-------------------------------------------------------------------------------
+SEE ALSO: hypersurf, join
+===============================================================================

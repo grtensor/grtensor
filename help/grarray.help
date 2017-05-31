@@ -1,0 +1,41 @@
+
+===============================================================================
+HELP FOR: grarray
+===============================================================================
+
+CALLING SEQUENCE: grarray ( object )
+
+PARAMETERS:  object     - name of a GRTensorII object
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- grarray() converts an n-index GRTensorII object to an n-array and
+  returns the value.
+
+- The array name should not conflict with the root of any GRTensor
+  object. For example, to you should not place the contents of G(dn,dn)
+  into an array named G.
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+> qload ( schw ):
+> gdd := grarray ( g(dn,dn) );
+                 [     1                                      ]
+                 [ ---------   0         0             0      ]
+                 [ 1 - 2 m/r                                  ]
+                 [                                            ]
+                 [             2                              ]
+       gdd :=    [     0      r          0             0      ]
+                 [                                            ]
+                 [                 2           2              ]
+                 [     0       0  r  sin(theta)        0      ]
+                 [                                            ]
+                 [     0       0         0        - 1 + 2 m/r ]
+
+-------------------------------------------------------------------------------
+SEE ALSO: grcomponent, grnewmetric.
+===============================================================================
+
+

@@ -1,0 +1,65 @@
+
+===============================================================================
+HELP FOR: grnewmetric
+===============================================================================
+
+CALLING SEQUENCE:  grnewmetric ( newMetric, objectName, [coords] )
+
+      PARAMETERS:  newMetric   - name to be assigned to the newly created
+                                 metric
+                   objectName  - name of a two index covariant GRTensorII
+                                 object
+                   coords      - (optional) a list of coordinate names for
+                                 the new metric, if different from the old
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- This function defines a new metric by copying an existing two-index 
+  covariant tensor to a new metric tensor whose name is given by newMetric.
+
+- Dimension and coordinates of the new metric are copied from the current
+  default metric.
+
+- The metric defined by this command becomes the new default metric
+
+- The new metric can be saved to a metric file using the grsaveg() command.
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+#
+# Use grnewmetric to declare the object newg(dn,dn) from rw
+# as a metric of a new spacetime rw_2
+#
+> qload ( rw ):
+> grdef ( `newg{(a b)} := Omega(r,t)*g{a b}` ):
+> grcalc ( newg(dn,dn) ):
+
+> grnewmetric( confRW, newg(dn,dn) ):
+
+                             Default metric = rw_2
+
+                                  Coordinates
+
+                              For the rw_2 metric.
+
+                      1        2            3          4
+                    x   = r, x   = theta, x   = phi, x   = t
+
+                                  Line element
+
+                              For the rw_2 metric.
+
+                              2     2
+        2     Omega(r, t) a(t)   d r                     2  2         2
+      ds  = - ------------------------ + Omega(r, t) a(t)  r   d theta
+                              2
+                     - 1 + k r
+
+                            2  2           2       2                    2
+          + Omega(r, t) a(t)  r  sin(theta)   d phi   - Omega(r, t)  d t
+
+-------------------------------------------------------------------------------
+SEE ALSO: makeg, qload, grsaveg, grarray.
+===============================================================================
+

@@ -1,0 +1,108 @@
+
+===============================================================================
+HELP FOR: gralter, grcalcalter
+===============================================================================
+
+CALLING SEQUENCE: gralter ( objectSeq )
+                  gralter ( objectSeq, simp )
+                  gralter ( objectSeq, simp1, simp2, ... )
+                  grcalcalter ( objectSeq, simp1, simp2, ... )
+
+      PARAMETERS: objectSeq - object name or sequence of object names
+                  simp      - (optional) simplification code(s) instructing
+                              which simplification routine to apply to the
+                              named objects
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- gralter() and grcalcalter() allow modification of GRTensorII objects through
+  the use of the standard MapleV simplification/expansion routines.
+
+- Both routines require a GRTensorII object name as the first argument. 
+  Further GRTensorII objects may be listed separated by commas.
+
+- If no simp argument is specified, a menu is displayed giving a list
+  of standard choices for simplification routines. The list is as
+  follows:
+
+    0)  none
+    1)  simplify()          try all simplification techniques
+    2)  simplify[trig]      apply trig simplification
+    3)  simplify[power]     simplify powers, exp and ln
+    4)  simplify[hypergeom] simplify hypergeometric functions
+    5)  simplify[radical]   convert radicals,log,exp to canonical form
+    6)  expand()
+    7)  factor()
+    8)  normal()
+    9)  sort()
+   10)  simplify[sqrt,symbolic] allows sqrt(r^2) = r
+   11)  simplify[trigsin]   trig simp biased to sin
+   12)  Apply constraint equations
+   13)  Apply constraints repeatedly
+   14)  other user-specified routine
+
+  The user is prompted to enter a digit corresponding to the desired
+  simplification to be applied to each component of each object specified
+  in the objectSeq argument.
+
+   1 ... 11 apply the named MapleV simplification routine. See the
+                corresponding MapleV help pages for more details on
+                the functioning of these routines.
+      12    applies any constraint equations that were specified with the
+                metric or using the grconstraint function [see the help
+                page for grconstraint].
+      13    applies the constraint equations repeatedly until the given
+		expression no longer changes.
+      14    the user is prompted to provide the name of a routine which will
+                be applied to each component of the named GRTensorII objects.
+
+- The simp parameters can be used to avoid the menu and apply the named
+  simplifications directly. These parameters can take one of three forms:
+
+    i) A digit 1 ... 13 corresponding to the menu options listed above;
+
+   ii) A name corresponding to the options listed above. Recognized names are
+
+           simplify, trig, power, hypergeom, radical, expand, factor,
+           normal, sort, sqrt, trigsin, cons, consr
+
+  iii) If a desired routine does not exist in the above list, its name can
+        be supplied directly (eg. radsimp). [Note that the routine must 
+        function with only one argument. To apply a function of more than
+        one argument, see grmap().]
+
+- gralter() is used on an object that has already been calculated.
+
+- grcalcalter() allows simplification to take place during the calculation.
+  Note that this means all precursor objects whose calculation is required
+  will be altered in the same fashion.
+
+- In the case of some of the scalar invariants the use of grcalcalter()
+  avoids a MapleV `Object Too Large' error. For example, the Kerr-Newmann
+  metric will generate this error when trigonometric simplification is
+  applied after using normal as the default simplification, but grcalcalter()
+  with trigonometric simplification is successful.
+
+- If the global variable grOptionAlterSize is set to true the size of 
+  each altered component will be displayed. This allows the user to
+  determine if an object has been reduced to a "displayable" size.
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+> gralter ( R(dn,dn,dn,dn), 2 ):
+Component Alteration of a grtensor object:
+
+Applying routine simplify[trig] to object R(dn,dn,dn,dn)
+
+> gralter ( R(dn,dn,dn,dn), trig ):
+Component Alteration of a grtensor object:
+
+Applying routine simplify[trig] to object R(dn,dn,dn,dn)
+
+> gralter ( R(dn,dn), radsimp ):
+
+-------------------------------------------------------------------------------
+SEE ALSO: grmap, grdisplay, grt_objects, groptions.
+===============================================================================

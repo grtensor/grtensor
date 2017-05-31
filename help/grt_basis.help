@@ -1,0 +1,209 @@
+
+===============================================================================
+HELP FOR: Basis/tetrad Object Library
+===============================================================================
+SYNOPSIS:
+
+- a set of object definitions for describing spacetimes in terms of
+  non-holonomic bases and the Newman-Penrose formalism. 
+
+- In order to use the objects defined in this library, a n-basis must be 
+  defined using makeg, or loaded using grload (or qload).
+
+- The covariant derivative indices for spacetimes specified by a basis
+  are `cbdn' and `cbup', as in
+
+                       grcalc ( R(bdn,bdn,cbdn):
+
+  This form of covariant derivative uses the rotation coefficients
+  rot(bdn,bdn,bdn) defined for the basis, rather than the Christoffel
+  symbols Chr(dn,dn,dn) which must be translated into a basis and are
+  thus usually less efficient.
+
+  Ordinary partial derivatives along the basis vectors can be specified
+  using the indices `pbdn' and `pbup', as in
+
+                       grcalc ( Psi2(pbdn) ):
+
+  For null tetrads, the derivative operators corresponding to these
+  derivatives can also be used (see ?grt_operators).  
+
+===============================================================================
+GRTensor name             Description
+-------------------------------------------------------------------------------
+
+  e(bdn,up)               - basis vectors (l,n,m,mbar).
+  e(bdn,dn)               - basis 1-forms.
+
+  nullt(up), nullt(dn)    - fancy display for null tetrads.
+  basisv(up), basisv(dn)  - fancy display for general bases.
+
+  l(up), n(up), m(up),    - individual basis vectors (null tetrad only).
+  mbar(up)
+  e1(up), ... , e4(up)    - individual basis vectors (general 4d basis).
+  w1(dn), ... , w1(dn)    - individual basis 1-forms (general 4d basis).
+
+  testNP(bdn,bdn)         - check that a set of basis vectors satisfy an
+                            NP inner product by calculating e{(a)c}*e{(b)^c}
+
+  eta(bdn,bdn)            - defines the inner product of two basis vectors.
+  lambda(bdn,bdn,bdn)     - intermediate objects for calculation of rotation
+                            coefficients.
+  rot(bdn,bdn,bdn)        - Ricci rotation coefficients.
+  str(bdn,bdn,bdn)        - structure constants.
+
+  NPkappa, NPsigma,
+  NPlambda, NPmu, NPrho
+  NPnu, NPtau, NPpi, 
+  NPepsilon, NPgamma,
+  NPalpha, NPbeta         - Newman-Penrose spin coefficients kappa ... beta.
+
+  NPSpin                  - collection of all NP spin coefficients.
+
+  NPkappabar, NPsigmabar,
+  NPlambdabar, NPmubar,
+  NPrhobar, NPnubar,
+  NPtaubar, NPpibar,
+  NPepsilonbar, NPgammabar,
+  NPalphabar, NPbetabar    - complex conjugates of the Newman-Penrose spin
+                             coefficients.
+
+  NPSpinbar               - collection of complex conjugates of all NP spin
+                            coefficients.
+
+  Psi0, Psi1, Psi2
+    Psi3, Psi4            - Weyl curvature coefficients
+
+  WeylSc                  - collection of Weyl coefficients coefficients
+
+  Phi00, Phi01, Phi10,
+  Phi02, Phi20, Phi12, 
+  Phi21, Phi11, Phi22,
+  NPLambda                - Ricci curvature coefficients
+
+  RicciSc                 - collection of Ricci curvature coefficients
+
+  Ckappa ... Cbeta        - NP spin coefficients using alternate formulations
+                            (see below).
+
+  Ckappabar ... Cbetabar  - complex conjugates of NP spin coefficients
+                            using alternate formulations
+
+  CPsi0 ... CPsi4         - Weyl curvature coefficients using altenate
+                            formulations
+
+  CPhi00 ... CPhi22,      - Ricci curvature coefficients using alternate
+  CLambda                   formulations
+
+  CSpin, CSpinbar         - collection of spin coefficients, alternate
+                            formulations.
+
+  CRicciSc, CWeylSc       - collection of Ricci and Weyl coefficients using
+                            alternate formulations.
+
+  Petrov                  - the Petrov type of a NP basis.
+ 
+-------------------------------------------------------------------------------
+
+- to refer to the basis components of a standard GRTensor object, use the index
+  place-holders bdn and bup just as you would use dn and up (eg. to use the
+  basis components of g(dn,dn), type g(bdn,bdn) ).
+
+- when using a null tetrad, the objects corresponding to the basis vectors
+  are:
+                   l(up)    ---> e(1,up),
+                   n(up)    ---> e(2,up), 
+                   m(up)    ---> e(3,up), 
+                   mbar(up) ---> e(4,up). 
+
+  To display tetrads, one can also use the objects
+
+                 nullt(up), nullt(dn)
+  
+  for null tetrads. For general 4d contravariant bases, the individual vectors
+  can be accessed as e1(up), e2(up), e3(up), e4(up) and together as basisv(up).
+  Contravariant basis vectors can be referenced as w1(dn), w2(dn), w3(dn),
+  w4(dn), and together as basisv(dn).
+
+  [Note, there is redundancy between these definitions, ie. e1(dn) = w1(dn),
+   etc. The form which is assigned by default depends on what form was
+   specified in the original spacetime file created by makeg().
+   These definitions are intended for display purposes, as well as for
+   use in grdef(). All subsequent calculations make use of the equivalent
+   objects e(bdn,up) and e(bdn,dn). Alteration to any of the nullt(up) or
+   basisv(up) vectors via gralter() will not affect subsequent calculations
+   from the basis.]
+
+- the `C' objects listed above use the alternate formulations of
+  
+     S. Allen, G. J. Fee, A. T. Kachura, F. W. Letniowski, R. G. McLenaghan,
+     (1994) Gen. Rel. Grav., 26, p. 26.
+
+  These definitions avoid the use of contravariant components of the basis
+  forms, thus avoiding inversion of the basis. If the basis vectors are
+  initially specified in covariant form, this may provide some time benefit.
+  See
+
+     D. Pollney, P. Musgrave, K. Lake, Class. Quant. Grav., 13, 2289.
+
+  for a discussion of this point.
+
+- two GRTensorII commands relate specifically to null tetrads:
+
+    nptetrad - defines a null tetrad given a metric.
+    nprotate - performs rotations on a null tetrad.
+
+  See the individual help pages for these functions for more information.
+
+- the result of a calculation of the Petrov type can be analyzed using
+  the PetrovReport() function. See ?PetrovReport for more information.
+
+- the definitions of these objects are concisely reviewed in
+
+    S. Chandrasekhar, The Mathematical Theory of Black Holes, 2nd ed.,
+        Oxford University Press, 1992. 
+
+  The NP objects are defined in
+
+    Ezra Newman and Roger Penrose (1962), J. Math. Phys., 3, 566; 
+        and errata (1962), 4, 998.
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+> qload ( npschw ):
+> grcalc ( WeylSc ):
+> grdisplay ( _ ):
+ 
+                           For the npschw spacetime:
+ 
+                              Weyl Scalar, NP Psi0
+ 
+                                    Psi0 = 0
+ 
+                              Weyl Scalar, NP Psi1
+ 
+                                    Psi1 = 0
+ 
+                              Weyl Scalar, NP Psi2
+ 
+                                            m
+                                 Psi2 = - ----
+                                            3
+                                           r
+ 
+                              Weyl Scalar, NP Psi3
+ 
+                                    Psi3 = 0
+ 
+                              Weyl Scalar, NP Psi4
+ 
+                                    Psi4 = 0
+
+-------------------------------------------------------------------------------
+SEE ALSO: grt_objects, grt_operators, PetrovReport(), nptetrad(), nprotate(),
+          grdef().
+===============================================================================
+
+
+
+

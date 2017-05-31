@@ -1,0 +1,92 @@
+
+===============================================================================
+HELP FOR: Killing Operators and Functions
+===============================================================================
+SYNOPSIS:
+
+- The operator KillingTest[] can be used to test if a vector is a Killing 
+  or homothetic Killing vector. It takes as its argument the name of a 
+  vector (a single index GRTensorII object). For example:
+
+    > grcalc ( KillingTest[v] );
+
+  Displaying the result of this calculation (using grdisplay()) will indicate
+  if the vector was determined to be a Killing vector.
+
+  A Killing vector, k , is defined to be a vector which satisfies the
+  equation:
+
+             k    + k    -  2 Phi g   = 0 .                         (1)
+              a;b    b;a           ab
+
+  If Phi = 0, the vector is a proper Killing vector (or simply Killing 
+    vector);
+
+  If Phi = constant, the vector is called `homothetic'; and
+
+  If Phi is a general function of the coordinates then the vector is
+    a `conformal' Killing vector.
+                                          a
+  ( In general Phi = Expansion(k)/ndim = k   /ndim )
+                                           ;a
+
+- NOTE: The determination of whether or not a vector is a Killing vector
+  requires that Eq (1) holds. The left-hand side of this equation is
+  stored in the GRTensorII object ktest[v](dn,dn). In order to ensure
+  that the algorithm work properly, it is necessary to ensure that
+  this object is simplified as much as possible using gralter().
+
+  The conformal factor is stored in the GRTensorII object conf[v], and
+  if this can not be evaluated to zero the vector is labelled as a
+  conformal/homothetic Killing vector rather than a Killing vector.
+  Thus it is important that this object also be simplified as much as
+  possible before using KillingTest.
+
+  If upon examining ktest[v](dn,dn) and conf[v] it is found that these
+  objects have not been completely simplified, then use
+
+  > grclear ( KillingTest[v] ):
+
+  to clear the results of the KillingTest[] calculation, then apply
+  the necessary simplifications to conf[v] and ktest[v](dn,dn) using
+  gralter(), then calculate KillingTest[v] again using grcalc().
+
+- The function KillingCoords() exists to create coordinate vectors and then
+  check which (if any) are Killing vectors. It does not take any arguments.
+
+-------------------------------------------------------------------------------
+Examples:
+
+> qload ( schw ):
+> grdef ( `v{^a} := kdelta{^a $t}` ):
+Created definition for v(up)
+
+> grcalc ( KillingTest[v] ):
+                                CPU Time  = .850
+
+> grdisplay ( KillingTest[v] ):
+
+                               Killing Test Result
+
+                              For the schw metric.
+
+                     Killing Test = v is a Killing vector.
+
+> KillingCoords():
+
+                        Killing Coordinate Test Results
+
+                    Coordinate vector  = [r, theta, phi, t]
+
+           coord1(up) = [1, 0, 0, 0], coord1 is NOT a Killing vector.
+
+           coord2(up) = [0, 1, 0, 0], coord2 is NOT a Killing vector.
+
+             coord3(up) = [0, 0, 1, 0], coord3 is a Killing vector.
+
+             coord4(up) = [0, 0, 0, 1], coord4 is a Killing vector.
+
+-------------------------------------------------------------------------------
+See also: grt_operators.
+===============================================================================
+

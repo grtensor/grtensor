@@ -1,0 +1,142 @@
+
+===============================================================================
+HELP FOR: nptetrad
+===============================================================================
+
+CALLING SEQUENCE:  nptetrad ( [lnSpace] )
+
+      PARAMETERS:  lnSpace -- (optional) specifies a pair of coordinates
+                              whose corresponding 1-forms will be used
+                              to construct the l and n vectors of the
+                              tetrad, eg. [t,r].
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- The nptetrad() command finds a null NP tetrad corresponding to a
+  given metric, g(dn,dn). The forms are saved as the object e(bdn,dn).
+
+- Basis vectors are initially chosen as column vectors of the covariant
+  metric. From these vectors, an orthonormalization is carried out to
+  create a set of null vectors that satisfy the NP inner product,
+
+                       c    [  0,  1,  0,  0  ]
+              e     e     = [  1,  0,  0,  0  ].
+               (a)c  (b)    [  0,  0,  0, -1  ]
+                            [  0,  0, -1,  0  ]
+
+- If the optional `lnSpace' argument is supplied, then the 1-forms
+  corresponding to the given columns of g(dn,dn) are use preferentially
+  to construct the l and n vectors. The `lnSpace' argument is specified
+  as a MapleV list of two coordinate names (eg. [t,r]), or numbers
+  (eg. [4,1]). At least one of these coordinates should be timelike or
+  null.
+
+- Because of inconsistencies in MapleV's application of the imaginary
+  number I=sqrt{-1} in symbolic expressions, incorrectly formed tetrads can
+  result. The output of an nptetrad() operation should be checked as
+  follows:
+
+    - the vectors l and n should have no imaginary components
+       (l and n correspond to the first and second rows of e(bdn,dn),
+       respectively).
+    - the vectors m and mbar should be complex conjugates of each other
+       (m and mbar correspond to the third and fourth rows of e(bdn,dn),
+       respectively).
+    - the inner product eta(bup,bup) should be of the NP form given above.
+
+  If any of these criteria can not be met, then the session should be
+  restarted and nptetrad() run again, possibly with a different choice
+  of lnSpace argument. [Note, the location of I in MapleV expressions
+  is strongly dependent on MapleV's memory state which can vary from
+  one run to the next. Thus different tetrads can result between two runs
+  of nptetrad() even if the input is identical.]
+
+- The appearance of large terms in the components of the basis can
+  impair later calculations. To ensure that future calculations are
+  optimized, apply the relevant gralter() commands to the basis
+  vectors until they seem to be fully simplified. See ?gralter.
+
+- The implementation of the Newman-Penrose formalism in GRTensorII
+  follows the original specification of Newman and Penrose (1962).
+  As such, it requires that the spacetime have a -2 signature. If
+  this is not the case, the program will ask the user if the metric
+  signature is to be reversed in the creation of the tetrad. If the
+  user answers `no' to this prompt, the tetrad can not be created and
+  the program aborts. A `yes' answer will cause the signature of
+  g(dn,dn) and g(up,up) to be negated.
+
+- Tetrads created using nptetrad() can be saved using the grsaveg()
+  command.
+
+- The results of the calculation are placed in the GRTensorII objects
+  e(bdn,dn) and eta(bup,bup), the basis vectors and basis inner product,
+  respectively.
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+> qload ( schw );
+   Calculating ds for schw ... Done. (0.010000 sec.) 
+                            Default spacetime = schw
+ 
+                            For the schw spacetime:
+ 
+                                  Coordinates
+ 
+                             a
+                           x   = [ r, theta, phi, t ]
+ 
+                                  Line element
+ 
+    2
+  ds  =
+ 
+           2
+        d r       2         2     2           2       2                      2
+     --------- + r   d theta   + r  sin(theta)   d phi   + (- 1 + 2 m/r)  d t
+     1 - 2 m/r
+ 
+                       The Classical Schwarzschild metric
+ 
+> nptetrad ( [t,r] );
+   The metric signature of the schw spacetime is +2.
+   In order to create an NP-tetrad, the signature of g(dn,dn) will be
+   changed to -2.
+   Continue? (1=yes):
+> 1
+   The signature of the schw spacetime is now -2.
+                            For the schw spacetime:
+ 
+                              Basis inner product
+ 
+                                      [ 0  1   0   0 ]
+                                      [              ]
+                            (a) (b)   [ 1  0   0   0 ]
+                         eta        = [              ]
+                                      [ 0  0   0  -1 ]
+                                      [              ]
+                                      [ 0  0  -1   0 ]
+ 
+                       Null tetrad (covariant components)
+ 
+                                            - r + 2 m
+                        l[a] = [ 1, 0, 0, - --------- ]
+                                                r
+ 
+                                       r
+                      n[a] = [ 1/2 ---------, 0, 0, 1/2 ]
+                                   - r + 2 m
+ 
+                               1/2             1/2
+            m[a] = [ 0, - 1/2 2    r, - 1/2 I 2    r sin(theta), 0 ]
+ 
+                                 1/2           1/2
+           mbar[a] = [ 0, - 1/2 2    r, 1/2 I 2    r sin(theta), 0 ]
+ 
+   The null tetrad has been stored as e(bdn,dn).
+> 
+ 
+-------------------------------------------------------------------------------
+SEE ALSO: makeg, grsaveg, grt_basis, nprotate.
+===============================================================================

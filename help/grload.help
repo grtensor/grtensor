@@ -1,0 +1,78 @@
+
+===============================================================================
+HELP FOR: grload
+===============================================================================
+
+CALLING SEQUENCE:   grload ( metricName, pathString )
+
+                    grload()
+
+      If no parameter is provided a file chooser dialog will open and the
+      metric file may be selected. 
+
+      PARAMETERS:  metricName - name to be assigned to the metric for the
+                                current session
+                   pathString - path to the file containing the metric
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- Reads the metric contained in the file indicated by pathString and
+  assigns it the name metricName.
+
+- The metric which is loaded becomes the default metric for subsequent
+  calculations.
+
+- The parameter pathString is a MapleV string (i.e. enclosed
+  in backquotes). Directories in the path are separated by forward
+  slashes (even under MS-DOS/Windows).
+
+- Metric files can be created using the command makeg(). A directory of
+  commonly used metrics is included with the GRTensorII distribution. An
+  online collection is kept at http://astro.queensu.ca/~grtensor/.
+
+- Older metric files do not have an entry specifying the spacetime
+  signature. If the global grOptionLLSC variable is set true, then
+  the following assumptions are made: if the spacetime is specified
+  by a four dimensional metric or general basis, then the signature
+  is set to +2; if the spacetime is specified by a set of basis vectors
+  satisfying an NP inner product, then the signature is set to -2.
+  These assumptions are overridden if the signature is explicitly
+  contained in the metric file. If the grOptionLLSC variable is set
+  false, then the signature is left unnassigned unless the signature
+  is explicitly given by the metric file. See ?groptions for a
+  description of the grOptionLLSC variable. To see the signature
+  of the current spacetime, use grdisplay(sig).
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+> grload ( schw, `c:/metrics/schw.mpl` );
+
+Calculated ds for schw. (0.010000 sec.) 
+                            Default spacetime = schw
+ 
+                            For the schw spacetime:
+ 
+                                  Coordinates
+ 
+                             a
+                           x   = [ r, theta, phi, t ]
+ 
+                                  Line element
+ 
+    2
+  ds  =
+ 
+           2
+        d r       2         2     2           2       2                      2
+     --------- + r   d theta   + r  sin(theta)   d phi   + (- 1 + 2 m/r)  d t
+     1 - 2 m/r
+ 
+                       The Classical Schwarzschild metric
+ 
+> grcalc ( R(dn,dn) ):
+
+-------------------------------------------------------------------------------
+SEE ALSO: qload(), makeg().
+===============================================================================

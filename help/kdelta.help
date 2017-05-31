@@ -1,0 +1,60 @@
+
+===============================================================================
+HELP FOR: kdelta
+===============================================================================
+SYNOPSIS:
+
+- The kdelta{^a b} object is used to represent the Kronecker delta matrix:
+
+                  kdelta{^a b} :=  1 if a = b,
+                                   0 otherwise.
+
+- It can be used in grdef() to define new objects, for instance:
+
+        > grdef ( `T{^a b} := phi(t)*kdelta{^a b}` ):
+
+
+- It can also be used in grdef() to select a single component of a tensor.
+  The component is selected by prefixing its name with a dollar sign `$',
+  as in:
+
+        > grdef ( `v{^a} := kdelta{ ^a $t }` ):
+
+  If the components are {r,theta,phi,t} then this command is equivalent
+  to
+        > grdef ( `v{^a} := [ 0, 0, 0, psi(t) ]` ):
+
+  however in the previous case, one would still need to run grcalc( v(up) )
+  to assign the components of v.
+
+- kdelta is defined automatically and can not be calculated or displayed or
+  altered as other tensors.
+
+-------------------------------------------------------------------------------
+EXAMPLE:
+
+> qload ( schw ):
+
+> grdef ( `T{^a ^b} := rho(t)*kdelta{^a $t}*kdelta{^b $t}` ):
+
+> grcalc ( T(up,up) ):
+Calculated T2(up,up) for schw. (0.080000 sec.) 
+
+> grdisplay ( _ ):
+
+ 
+                            For the schw spacetime:
+ 
+                                    T(up,up)
+ 
+                                  [ 0  0  0     0   ]
+                                  [                 ]
+                            a b   [ 0  0  0     0   ]
+                           T    = [                 ]
+                                  [ 0  0  0     0   ]
+                                  [                 ]
+                                  [ 0  0  0  rho(t) ]
+
+-------------------------------------------------------------------------------
+SEE ALSO: grdef, grt_objects.
+===============================================================================

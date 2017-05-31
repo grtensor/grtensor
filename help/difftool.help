@@ -1,0 +1,38 @@
+
+===============================================================================
+HELP FOR: difftool
+===============================================================================
+
+CALLING SEQUENCE:  difftool ( function ):
+
+      PARAMETERS:  function - a function involving derivatives
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- difftool converts the active form diff to Diff for any second
+  order or higher derivatives but NOT for first order derivatives.
+  This allows the user to set first order derivatives to zero
+  without affecting higher order derivatives.
+
+- To apply this to GRTensorIII objects use grmap().
+
+-------------------------------------------------------------------------------
+EXAMPLE:
+
+> with(grtensor):
+> diff ( R(r,t), r ) + diff ( diff( R(r,t), r ),t );
+
+                                        /    2          \
+                       /  d         \   |   d           |
+                       |---- R(r, t)| + |------- R(r, t)|
+                       \ dr         /   \ dt dr         /
+
+> lprint ( difftool(") );
+
+diff(R(r,t),r)+Diff(Diff(R(r,t),r),t)
+
+-------------------------------------------------------------------------------
+SEE ALSO: diff, Diff, grmap.
+===============================================================================
+

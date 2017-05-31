@@ -1,0 +1,57 @@
+
+===============================================================================
+HELP FOR: grcalc1
+===============================================================================
+
+CALLING SEQUENCE:  grcalc1 ( object, indexList );
+
+      PARAMETERS:  object      - GRTensorII object name
+                   indexList   - index list specifying a component
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- This function can be used to calculate a single component of
+  a tensor. 
+
+- This is useful when the metric is sufficiently complicated
+  that certain components of tensors can not be calculated without
+  running into a MapleV `Object Too Large' error. Using grcalc1(), at least
+  some information may be extracted by avoiding such components and
+  calculating the other components individually.
+
+- The desired component is specified by a list which gives the value
+  of each tensor index as either a number or coordinate name.
+  For example, if we are considering a spacetime with coordinates
+  (r,theta,phi,t) the following equivalent lists could be used to
+  indicate the (r,r,phi,t) component of the Riemann tensor:
+
+                 [1,1,3,4]    or   [r,r,phi,t]
+
+- Note that since only one component has been calculated, GRTensorII 
+  will not recognize the object as calculated and so the result of the
+  calculation cannot be displayed with grdisplay() (grcomponent() must
+  be used). Calculation of all components of an object can be
+  done with grcalc().
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+> qload ( schw ):
+
+> grcalc1 ( Chr(dn,dn,up), [theta,theta,r] ):
+
+Calculated detg for schw. (0.020000 sec.) 
+Calculated g(up,up) for schw. (0.060000 sec.) 
+Calculated g(dn,dn,pdn) for schw. (0.060000 sec.) 
+Calculated Chr(dn,dn,dn) for schw. (0.060000 sec.) 
+Calculated the [theta, theta, r] component of Chr(dn,dn,up) for schw.
+
+> grcomponent ( Chr(dn,dn,up), [theta,theta,r] );
+
+                                   - r + 2 m
+
+-------------------------------------------------------------------------------
+SEE ALSO: grcalc, grcomponent.
+===============================================================================
+

@@ -1,0 +1,55 @@
+
+===============================================================================
+HELP FOR: spacetime
+===============================================================================
+
+CALLING SEQUENCE:  spacetime ( name, param1=value1, param2=value2, ... )
+
+      PARAMETERS: name - name of the new space time
+
+      NAME/VALUE pairs:
+        coord : list of co-ordinates for the spacetime
+        ds    : line element using d[coord] to denote differential
+                elements
+        g[coord,coord]  : metric elements (indices down/covariant)
+
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- defines a new spacetime assigning it the name <name>
+
+- allows the spacetime to be defined in the worksheet without reference to 
+  an external metric file
+
+- the spacetime will be valid in the current worksheet. It can be saved with 
+  grsave
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+> spacetime(mink, coord=[t,x,y,z], ds=-d[t]^2+d[x]^2+d[y]^2+d[z]^2);
+
+               For the mink spacetime:
+
+                    Line element
+
+         2        2        2        2        2
+       ds  = - d t   +  d x   +  d y   +  d z
+
+> spacetime(static, coord=[t,r,theta,phi], g[t,t]=-f(r),g[r,r]=1/f(r),
+g[theta,theta]=r^2,g[phi,phi]=r^2*sin(theta)^2);
+
+                             For the static spacetime:
+
+                                   Line element
+
+                                2
+         2             2     d r      2         2     2           2       2
+       ds  = -f(r)  d t   + ------ + r   d theta   + r  sin(theta)   d phi
+                             f(r)
+
+
+-------------------------------------------------------------------------------
+SEE ALSO: qload, grload, makeg.
+===============================================================================

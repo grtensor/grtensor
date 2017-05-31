@@ -1,0 +1,107 @@
+
+===============================================================================
+HELP FOR: grtransform
+===============================================================================
+
+CALLING SEQUENCE: grtransform ( oldmetric, newmetric, xform, [sig] )
+
+      PARAMETERS: oldmetric - the name of the metric to be transformed
+                  newmetric - the name by which the transformed metric is
+                               to be referenced
+                  xform     - a list specifying the transformation
+                  sig       - (optional) the signature of the new metric,
+                               if different from the old.
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- Performs a coordinate transformation of the metric tensor.
+
+- The transformation is specified by a list of functions giving the
+  old coordinates in terms of the new coordinates or vice versa. For
+  instance if we are performing the transformation
+
+                [t,x,y,z] --> [tau,u,v,w]
+
+  then we could specify xform as a set of functions of old in terms
+  of new,
+
+      xform := [ t(tau,u,v,w)=..., x(tau,u,v,w)=..., y(tau,u,v,w)=..., 
+               z(tau,u,v,w) = ... ]:
+
+  or new in terms of old,
+
+      xform := [ tau(t,x,y,z)=..., u(t,x,y,z)=..., v(t,x,y,z)=..., 
+               w(t,x,y,z)=... ]:
+
+- Note that for an n-dimensional spacetime, n functions must be specified.
+
+- None of the new set of coordinates can be the same as any of the old
+  coordinates. For instance, if both spacetimes are spherically symmetric,
+  new coordinate names for the angles must be given.
+
+- It is not necessary that each of the transformation functions be specified 
+  as a function of all n variables, but each of the variables must be
+  represented in at least one of the functions of the set. For instance,
+  in the second example above, at least one of the components of xform
+  must be a function of t, at least one must be a function of x, etc.
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+> qload(schw);
+Calculated ds for schw (0.000000 sec.)
+Assigning info `The Schwarzschild metric in curvature coordinates`
+                           Default spacetime = schw
+
+                            For the schw spacetime:
+
+                                  Coordinates
+
+                                     x(up)
+
+                             a
+                           x   = [r, theta, phi, t]
+
+                                 Line element
+
+            2
+    2    d r       2         2     2           2       2    /     2 m\     2
+  ds  = ------- + r   d theta   + r  sin(theta)   d phi   + |-1 + ---|  d t
+            2 m                                             \      r /
+        1 - ---
+             r
+
+               The Schwarzschild metric in curvature coordinates
+
+> rstar := int(1/(1-2*m/r), r);
+  rstar := r + 2 m ln(r - 2 m)
+
+> xform := [u(r, t) = t-rstar, r = r, theta = theta, phi = phi];
+   xform := [u(r, t) = t - r - 2 m ln(r - 2 m), r = r, theta = theta, phi = phi]
+
+> grtransform(schw, schw_EF, xform);
+transform is x_new(x_old)
+Calculated ds for schw_EF (0.000000 sec.)
+The new default metric is: schw_EF
+                              For the schw_EF spacetime:
+
+                                      Coordinates
+
+                                         x(up)
+
+                                 a
+                               x   = [u, r, theta, phi]
+
+                              For the schw_EF spacetime:
+
+                                     Line element
+
+                        2
+     2   (-r + 2 m)  d u                      2         2     2           2       2
+   ds  = ----------------- - 2  d u  d  r  + r   d theta   + r  sin(theta)   d phi
+                 r
+
+> 
+-------------------------------------------------------------------------------
+SEE ALSO: makeg, grsaveg, grmap, grconstraint, nptetrad, nprotate.
+===============================================================================

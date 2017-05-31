@@ -1,0 +1,71 @@
+
+===============================================================================
+HELP FOR: grclear
+===============================================================================
+
+CALLING SEQUENCE:  grclear ( objects ):
+
+      PARAMETERS: objects -  GRTensorII object name or sequence of names.
+
+-------------------------------------------------------------------------------
+SYNOPSIS:
+
+- Deletes the record of the GRTensorII objects named, allowing them
+  to be re-calculated for a particular metric.
+
+- If the name `results' is given as the `objects' parameter, then all
+  of the tensors calculated for the default spacetime will be deleted, but
+  not the spacetime itself.
+
+- If the name `metric' is given as the `objects' parameter, then all
+  of the tensors calculated for the default spacetime will be deleted,
+  including the components of the metric, g(dn,dn). If basis vectors
+  exists for the spacetime, they are not cleared.
+
+- If the name `spacetime' is given as the `objects' parameter, then
+  all of the objects calclulated for the default spacetime will be
+  deleted, including the components of the metric and basis, if
+  assigned.
+
+- If `metric' or `results' is specified then grclear() prompts for
+  confirmation and allows user to abort if so desired.
+
+- grclear() does not remove the definition of the object, merely its
+  value. To clear a definition use grundefine().
+
+-------------------------------------------------------------------------------
+EXAMPLES:
+
+> qload ( schw ):
+> grcalc ( R(dn,dn):
+
+> grclear ( R(dn,dn) ):
+
+Cleared  R(dn,dn) for the schw metric.
+
+> grdisplay ( R(dn,dn) ):
+
+R(dn,dn) has not been calculated.
+
+> grclear(metric);
+
+Clear the metric schw and all results (yes=1 followed by ;) ?
+
+> 1;
+
+Clear the metric schw and all results (yes=1 followed by ;) ?1;
+Cleared detg for the schw metric.
+Cleared g(dn,dn,pdn) for the schw metric.
+Cleared dimension for the schw metric.
+Cleared Info for the schw metric.
+Cleared ds for the schw metric.
+Cleared g(up,up) for the schw metric.
+Cleared g(dn,dn) for the schw metric.
+Cleared Chr(dn,dn,dn) for the schw metric.
+Cleared Chr(dn,dn,up) for the schw metric.
+Cleared x(up) for the schw metric.
+
+-------------------------------------------------------------------------------
+SEE ALSO: grcalc, grundefine.
+===============================================================================
+
