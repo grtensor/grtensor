@@ -85,12 +85,8 @@ GRTensorIII name         Description
   vor[v]              - vorticity scalar
   shear[v](dn,dn)     - shear tensor
   shear[v]            - shear scalar
-  RayEqn[v]           - Raychaudhuri's equation
   E[v](dn,dn)         - `electric part' of the Weyl tensor
   H[v](dn,dn)         - `magnetic part' of the Weyl tensor
--------------------------------------------------------------------------------
-(* - these definitions are valid only for null vector fields.)
--------------------------------------------------------------------------------
 
 - if the vector field is non-null, it can be normalized using the
   grnormalize() command. See the ?grnormalize for more details.
