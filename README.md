@@ -1,6 +1,9 @@
 =================================
 GRTensorIII for Maple
 =================================
+Version 2.1.5 June 1, 2017
+- remove RayCh vector operator until it can be re-verified
+
 Version 2.1.4, May 30, 2017
 - support non-interactive grconstraint definition
   (see ?grconstraint)
