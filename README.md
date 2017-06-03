@@ -2,6 +2,12 @@
 GRTensorIII for Maple
 =================================
 Version 2.1.5 June 1, 2017
+- fix issue#19 (allow any option to be set in init file)
+
+Version 2.1.6 June 1, 2017
+- add grcalcd/gralterd to combine display function
+
+Version 2.1.5 June 1, 2017
 - remove RayCh vector operator until it can be re-verified
 
 Version 2.1.4, May 30, 2017

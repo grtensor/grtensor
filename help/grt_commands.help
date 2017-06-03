@@ -9,7 +9,9 @@ each command describe their use.
 
 Calculation:
     grcalc()    - calculate the components of a tensor
+    grcalcd()   - calculate and display components of a tensor
     gralter()   - simplify/modify tensor components
+    gralterd()  - simplify/modify and display tensor components
     grmap()     - apply a MapleV function to the components of a tensor
     grcalc1()   - calculate a single component of a tensor
     grcalcalter()   - calculate and apply simplification
