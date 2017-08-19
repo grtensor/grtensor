@@ -1,6 +1,10 @@
 =================================
 GRTensorIII for Maple
 =================================
+Version 2.1.8 August 20, 2017
+- fix Issue#22 (grdef with expsc[u])
+- fix Issue#23 (gredef with operators on RHS) 
+
 Version 2.1.5 June 1, 2017
 - fix issue#19 (allow any option to be set in init file)
 
