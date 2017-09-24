@@ -1,6 +1,10 @@
 =================================
 GRTensorIII for Maple
 =================================
+Version 2.1.9 Sept 24, 2017
+- issue #24 (CM def for NP tetrad)
+- issue #17 (Add license file)
+
 Version 2.1.8 August 20, 2017
 - fix Issue#22 (grdef with expsc[u])
 - fix Issue#23 (gredef with operators on RHS) 
