@@ -1,6 +1,10 @@
 =================================
 GRTensorIII for Maple
 =================================
+Version 2.1.10 Oct 3, 2017
+- add function grt2DG() to export a metric in a form that
+  can be used with the Maple Differential Geometry package
+
 Version 2.1.9 Sept 24, 2017
 - issue #24 (CM def for NP tetrad)
 - issue #17 (Add license file)
