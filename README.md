@@ -1,6 +1,11 @@
 =================================
 GRTensorIII for Maple
 =================================
+Version 2.2 Oct 1, 2018
+- support Maple 2018 (issues #30, #31)
+- fix mapping for int (issue #29)
+
+
 Version 2.1.10 Oct 3, 2017
 - add function grt2DG() to export a metric in a form that
   can be used with the Maple Differential Geometry package
