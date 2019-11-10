@@ -1,6 +1,10 @@
 =================================
 GRTensorIII for Maple
 =================================
+Version 2.3 Nov 10, 2019
+- change nprotate command to create a new spacetime
+- fix bug in grundef for scalar objects (fix from G. Ried)
+
 Version 2.2 Oct 1, 2018
 - support Maple 2018 (issues #30, #31)
 - fix mapping for int (issue #29)
