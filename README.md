@@ -1,6 +1,12 @@
 =================================
 GRTensorIII for Maple
 =================================
+Version 2.5 Jan 29, 2022
+- add a check in grdef to fix a bug with illegal index detection 
+    e.g. grdef("eq2{^n ^e m} := Ddq{m}*q{^n ^m} + dq*q{^n ^e;m} ")
+    SHOULD fail since error in m up/dn-ness on RHS
+
+
 Version 2.3 Nov 10, 2019
 - change nprotate command to create a new spacetime
 - fix bug in grundef for scalar objects (fix from G. Ried)
