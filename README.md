@@ -1,6 +1,9 @@
 =================================
 GRTensorIII for Maple
 =================================
+Version 2.8 Oct 31, 2023
+- fixes for subscripts in operators and grtransform
+
 Version 2.5 Jan 29, 2022
 - add a check in grdef to fix a bug with illegal index detection 
     e.g. grdef("eq2{^n ^e m} := Ddq{m}*q{^n ^m} + dq*q{^n ^e;m} ")
